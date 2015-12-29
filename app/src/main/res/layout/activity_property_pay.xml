@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_property_pay_house_owner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/tv_property_pay_house_owner_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/house_owner"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <TextView
+            android:id="@+id/tv_property_pay_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_toRightOf="@+id/tv_property_pay_house_owner_title"
+            android:text="张三"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_property_pay_contact_way"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/tv_property_pay_contact_way_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/contact_way"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <TextView
+            android:id="@+id/tv_property_pay_contact_way"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_toRightOf="@+id/tv_property_pay_contact_way_title"
+            android:text="1888888888888888"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@color/color_white"
+        android:hint="@string/invoice_title"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:textColor="@color/text_color_listviewtext"
+        android:textColorHint="@color/text_color_edit"
+        android:textSize="@dimen/text_size_listview_title" />
+
+    <RelativeLayout
+        android:id="@+id/rl_property_pay_water_rent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/tv_property_pay_water_rent_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/water_rent"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sanjiao" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_item_tour_title"
+        android:layout_below="@+id/tv_item_tour_title"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="@string/select_invoice_document"
+        android:textColor="@color/text_color_tips"
+        android:textSize="@dimen/text_login_littletips" />
+
+    <RelativeLayout
+        android:id="@+id/rl_property_pay_personal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/tv_property_pay_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/personal"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <ImageView
+            android:id="@+id/iv_property_pay_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/danxuankuang" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_property_pay_company"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/tv_property_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/company"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <ImageView
+            android:id="@+id/iv_property_pay_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/danxuankuang2" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:text="@string/send_home_tips"
+        android:textColor="@color/text_color_tips"
+        android:textSize="@dimen/text_login_littletips" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_property_pay_pick_up_the_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_property_pay_pick_the_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/danxuankuang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_index_ads"
+                android:text="@string/pick_up_the_invoice"
+                android:textColor="@color/text_color_edit"
+                android:textSize="@dimen/text_size_listview_text" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_property_pay_send_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_property_pay_send_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/danxuankuang2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_index_ads"
+                android:text="@string/send_home"
+                android:textColor="@color/text_color_edit"
+                android:textSize="@dimen/text_size_listview_text" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_property_pay_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin_middleaa"
+        android:background="@drawable/bg_button"
+        android:text="@string/commit"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_big" />
+</LinearLayout>
+
+
+

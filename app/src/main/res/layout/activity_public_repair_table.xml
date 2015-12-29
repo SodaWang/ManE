@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.hshy41.mane.my.activity.PersonalInfoSetActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_color_main"
+        android:orientation="vertical">
+
+        <include layout="@layout/title_bar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_public_repair_table_chosed_community"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_layout"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/chosed_community"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_listview_title" />
+
+            <ImageView
+                android:id="@+id/iv_public_repair_table_arrow_right1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_right" />
+
+            <TextView
+                android:id="@+id/tv_public_repair_table_community"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_toLeftOf="@+id/iv_public_repair_table_arrow_right1"
+                android:text="回龙观西大街"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_listview_title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_public_repair_table_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_layout"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding">
+
+            <TextView
+                android:id="@+id/tv_public_repair_table_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="姓        名:"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_listview_title" />
+
+
+            <TextView
+                android:id="@+id/tv_public_repair_table_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_toRightOf="@+id/tv_public_repair_table_name_title"
+                android:text="张三"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_listview_title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_public_repair_table_contact_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_layout"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding">
+
+            <TextView
+                android:id="@+id/tv_public_repair_table_contact_phone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/contact_phone"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_listview_title" />
+
+            <TextView
+                android:id="@+id/tv_public_repair_contact_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_toRightOf="@+id/tv_public_repair_table_contact_phone_title"
+                android:text="186666666"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_listview_title" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_public_repair_table_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hight_layout"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@color/color_white"
+            android:paddingLeft="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding">
+
+            <TextView
+                android:id="@+id/tv_public_repair_table_address_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="地        址:"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_listview_title" />
+
+            <TextView
+                android:id="@+id/tv_public_repair_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_toRightOf="@+id/tv_public_repair_table_address_title"
+                android:text="回龙观西大街"
+                android:textColor="@color/text_color_normal"
+                android:textSize="@dimen/text_size_listview_title" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="@string/repair_introduce"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_suggestion_post_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:background="@color/white"
+            android:gravity="top"
+            android:padding="@dimen/layout_padding"
+            android:textColor="@color/text_color_normal"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/text_size_listview_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="@string/add_photo_tip"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_public_repair_table"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_index_market"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/bt_public_repair_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:layout_marginTop="@dimen/layout_margin_middleaa"
+            android:background="@drawable/bg_button"
+            android:text="@string/commit"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/text_size_big" />
+    </LinearLayout>
+</ScrollView>
+
+
+

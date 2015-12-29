@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_titlebar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_titleBar"
+    android:background="@color/color_white">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_left"
+        android:layout_width="@dimen/height_titleBar"
+        android:layout_height="match_parent"></RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_title_left"
+        android:layout_width="@dimen/width_title_back"
+        android:layout_height="@dimen/height_title_back"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:background="@drawable/back" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_title_gps"
+            android:layout_width="@dimen/width_title_gpsImg"
+            android:layout_height="@dimen/height_title_gpsImg"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dingwei" />
+
+        <TextView
+            android:id="@+id/tv_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/iv_title_gps"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/gps_address"
+            android:textColor="@color/bg_color_title"
+            android:textSize="@dimen/text_size_big" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title_right"
+        android:layout_width="@dimen/height_titleBar"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"></RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_title_right"
+        android:layout_width="@dimen/width_title_search"
+        android:layout_height="@dimen/height_title_search"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:background="@drawable/sousuo" />
+
+    <TextView
+        android:id="@+id/tv_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:text="@string/regist"
+        android:textColor="@color/bg_color_title"
+        android:textSize="@dimen/text_size_grid"
+        android:visibility="gone"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_title_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_search_bar"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/rl_title_right"
+        android:layout_toRightOf="@+id/rl_title_left"
+        android:background="@drawable/bg_search"
+        android:paddingLeft="@dimen/layout_padding"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_title_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/pleaseentercontent"
+            android:singleLine="true"
+            android:textColorHint="@color/item_pressed_color"
+            android:textSize="@dimen/text_size_grid" />
+
+    </RelativeLayout>
+</RelativeLayout>
+

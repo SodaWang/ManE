@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AlertViewDemo" />
+            <option value="$PROJECT_DIR$/RecyclerViewPager" />
+            <option value="$PROJECT_DIR$/RecyclerViewPagerDemo" />
+            <option value="$PROJECT_DIR$/RecyclerViewSwipeDismiss" />
+            <option value="$PROJECT_DIR$/RecyclerViewSwipeDismissDemo" />
+            <option value="$PROJECT_DIR$/ToggleButtonLib" />
+            <option value="$PROJECT_DIR$/ToggleButtonSample" />
+            <option value="$PROJECT_DIR$/alertview" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/tablayoutsupport" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

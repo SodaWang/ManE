@@ -1,0 +1,65 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/hw_dividing_line"-->
+    <!--android:background="@color/bg_color_dividing_line" />-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abl_tour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/Theme.DesignDemo">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_tour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_titleBar"
+            android:background="?attr/colorPrimary"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="@null"
+            app:title="">
+
+            <include
+                android:id="@+id/title_layout"
+                layout="@layout/title_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_titleBar" />
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/segment_line_height"
+            android:background="@color/bg_color_dividing_line" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_tour"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_tabBar"
+            app:tabGravity="center"
+            android:background="@color/white"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/text_color_select"
+            app:tabTextAppearance="@style/CustomTabLayoutTextAppearance"
+            app:tabTextColor="@color/text_color_hint">
+        </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.lsjwzh.widget.recyclerviewpager.RecyclerViewPager
+        android:id="@+id/rvp_tour"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:rvp_singlePageFling="false"
+        app:rvp_triggerOffset="0.1" />
+
+</android.support.design.widget.CoordinatorLayout>

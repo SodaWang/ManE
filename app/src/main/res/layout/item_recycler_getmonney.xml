@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_index_textSpacing"
+        android:background="@color/bg_color_main" />
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/rl_item_layout_getmonney_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_getmonneyitem_title"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/tv_verticalline"
+            android:layout_width="@dimen/height_orangeline"
+            android:layout_height="@dimen/width_orangeline"
+            android:layout_centerVertical="true"
+            android:background="@color/bg_color_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_toRightOf="@id/tv_verticalline"
+            android:text="@string/updateads"
+            android:textSize="@dimen/text_size_grid" />
+
+        <LinearLayout
+            android:id="@+id/ll_item_getmonney_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_item_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="@color/bg_color_title"
+                android:textSize="@dimen/text_size_grid" />
+
+            <Button
+                android:layout_width="@dimen/width_title_back"
+                android:layout_height="@dimen/height_title_back"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:background="@drawable/arrow_orange_right" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_item_getmonney_adimg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_getmonney_ad"
+        android:background="@drawable/ad1" />
+</LinearLayout>

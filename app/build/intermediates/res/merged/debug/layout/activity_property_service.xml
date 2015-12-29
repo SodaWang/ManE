@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_main"
+    android:orientation="vertical"
+    tools:context="com.hshy41.mane.my.activity.PropertyHallActivity">
+
+    <include layout="@layout/title_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_property_service_power_repair"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+
+        <ImageView
+            android:id="@+id/iv_property_service_phone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/baoxiu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_property_service_phone1"
+            android:text="@string/power_repair"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dianhuajian" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_property_service_water_repair"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+
+        <ImageView
+            android:id="@+id/iv_property_service_phone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/baoxiu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_property_service_phone2"
+            android:text="@string/water_repair"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dianhuajian" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_property_service_net_repair"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+
+        <ImageView
+            android:id="@+id/iv_property_service_phone3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/baoxiu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_property_service_phone3"
+            android:text="@string/net_repair"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dianhuajian" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_property_service_warm_repair"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+
+        <ImageView
+            android:id="@+id/iv_property_service_phone4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/baoxiu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_property_service_phone4"
+            android:text="@string/warm_repair"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/dianhuajian" />
+
+
+    </RelativeLayout>
+</LinearLayout>

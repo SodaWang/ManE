@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_main"
+    android:orientation="vertical"
+    tools:context="com.hshy41.mane.my.activity.AccountActivity">
+
+    <include layout="@layout/title_bar" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_message_set_message_off"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/message_off"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <com.zcw.togglebutton.ToggleButton
+            android:id="@+id/tb_message_set_message_off"
+            android:layout_width="@dimen/width_toggle"
+            android:layout_height="@dimen/height_toggle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            toggle:my_borderWidth="1dp"
+            toggle:offBorderColor="#ddd"
+            toggle:offColor="#ddd"
+           />
+        <!--toggle:onColor="#74ED57"-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_message_set_sound"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sound"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <com.zcw.togglebutton.ToggleButton
+            android:id="@+id/tb_message_set_sound"
+            android:layout_width="@dimen/width_toggle"
+            android:layout_height="@dimen/height_toggle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            toggle:my_borderWidth="1dp"
+            toggle:offBorderColor="#ddd"
+            toggle:offColor="#ddd"/>
+        <!--toggle:onColor="#74ED57"-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_message_set_vibrate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/vibrate"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+
+        <com.zcw.togglebutton.ToggleButton
+            android:id="@+id/tb_message_set_vibrate"
+            android:layout_width="@dimen/width_toggle"
+            android:layout_height="@dimen/height_toggle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            toggle:my_borderWidth="1dp"
+            toggle:offBorderColor="#ddd"
+            toggle:offColor="#ddd" />
+        <!--toggle:onColor="#74ED57"-->
+    </RelativeLayout>
+
+
+</LinearLayout>

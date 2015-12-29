@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_property_hall_property_notification"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hight_layout"
+    android:layout_marginTop="@dimen/hw_dividing_line"
+    android:background="@color/color_white"
+    android:paddingLeft="@dimen/layout_padding"
+    android:paddingRight="@dimen/layout_padding">
+
+    <ImageView
+        android:id="@+id/iv_item_property_notification_trangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sanjiao" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_toRightOf="@+id/iv_item_property_notification_trangle"
+        android:text="请勿高空抛物。"
+        android:textColor="@color/text_color_normal"
+        android:textSize="@dimen/text_size_listview_title" />
+
+
+    <TextView
+        android:id="@+id/tv_item_transaction_details_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="2015-10-11"
+        android:textColor="@color/text_color_listviewtext"
+        android:textSize="@dimen/text_size_listview_text" />
+
+</RelativeLayout>

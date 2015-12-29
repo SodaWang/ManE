@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_main"
+    android:orientation="vertical"
+    tools:context="com.hshy41.mane.my.activity.PersonalInfoSetActivity">
+
+    <include layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_info_set_head_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/headicon"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+        <ImageView
+            android:id="@+id/iv_personal_info_set_arrow_right1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right" />
+
+        <ImageView
+            android:id="@+id/iv_personal_info_set_head_icon"
+            android:layout_width="@dimen/height_index_ads"
+            android:layout_height="@dimen/height_index_ads"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:layout_toLeftOf="@+id/iv_personal_info_set_arrow_right1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_info_set_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/nickname"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+        <ImageView
+            android:id="@+id/iv_personal_info_set_arrow_right2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/tv_personal_info_set_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:layout_toLeftOf="@+id/iv_personal_info_set_arrow_right2"
+            android:textColor="@color/text_color_edit"
+            android:textSize="@dimen/text_size_listview_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_info_set_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/name"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+        <ImageView
+            android:id="@+id/iv_personal_info_set_arrow_right3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/iv_personal_info_set_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:layout_toLeftOf="@+id/iv_personal_info_set_arrow_right3"
+            android:text="张三"
+            android:textColor="@color/text_color_edit"
+            android:textSize="@dimen/text_size_listview_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_personal_info_set_phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginTop="@dimen/hw_dividing_line"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/phonenumber"
+            android:textColor="@color/text_color_normal"
+            android:textSize="@dimen/text_size_listview_title" />
+
+        <ImageView
+            android:id="@+id/iv_personal_info_set_arrow_right4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/iv_personal_info_set_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/layout_margin"
+            android:layout_toLeftOf="@+id/iv_personal_info_set_arrow_right4"
+            android:text="110"
+            android:textColor="@color/text_color_edit"
+            android:textSize="@dimen/text_size_listview_title" />
+    </RelativeLayout>
+</LinearLayout>

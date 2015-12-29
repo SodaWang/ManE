@@ -1,0 +1,169 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 边距 -->
+    <!--满E公益大布局文字内边距-->
+    <dimen name="layout_commonweal_padding">10dp</dimen>
+    <dimen name="layout_padding">10dp</dimen>
+    <dimen name="layout_margin">10dp</dimen>
+    <dimen name="index_padding">5dp</dimen>
+    <dimen name="title_search_padding">5dp</dimen>
+    <dimen name="title_search_margin">5dp</dimen>
+    <dimen name="layout_margin_big">50dp</dimen>
+    <dimen name="layout_margin_bigmiddle">30dp</dimen>
+    <dimen name="layout_margin_offbigmiddle">29dp</dimen>
+    <dimen name="layout_margin_middleaa">15dp</dimen>
+    <dimen name="layout_margin_middle">5dp</dimen>
+    <dimen name="layout_margin_small">2dp</dimen>
+    <dimen name="grid_index_vertical">17dp</dimen>
+    <dimen name="grid_index_textSpacing">10dp</dimen>
+    <dimen name="marinTop_index_grid">21dp</dimen>
+    <dimen name="marinTop_index_ads">8.5dp</dimen>
+    <!--首页广告横间距-->
+    <dimen name="padding_index_ads">5dp</dimen>
+    <!--首页主要广告标题距离顶部距离 -->
+    <dimen name="marinTop_index_mainAd">17dp</dimen>
+    <!--首页listview缩略图与右侧文字间距宽度 -->
+    <dimen name="marinRight_index_listviewimg">10dp</dimen>
+    <!--周边商户弹出菜单文字与左侧间距 -->
+    <dimen name="marinLeft_pop_listviewtext">15dp</dimen>
+    <!--中等内边距 -->
+    <dimen name="padding_middle">20dp</dimen>
+    <!--小边距 -->
+    <dimen name="padding_small">10dp</dimen>
+    <!--家政类别item内容和标题间距-->
+    <dimen name="marignTop_houseKeeping_content_title">8dp</dimen>
+
+    <!-- 宽高 -->
+    <dimen name="hight_onekeyphone">40.5dp</dimen>
+    <dimen name="hight_image">30dp</dimen>
+    <dimen name="hight_layout">40dp</dimen>
+    <!--首页标题栏高度 -->
+    <dimen name="height_titleBar">44dp</dimen>
+    <!--首页定位图高度 -->
+    <dimen name="height_title_gpsImg">16dp</dimen>
+    <!--首页定位图宽度 -->
+    <dimen name="width_title_gpsImg">11.5dp</dimen>
+    <!--首页返查找钮高度 -->
+    <dimen name="height_title_search">16dp</dimen>
+    <!--首页返查找钮宽度 -->
+    <dimen name="width_title_search">16dp</dimen>
+    <!--首页返回钮高度 -->
+    <dimen name="height_title_back">12dp</dimen>
+    <!--首页返回钮宽度 -->
+    <dimen name="width_title_back">6dp</dimen>
+    <!--首页轮播高度 -->
+    <dimen name="height_banner">170dp</dimen>
+    <!--首页九宫格宽度 -->
+    <dimen name="width_grid">358dp</dimen>
+    <!--首页九宫格item宽度 -->
+    <dimen name="width_grid_item">62dp</dimen>
+    <!--首页九宫格ViewPager高度 -->
+    <dimen name="height_gridViewPager">325dp</dimen>
+    <!--首页轮播指示器布局高度 -->
+    <dimen name="height_layout_bannarPointer">30dp</dimen>
+    <!--首页广告1图高度 -->
+    <dimen name="height_index_ad1">160dp</dimen>
+    <!--首页广告2图高度 -->
+    <dimen name="height_index_ad2">155dp</dimen>
+    <!--首页广告标题高度 -->
+    <dimen name="height_index_ads">30dp</dimen>
+    <!-- 分割线 -->
+    <dimen name="segment_line_height">0.5dp</dimen>
+    <!--首页周边优惠高度 -->
+    <dimen name="height_index_concessions">155dp</dimen>
+    <!--首页周边优惠宽度 -->
+    <dimen name="width_index_concessions">175dp</dimen>
+    <!--首页便民超市高度 -->
+    <dimen name="height_index_market">60dp</dimen>
+    <!--首页便民超市布局高度 -->
+    <dimen name="height_index_layout_market">92.5dp</dimen>
+    <!--首页主要广告信息高度 -->
+    <dimen name="height_index_mainAd">195dp</dimen>
+    <!--首页主要广告信息宽度 -->
+    <dimen name="width_index_mainAd">355dp</dimen>
+    <!--首页listviewitem高度 -->
+    <dimen name="height_index_listviewitem">70dp</dimen>
+    <!--首页listview缩略图高度 -->
+    <dimen name="height_index_listviewimg">50dp</dimen>
+    <!--首页listview缩略图宽度 -->
+    <dimen name="width_index_listviewimg">80dp</dimen>
+    <!--首页轮播指示器图宽 -->
+    <dimen name="width_index_bannarPointer">7.5dp</dimen>
+    <!--次级页面Tabbar高度 -->
+    <dimen name="height_tabBar">36dp</dimen>
+    <!--分隔线尺寸 -->
+    <dimen name="hw_dividing_line">1dp</dimen>
+    <!--分隔线高度 -->
+    <dimen name="height_dividing_line">20dp</dimen>
+    <!--弹出listviewitem高度 -->
+    <dimen name="height_popItem">36dp</dimen>
+    <!--左弹出list高度 -->
+    <dimen name="height_popList_left">180dp</dimen>
+    <!--右弹出list高度 -->
+    <dimen name="height_popList_right">108dp</dimen>
+    <!--我的页面中list的icon宽高-->
+    <dimen name="size_my_listicon">14dp</dimen>
+    <!--我的页面顶部个人信息布局高度-->
+    <dimen name="height_myinfo">115dp</dimen>
+    <!--赚钱item布局title高-->
+    <dimen name="height_getmonneyitem_title">35dp</dimen>
+    <!--橘黄色小丨宽度-->
+    <dimen name="width_orangeline">15dp</dimen>
+    <!--橘黄色小丨高度-->
+    <dimen name="height_orangeline">2dp</dimen>
+    <!--赚钱广告图高度-->
+    <dimen name="height_getmonney_ad">140dp</dimen>
+    <!--广告Item图高度-->
+    <dimen name="height_item_ad_img">120dp</dimen>
+    <!--广告Item图宽度-->
+    <dimen name="width_item_ad_img">172.5dp</dimen>
+    <!--广告布局高度-->
+    <dimen name="height_layout_ad">165dp</dimen>
+    <!--广告透明背景图高度-->
+    <dimen name="height_item_ad_alphabg">21dp</dimen>
+    <!--周边旅游底部信息高度-->
+    <dimen name="height_item_tour_info">45dp</dimen>
+    <!--账户金钱信息背景高度-->
+    <dimen name="height_account_monney">145dp</dimen>
+    <!--toggle高度-->
+    <dimen name="height_toggle">25dp</dimen>
+    <!--toggle宽度-->
+    <dimen name="width_toggle">45dp</dimen>
+    <!--意见反馈框高度-->
+    <dimen name="height_suggestion_post_content">180dp</dimen>
+    <!--公共报修布局高度-->
+    <dimen name="height_layout_public_repair">110dp</dimen>
+    <!--搜索框高度-->
+    <dimen name="height_search_bar">25dp</dimen>
+
+    <!-- 字体 -->
+    <!-- 导航文字 -->
+    <dimen name="text_size_super">24sp</dimen>
+    <!-- 按钮文字 -->
+    <dimen name="text_size_big">17dp</dimen>
+    <!-- 标题文字 -->
+    <dimen name="text_size_normal">16sp</dimen>
+    <!-- 文本文字 -->
+    <dimen name="text_size_middle">12sp</dimen>
+    <!-- 备注文字 -->
+    <dimen name="text_size_small">10sp</dimen>
+    <!-- 九宫格文字 -->
+    <dimen name="text_size_grid">13dp</dimen>
+    <!-- 首页红色福利字号 -->
+    <dimen name="text_size_welfare">9dp</dimen>
+    <!-- 首页listview标题字号 -->
+    <dimen name="text_size_listview_title">12dp</dimen>
+    <!-- 首页listview内容字号 -->
+    <dimen name="text_size_listview_text">11dp</dimen>
+    <!-- 登录页小提示字号 -->
+    <dimen name="text_login_littletips">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <!-- 账户中心总额标题字号 -->
+    <dimen name="text_total_title">18dp</dimen>
+    <!-- 账户中心总额数字字号 -->
+    <dimen name="text_total_number">25dp</dimen>
+</resources>

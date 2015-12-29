@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hshy41.mane.MainActivity" 
+    android:orientation="vertical">
+
+
+
+	<FrameLayout
+	    android:id="@+id/container"
+	    android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+	    ></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/index_layout_main_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/segment_line_height"
+            android:background="@color/bg_color_dividing_line" />
+
+        <RadioGroup
+            android:id="@+id/index_radiogroup_index"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/index_padding"
+            android:paddingTop="@dimen/index_padding" >
+
+            <RadioButton
+                android:id="@+id/content_shouye_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shouye_select"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/main_shouye"
+                android:textColor="@drawable/text_select"
+                android:textSize="@dimen/text_size_grid" />
+
+            <RadioButton
+                android:id="@+id/content_shequ_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/shequ_select"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/main_shequ"
+                android:textColor="@drawable/text_select"
+                android:textSize="@dimen/text_size_grid" />
+
+            <RadioButton
+                android:id="@+id/content_zhuan_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/zhuan_select"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/main_zhuan"
+                android:textColor="@drawable/text_select"
+                android:textSize="@dimen/text_size_grid" />
+
+            <RadioButton
+                android:id="@+id/content_my_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/my_select"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/main_my"
+                android:textColor="@drawable/text_select"
+                android:textSize="@dimen/text_size_grid" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

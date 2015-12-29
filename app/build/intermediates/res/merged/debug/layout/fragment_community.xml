@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_main"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_titleBar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hshy41.mane.views.AutoScrollViewPager
+            android:id="@+id/avp_community"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_banner">
+
+        </com.hshy41.mane.views.AutoScrollViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_community_bannarpointer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"></LinearLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bt_community_property_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@drawable/bg_button"
+        android:text="@string/property_service"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/text_size_big" />
+
+    <RelativeLayout
+        android:id="@+id/rl_item_layout_getmonney_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_getmonneyitem_title"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <TextView
+            android:id="@+id/tv_verticalline"
+            android:layout_width="@dimen/height_orangeline"
+            android:layout_height="@dimen/width_orangeline"
+            android:layout_centerVertical="true"
+            android:background="@color/bg_color_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_toRightOf="@id/tv_verticalline"
+            android:text="@string/popular_recommendation"
+            android:textSize="@dimen/text_size_grid" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_dividing_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_gray" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding"
+        android:id="@+id/rv_community"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+</LinearLayout>

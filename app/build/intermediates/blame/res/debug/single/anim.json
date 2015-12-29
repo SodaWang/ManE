@@ -1,0 +1,162 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_out_center.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\anim\\fade_out_center.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\snackbar_in.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\anim\\snackbar_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_bottom.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\anim\\slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fab_out.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\anim\\fab_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_bottom.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\anim\\slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popout.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\anim\\popout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in_center.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\anim\\fade_in_center.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popin.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\anim\\popin.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fab_in.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\anim\\fab_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fab_in.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\anim\\fab_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\snackbar_out.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\anim\\snackbar_out.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popout.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\anim\\popout.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fab_out.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\anim\\fab_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_out_bottom.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\anim\\slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\snackbar_out.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\anim\\snackbar_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popin.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\anim\\popin.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_out_center.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\anim\\fade_out_center.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in_center.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\anim\\fade_in_center.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\slide_in_bottom.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\anim\\slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\snackbar_in.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\anim\\snackbar_in.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\anim\\abc_slide_in_top.xml"
+    }
+]

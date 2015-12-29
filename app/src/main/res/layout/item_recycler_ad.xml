@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_layout_ad"
+    android:layout_width="@dimen/width_item_ad_img"
+    android:layout_height="@dimen/height_layout_ad"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_layout_adimg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_ad_img"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ad_img">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item_ad_alphabg"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_alpha_black"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/tuiguang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:text="女士包包哪种好"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_welfare" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_item_layout_adimg"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/layout_padding">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="迪桑娜(DISSONA)皮包"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_listview_title" />
+
+            <TextView
+                android:id="@+id/tv_productinfo_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="￥330.00"
+                android:textColor="@color/text_color_tips"
+                android:textSize="@dimen/text_login_littletips" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

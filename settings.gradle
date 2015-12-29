@@ -1,0 +1,1 @@
+include ':app', 'RecyclerViewPagerDemo', ':RecyclerViewPager', ':tablayoutsupport', ':ToggleButtonLib', ':ToggleButtonSample', ':alertview', ':AlertViewDemo', 'RecyclerViewSwipeDismiss', 'RecyclerViewSwipeDismissDemo'

@@ -1,0 +1,4476 @@
+Index: app/src/main/java/com/hshy41/mane/entity/RegistEntity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/entity/RegistEntity.java	(revision )
++++ app/src/main/java/com/hshy41/mane/entity/RegistEntity.java	(revision )
+@@ -0,0 +1,21 @@
++package com.hshy41.mane.entity;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class RegistEntity {
++
++    /**
++     * uid : 1
++     */
++
++    private int uid;
++
++    public void setUid(int uid) {
++        this.uid = uid;
++    }
++
++    public int getUid() {
++        return uid;
++    }
++}
+Index: app/src/main/java/com/hshy41/mane/bean/RegistBaseBean.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/bean/RegistBaseBean.java	(revision )
++++ app/src/main/java/com/hshy41/mane/bean/RegistBaseBean.java	(revision )
+@@ -0,0 +1,12 @@
++package com.hshy41.mane.bean;
++
++import com.hshy41.mane.entity.RegistEntity;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class RegistBaseBean {
++    public String Result;
++    public String Message;
++    public RegistEntity data;
++}
+Index: app/src/main/java/com/hshy41/mane/bean/ChangePasswordBaseBean.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/bean/ChangePasswordBaseBean.java	(revision )
++++ app/src/main/java/com/hshy41/mane/bean/ChangePasswordBaseBean.java	(revision )
+@@ -0,0 +1,9 @@
++package com.hshy41.mane.bean;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class ChangePasswordBaseBean {
++    public String Result;
++    public String Message;
++}
+Index: app/build/intermediates/res/merged/debug/layout/activity_regist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/intermediates/res/merged/debug/layout/activity_regist.xml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/intermediates/res/merged/debug/layout/activity_regist.xml	(revision )
+@@ -2,43 +2,43 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-     android:background="@color/bg_color_main"
++    android:background="@color/bg_color_main"
+-    android:orientation="vertical" >
++    android:orientation="vertical">
++
+-       <include
++    <include
+         android:id="@+id/title_layout"
++        layout="@layout/title_bar"
+         android:layout_width="match_parent"
+-        android:layout_height="@dimen/height_tabBar"
+-        layout="@layout/title_bar" />
++        android:layout_height="@dimen/height_tabBar" />
+ 
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/hight_layout"
+-        android:layout_marginTop="@dimen/padding_middle"
+         android:layout_marginLeft="@dimen/padding_small"
+         android:layout_marginRight="@dimen/padding_small"
++        android:layout_marginTop="@dimen/padding_middle"
+         android:background="@drawable/editjiage_color"
+-        android:padding="@dimen/layout_margin"
+-        >
++        android:padding="@dimen/layout_margin">
+ 
+         <ImageView
+             android:id="@+id/userTv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:background="@drawable/phone"
+             android:layout_centerVertical="true"
+-            />
++            android:background="@drawable/phone" />
++
+         <EditText
+-            android:id="@+id/userEdit"
+-            android:layout_marginLeft="@dimen/layout_margin"
++            android:id="@+id/et_regist_phone"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+-            android:layout_toRightOf="@id/userTv"
+             android:layout_centerVertical="true"
++            android:layout_marginLeft="@dimen/layout_margin"
++            android:layout_toRightOf="@id/userTv"
+             android:background="@null"
+-            android:phoneNumber="true"
+-            android:textColorHint="@color/item_pressed_color"
+             android:hint="@string/enterphonenumber"
+-            android:singleLine="true" />
++            android:phoneNumber="true"
++            android:singleLine="true"
++            android:textColorHint="@color/item_pressed_color" />
+ 
+     </RelativeLayout>
+ 
+@@ -47,43 +47,43 @@
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/padding_small"
+         android:layout_marginRight="@dimen/padding_small"
+-        android:layout_marginTop="@dimen/padding_small" >
++        android:layout_marginTop="@dimen/padding_small">
+ 
+         <RelativeLayout
+-            android:background="@drawable/editjiage_color"
+-            android:padding="@dimen/layout_margin"
+-            android:layout_weight=".60"
+             android:layout_width="0dp"
+-            android:layout_height="match_parent">
++            android:layout_height="match_parent"
++            android:layout_weight=".60"
++            android:background="@drawable/editjiage_color"
++            android:padding="@dimen/layout_margin">
+ 
+             <ImageView
+                 android:id="@+id/iv_yanzhengma"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+-                android:background="@drawable/yanzhengma"
+                 android:layout_centerVertical="true"
+-                />
++                android:background="@drawable/yanzhengma" />
+ 
+             <EditText
+-                android:layout_marginLeft="@dimen/layout_margin"
++                android:id="@+id/et_regist_identifyingcode"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+-                android:layout_toRightOf="@id/iv_yanzhengma"
+                 android:layout_centerVertical="true"
++                android:layout_marginLeft="@dimen/layout_margin"
++                android:layout_toRightOf="@id/iv_yanzhengma"
+                 android:background="@null"
+-                android:phoneNumber="true"
+-                android:textColorHint="@color/item_pressed_color"
+                 android:hint="@string/identifyingcode"
+-                android:singleLine="true" />
++                android:phoneNumber="true"
++                android:singleLine="true"
++                android:textColorHint="@color/item_pressed_color" />
+         </RelativeLayout>
+ 
+ 
+         <Button
+-            android:id="@+id/zhuce_yanzhengmahuoqubt"
++            android:id="@+id/bt_regist_send_identifyingcode"
+             android:layout_width="0dp"
+             android:layout_height="@dimen/hight_layout"
+-            android:layout_weight=".40"
+             android:layout_marginLeft="@dimen/layout_margin"
++            android:layout_weight=".40"
+             android:background="@drawable/bg_button"
+             android:text="@string/sendidentifyingcode"
+             android:textColor="@color/color_white" />
+@@ -100,21 +100,21 @@
+             android:id="@+id/iv_enterpassword"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:background="@drawable/password"
+             android:layout_centerVertical="true"
+-            />
++            android:background="@drawable/password" />
+ 
+         <EditText
+-            android:layout_marginLeft="@dimen/layout_margin"
++            android:id="@+id/et_regist_password"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+-            android:layout_toRightOf="@id/iv_enterpassword"
+             android:layout_centerVertical="true"
++            android:layout_marginLeft="@dimen/layout_margin"
++            android:layout_toRightOf="@id/iv_enterpassword"
+             android:background="@null"
+-            android:password="true"
+-            android:textColorHint="@color/item_pressed_color"
+             android:hint="@string/enterpassword"
+-            android:singleLine="true" />
++            android:password="true"
++            android:singleLine="true"
++            android:textColorHint="@color/item_pressed_color" />
+     </RelativeLayout>
+ 
+     <RelativeLayout
+@@ -128,45 +128,43 @@
+             android:id="@+id/iv_confirmpassword"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:background="@drawable/password"
+             android:layout_centerVertical="true"
+-            />
++            android:background="@drawable/password" />
+ 
+         <EditText
+-            android:layout_marginLeft="@dimen/layout_margin"
++            android:id="@+id/et_regist_confirmpassword"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+-            android:layout_toRightOf="@id/iv_confirmpassword"
+             android:layout_centerVertical="true"
++            android:layout_marginLeft="@dimen/layout_margin"
++            android:layout_toRightOf="@id/iv_confirmpassword"
+             android:background="@null"
+-            android:password="true"
+-            android:textColorHint="@color/item_pressed_color"
+             android:hint="@string/confirmpassword"
+-            android:singleLine="true" />
++            android:password="true"
++            android:singleLine="true"
++            android:textColorHint="@color/item_pressed_color" />
+     </RelativeLayout>
+-    
+-        <EditText
++
++    <EditText
+-        android:id="@+id/et_invitationcode"
++        android:id="@+id/et_regist_invitationcode"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/hight_layout"
+         android:layout_margin="@dimen/layout_margin"
++        android:background="@drawable/editjiage_color"
+-         android:gravity="center_vertical"
++        android:gravity="center_vertical"
+-        android:padding="@dimen/index_padding"
+         android:hint="@string/invitationcode"
+-            android:textColorHint="@color/item_pressed_color"
+-        android:background="@drawable/editjiage_color"
+-         />
++        android:padding="@dimen/index_padding"
++        android:textColorHint="@color/item_pressed_color" />
+ 
+-	<Button 
++    <Button
+-	    android:id="@+id/bt_mainbutton"
++        android:id="@+id/bt_regist_regist"
+-	    android:layout_width="match_parent"
+-	    android:layout_height="wrap_content"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
+-	    android:layout_marginTop="@dimen/layout_margin_bigmiddle"
+-	    android:layout_marginLeft="@dimen/layout_margin"
+-	   	android:layout_marginRight="@dimen/layout_margin"
++        android:layout_marginLeft="@dimen/layout_margin"
++        android:layout_marginRight="@dimen/layout_margin"
+-	    android:text="@string/regist"
+-	    android:textColor="@color/color_white"
++        android:layout_marginTop="@dimen/layout_margin_bigmiddle"
+-	    android:background="@drawable/bg_button"
++        android:background="@drawable/bg_button"
+-	    />
++        android:text="@string/regist"
++        android:textColor="@color/color_white" />
+ 
+ </LinearLayout>
+Index: app/build/generated/source/r/debug/android/support/v7/appcompat/R.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/generated/source/r/debug/android/support/v7/appcompat/R.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/generated/source/r/debug/android/support/v7/appcompat/R.java	(revision )
+@@ -429,7 +429,7 @@
+ 		public static final int notification_template_icon_bg = 0x7f0200c9;
+ 	}
+ 	public static final class id {
+-		public static final int action0 = 0x7f0b01ed;
++		public static final int action0 = 0x7f0b01f2;
+ 		public static final int action_bar = 0x7f0b0064;
+ 		public static final int action_bar_activity_content = 0x7f0b0000;
+ 		public static final int action_bar_container = 0x7f0b0063;
+@@ -438,7 +438,7 @@
+ 		public static final int action_bar_subtitle = 0x7f0b0048;
+ 		public static final int action_bar_title = 0x7f0b0047;
+ 		public static final int action_context_bar = 0x7f0b0065;
+-		public static final int action_divider = 0x7f0b01f1;
++		public static final int action_divider = 0x7f0b01f6;
+ 		public static final int action_menu_divider = 0x7f0b0002;
+ 		public static final int action_menu_presenter = 0x7f0b0003;
+ 		public static final int action_mode_bar = 0x7f0b0061;
+@@ -449,9 +449,9 @@
+ 		public static final int always = 0x7f0b002c;
+ 		public static final int beginning = 0x7f0b002a;
+ 		public static final int buttonPanel = 0x7f0b005a;
+-		public static final int cancel_action = 0x7f0b01ee;
++		public static final int cancel_action = 0x7f0b01f3;
+ 		public static final int checkbox = 0x7f0b005c;
+-		public static final int chronometer = 0x7f0b01f4;
++		public static final int chronometer = 0x7f0b01f9;
+ 		public static final int collapseActionView = 0x7f0b002d;
+ 		public static final int contentPanel = 0x7f0b0055;
+ 		public static final int custom = 0x7f0b0059;
+@@ -463,7 +463,7 @@
+ 		public static final int dropdown = 0x7f0b0032;
+ 		public static final int edit_query = 0x7f0b0066;
+ 		public static final int end = 0x7f0b0021;
+-		public static final int end_padder = 0x7f0b01f9;
++		public static final int end_padder = 0x7f0b01fe;
+ 		public static final int expand_activities_button = 0x7f0b004b;
+ 		public static final int expanded_menu = 0x7f0b005b;
+ 		public static final int home = 0x7f0b0004;
+@@ -471,12 +471,12 @@
+ 		public static final int icon = 0x7f0b004f;
+ 		public static final int ifRoom = 0x7f0b002e;
+ 		public static final int image = 0x7f0b004c;
+-		public static final int info = 0x7f0b01f8;
+-		public static final int line1 = 0x7f0b01f2;
+-		public static final int line3 = 0x7f0b01f6;
++		public static final int info = 0x7f0b01fd;
++		public static final int line1 = 0x7f0b01f7;
++		public static final int line3 = 0x7f0b01fb;
+ 		public static final int listMode = 0x7f0b000b;
+ 		public static final int list_item = 0x7f0b004e;
+-		public static final int media_actions = 0x7f0b01f0;
++		public static final int media_actions = 0x7f0b01f5;
+ 		public static final int middle = 0x7f0b002b;
+ 		public static final int multiply = 0x7f0b0036;
+ 		public static final int never = 0x7f0b002f;
+@@ -507,13 +507,13 @@
+ 		public static final int src_atop = 0x7f0b0038;
+ 		public static final int src_in = 0x7f0b0039;
+ 		public static final int src_over = 0x7f0b003a;
+-		public static final int status_bar_latest_event_content = 0x7f0b01ef;
++		public static final int status_bar_latest_event_content = 0x7f0b01f4;
+ 		public static final int submit_area = 0x7f0b006f;
+ 		public static final int tabMode = 0x7f0b000d;
+-		public static final int text = 0x7f0b01f7;
+-		public static final int text2 = 0x7f0b01f5;
++		public static final int text = 0x7f0b01fc;
++		public static final int text2 = 0x7f0b01fa;
+ 		public static final int textSpacerNoButtons = 0x7f0b0057;
+-		public static final int time = 0x7f0b01f3;
++		public static final int time = 0x7f0b01f8;
+ 		public static final int title = 0x7f0b0050;
+ 		public static final int title_template = 0x7f0b0053;
+ 		public static final int topPanel = 0x7f0b0052;
+Index: app/src/main/java/com/hshy41/mane/my/activity/FindPasswordActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/my/activity/FindPasswordActivity.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/java/com/hshy41/mane/my/activity/FindPasswordActivity.java	(revision )
+@@ -8,73 +8,258 @@
+ import android.widget.RelativeLayout;
+ import android.widget.TextView;
+ 
++import com.android.volley.AuthFailureError;
++import com.android.volley.Request;
++import com.android.volley.RequestQueue;
++import com.android.volley.Response;
++import com.android.volley.VolleyError;
++import com.android.volley.toolbox.StringRequest;
++import com.android.volley.toolbox.Volley;
++import com.google.gson.Gson;
+ import com.hshy41.mane.R;
+ import com.hshy41.mane.base.BaseActivity;
++import com.hshy41.mane.bean.FindPasswordBaseBean;
++import com.hshy41.mane.bean.Identifyingcode_FindPassword_BaseBean;
++import com.hshy41.mane.bean.Identifyingcode_Regist_BaseBean;
++import com.hshy41.mane.entity.FindPasswordEntity;
++import com.hshy41.mane.entity.Identifyingcode_Regist_Entity;
++import com.hshy41.mane.utils.Cons;
++import com.hshy41.mane.utils.ToastUtil;
+ 
++import org.json.JSONException;
++import org.json.JSONObject;
++
++import java.util.HashMap;
++import java.util.Map;
++
+-public class FindPasswordActivity extends BaseActivity implements OnClickListener{
++public class FindPasswordActivity extends BaseActivity implements OnClickListener {
+-	private EditText et_invitationcode;
++    private EditText et_invitationcode;
+ 
+     /**
++     * 各种输入框
++     *
++     * @param et_phone 请输入手机号
++     * @param identifyingcode 请输入验证码
++     * @param password 请输入密码
++     * @param confirm_password 确认密码
++     */
++    EditText et_phone, et_identifyingcode, et_password,
++            et_confirm_password;
++
++    /**
++     * 按钮
++     *
++     * @param bt_send_identifyingcode 发送验证码
++     */
++    Button bt_send_identifyingcode;
++    /**
+      * 确定钮
++     *
+      * @return
+      */
+     Button bt_confirm;
+ 
++
++    //Volley请求队列
++    RequestQueue mQueue;
++    //Gson
++    Gson gson;
++
+-	@Override
+-	protected int setContent() {
+-		// TODO Auto-generated method stub
+-		//找回密码和注册共用一个布局
+-		return R.layout.activity_regist;
+-	}
++    @Override
++    protected int setContent() {
++        // TODO Auto-generated method stub
++        //找回密码和注册共用一个布局
++        return R.layout.activity_regist;
++    }
+ 
+-	@Override
+-	protected void initViews() {
+-		// TODO Auto-generated method stub
++    @Override
++    protected void initViews() {
++        // TODO Auto-generated method stub
++        //初始化Gson
++        gson = new Gson();
++        //初始化请求队列
++        mQueue = Volley.newRequestQueue(context);
+-		//邀请码隐藏
++        //邀请码隐藏
+-		et_invitationcode = (EditText) findViewById(R.id.et_invitationcode);
++        et_invitationcode = (EditText) findViewById(R.id.et_regist_invitationcode);
+-		et_invitationcode.setVisibility(View.GONE);
++        et_invitationcode.setVisibility(View.GONE);
+         //下方按钮换字
+-        bt_confirm = (Button) findViewById(R.id.bt_mainbutton);
++        bt_confirm = (Button) findViewById(R.id.bt_regist_regist);
+         bt_confirm.setText(R.string.confirm);
++
++        //初始化各种控件
++        //EditText组
++        et_phone = (EditText) findViewById(R.id.et_regist_phone);
++        et_identifyingcode = (EditText) findViewById(R.id.et_regist_identifyingcode);
++        et_password = (EditText) findViewById(R.id.et_regist_password);
++        et_confirm_password = (EditText) findViewById(R.id.et_regist_confirmpassword);
++        //Button组
++        bt_send_identifyingcode = (Button) findViewById(R.id.bt_regist_send_identifyingcode);
++
++        bt_send_identifyingcode.setOnClickListener(this);
++        bt_confirm.setOnClickListener(this);
++
+-	}
++    }
+ 
+-	@Override
+-	protected void initTitleBar() {
+-		rl_title_left = (RelativeLayout) findViewById(R.id.rl_title_left);
+-		rl_title_right = (RelativeLayout) findViewById(R.id.rl_title_right);
+-		iv_title_gps = (ImageView) findViewById(R.id.iv_title_gps);
+-		tv_title_text = (TextView) findViewById(R.id.tv_title_text);
+-		tv_title_right = (TextView) findViewById(R.id.tv_title_right);
+-		bt_title_right = (Button) findViewById(R.id.bt_title_right);
+-		bt_title_left = (Button) findViewById(R.id.bt_title_left);
+-	}
++    @Override
++    protected void initTitleBar() {
++        rl_title_left = (RelativeLayout) findViewById(R.id.rl_title_left);
++        rl_title_right = (RelativeLayout) findViewById(R.id.rl_title_right);
++        iv_title_gps = (ImageView) findViewById(R.id.iv_title_gps);
++        tv_title_text = (TextView) findViewById(R.id.tv_title_text);
++        tv_title_right = (TextView) findViewById(R.id.tv_title_right);
++        bt_title_right = (Button) findViewById(R.id.bt_title_right);
++        bt_title_left = (Button) findViewById(R.id.bt_title_left);
++    }
+ 
+-	@Override
+-	protected void setTitleBar() {
+-		rl_title_left.setVisibility(View.VISIBLE);
+-		rl_title_right.setVisibility(View.GONE);
+-		iv_title_gps.setVisibility(View.GONE);
+-		tv_title_text.setVisibility(View.VISIBLE);
+-		bt_title_right.setVisibility(View.GONE);
+-		bt_title_left.setVisibility(View.VISIBLE);
++    @Override
++    protected void setTitleBar() {
++        rl_title_left.setVisibility(View.VISIBLE);
++        rl_title_right.setVisibility(View.GONE);
++        iv_title_gps.setVisibility(View.GONE);
++        tv_title_text.setVisibility(View.VISIBLE);
++        bt_title_right.setVisibility(View.GONE);
++        bt_title_left.setVisibility(View.VISIBLE);
+ 
+-		tv_title_text.setText(R.string.findpassword);
+-		bt_title_left.setOnClickListener(this);
+-		rl_title_left.setOnClickListener(this);
+-	}
++        tv_title_text.setText(R.string.findpassword);
++        bt_title_left.setOnClickListener(this);
++        rl_title_left.setOnClickListener(this);
++    }
+ 
+ 
+-	@Override
+-	public void onClick(View arg0) {
+-		// TODO Auto-generated method stub
+-		switch (arg0.getId()) {
+-		case R.id.rl_title_left:
+-			case R.id.bt_title_left:
+-			finish();
+-			break;
++    @Override
++    public void onClick(View arg0) {
++        // TODO Auto-generated method stub
++        switch (arg0.getId()) {
++            case R.id.rl_title_left:
++            case R.id.bt_title_left:
++                finish();
++                break;
+-
++            case R.id.bt_regist_send_identifyingcode:
++                if (Cons.isMobile(et_phone.getText().toString())) {
++                    GetIdentifyingcode();
++                } else {
++                    ToastUtil.showToast(this, "请输入正确的手机号");
++                }
++                break;
++            case R.id.bt_regist_regist:
++                if (CheckFindPasswordInfo())
++                    FindPassword();
++                break;
+-		default:
+-			break;
+-		}
+-	}
++            default:
++                break;
++        }
++    }
++
++    /**
++     * 获取验证码
++     */
++    private void GetIdentifyingcode() {
++        StringRequest stringRequest = new StringRequest(Request.Method.POST,
++                Cons.DOMAIN + Cons.IDENTIFYING_CODE_FIND_PASSWORD,
++                new Response.Listener<String>() {
++                    @Override
++                    public void onResponse(String s) {
++                        if (s != null) {
++                            try {
++                                JSONObject json = new JSONObject(s);
++                                if (json.get("Result").equals("0")) {
++                                    Identifyingcode_FindPassword_BaseBean bean = gson.fromJson(s, Identifyingcode_FindPassword_BaseBean.class);
++                                } else if (json.get("Result").equals("1")) {
++                                    ToastUtil.showToast(FindPasswordActivity.this, json.getString("Message"));
+-}
++                                }
++                            } catch (JSONException e) {
++                                e.printStackTrace();
++                            }
++                        }
++
++                    }
++                }, new Response.ErrorListener() {
++            @Override
++            public void onErrorResponse(VolleyError volleyError) {
++
++            }
++        }) {
++            @Override
++            protected Map<String, String> getParams() throws AuthFailureError {
++                Map<String, String> map = new HashMap<String, String>();
++                map.put("mobile", et_phone.getText().toString());
++                return map;
++            }
++        };
++        mQueue.add(stringRequest);
++    }
++
++    /**
++     * 找回密码
++     */
++    private void FindPassword() {
++        StringRequest stringRequest = new StringRequest(Request.Method.POST,
++                Cons.DOMAIN + Cons.FIND_PASSWORD,
++                new Response.Listener<String>() {
++                    @Override
++                    public void onResponse(String s) {
++                        if (s != null) {
++                            try {
++                                JSONObject json = new JSONObject(s);
++                                if (json.get("Result").equals("0")) {
++                                    FindPasswordBaseBean bean = gson.fromJson(s, FindPasswordBaseBean.class);
++                                } else if (json.get("Result").equals("1")) {
++                                    ToastUtil.showToast(FindPasswordActivity.this, json.getString("Message"));
++                                }
++                            } catch (JSONException e) {
++                                e.printStackTrace();
++                            }
++                        }
++
++                    }
++                }, new Response.ErrorListener() {
++            @Override
++            public void onErrorResponse(VolleyError volleyError) {
++
++            }
++        }) {
++            @Override
++            protected Map<String, String> getParams() throws AuthFailureError {
++                Map<String, String> map = new HashMap<String, String>();
++                map.put("mobile", et_phone.getText().toString());
++                map.put("password", et_password.getText().toString());
++                map.put("yzm", et_identifyingcode.getText().toString());
++                return map;
++            }
++        };
++        mQueue.add(stringRequest);
++    }
++
++
++    /**
++     * 判断注册参数正确与否
++     */
++    private boolean CheckFindPasswordInfo() {
++        if (!Cons.isMobile(et_phone.getText().toString())) {
++            ToastUtil.showToast(FindPasswordActivity.this, "请输入正确的手机号");
++            return false;
++        }
++
++        if (et_identifyingcode.getText().toString().equals("") || et_identifyingcode.getText() == null) {
++            ToastUtil.showToast(FindPasswordActivity.this, "请输入验证码");
++            return false;
++        }
++
++        if (et_password.getText().toString().equals("") || et_password.getText() == null) {
++            ToastUtil.showToast(FindPasswordActivity.this, "请输入密码");
++            return false;
++        }
++
++        if (et_confirm_password.getText().toString().equals("") || et_confirm_password.getText() == null) {
++            ToastUtil.showToast(FindPasswordActivity.this, "请确认密码");
++            return false;
++        }
++
++        if (!et_confirm_password.getText().toString().equals(et_password.getText().toString())) {
++            ToastUtil.showToast(FindPasswordActivity.this, "两次输入的密码不一致");
++            return false;
++        }
++        return true;
++    }
++}
++
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build.gradle	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build.gradle	(revision )
+@@ -19,8 +19,9 @@
+ }
+ 
+ dependencies {
+-    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
+-    compile files('libs/xUtils-2.6.14.jar')
++    compile fileTree(include: ['*.jar'], dir: 'libs')
++//    compile files('libs/universal-image-loader-1.9.4-with-sources.jar')
++//    compile files('libs/xUtils-2.6.14.jar')
+     compile project(':RecyclerViewPager')
+     compile project(':tablayoutsupport')
+     compile 'com.android.support:support-v4:22.2.1'
+Index: app/src/main/java/com/hshy41/mane/bean/Identifyingcode_FindPassword_BaseBean.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/bean/Identifyingcode_FindPassword_BaseBean.java	(revision )
++++ app/src/main/java/com/hshy41/mane/bean/Identifyingcode_FindPassword_BaseBean.java	(revision )
+@@ -0,0 +1,9 @@
++package com.hshy41.mane.bean;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class Identifyingcode_FindPassword_BaseBean {
++    public String Result;
++    public String Message;
++}
+Index: app/src/main/res/layout/activity_regist.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_regist.xml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/res/layout/activity_regist.xml	(revision )
+@@ -2,43 +2,43 @@
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+-     android:background="@color/bg_color_main"
++    android:background="@color/bg_color_main"
+-    android:orientation="vertical" >
++    android:orientation="vertical">
++
+-       <include
++    <include
+         android:id="@+id/title_layout"
++        layout="@layout/title_bar"
+         android:layout_width="match_parent"
+-        android:layout_height="@dimen/height_tabBar"
+-        layout="@layout/title_bar" />
++        android:layout_height="@dimen/height_tabBar" />
+ 
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/hight_layout"
+-        android:layout_marginTop="@dimen/padding_middle"
+         android:layout_marginLeft="@dimen/padding_small"
+         android:layout_marginRight="@dimen/padding_small"
++        android:layout_marginTop="@dimen/padding_middle"
+         android:background="@drawable/editjiage_color"
+-        android:padding="@dimen/layout_margin"
+-        >
++        android:padding="@dimen/layout_margin">
+ 
+         <ImageView
+             android:id="@+id/userTv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:background="@drawable/phone"
+             android:layout_centerVertical="true"
+-            />
++            android:background="@drawable/phone" />
++
+         <EditText
+-            android:id="@+id/userEdit"
+-            android:layout_marginLeft="@dimen/layout_margin"
++            android:id="@+id/et_regist_phone"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+-            android:layout_toRightOf="@id/userTv"
+             android:layout_centerVertical="true"
++            android:layout_marginLeft="@dimen/layout_margin"
++            android:layout_toRightOf="@id/userTv"
+             android:background="@null"
+-            android:phoneNumber="true"
+-            android:textColorHint="@color/item_pressed_color"
+             android:hint="@string/enterphonenumber"
+-            android:singleLine="true" />
++            android:phoneNumber="true"
++            android:singleLine="true"
++            android:textColorHint="@color/item_pressed_color" />
+ 
+     </RelativeLayout>
+ 
+@@ -47,43 +47,43 @@
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="@dimen/padding_small"
+         android:layout_marginRight="@dimen/padding_small"
+-        android:layout_marginTop="@dimen/padding_small" >
++        android:layout_marginTop="@dimen/padding_small">
+ 
+         <RelativeLayout
+-            android:background="@drawable/editjiage_color"
+-            android:padding="@dimen/layout_margin"
+-            android:layout_weight=".60"
+             android:layout_width="0dp"
+-            android:layout_height="match_parent">
++            android:layout_height="match_parent"
++            android:layout_weight=".60"
++            android:background="@drawable/editjiage_color"
++            android:padding="@dimen/layout_margin">
+ 
+             <ImageView
+                 android:id="@+id/iv_yanzhengma"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+-                android:background="@drawable/yanzhengma"
+                 android:layout_centerVertical="true"
+-                />
++                android:background="@drawable/yanzhengma" />
+ 
+             <EditText
+-                android:layout_marginLeft="@dimen/layout_margin"
++                android:id="@+id/et_regist_identifyingcode"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+-                android:layout_toRightOf="@id/iv_yanzhengma"
+                 android:layout_centerVertical="true"
++                android:layout_marginLeft="@dimen/layout_margin"
++                android:layout_toRightOf="@id/iv_yanzhengma"
+                 android:background="@null"
+-                android:phoneNumber="true"
+-                android:textColorHint="@color/item_pressed_color"
+                 android:hint="@string/identifyingcode"
+-                android:singleLine="true" />
++                android:phoneNumber="true"
++                android:singleLine="true"
++                android:textColorHint="@color/item_pressed_color" />
+         </RelativeLayout>
+ 
+ 
+         <Button
+-            android:id="@+id/zhuce_yanzhengmahuoqubt"
++            android:id="@+id/bt_regist_send_identifyingcode"
+             android:layout_width="0dp"
+             android:layout_height="@dimen/hight_layout"
+-            android:layout_weight=".40"
+             android:layout_marginLeft="@dimen/layout_margin"
++            android:layout_weight=".40"
+             android:background="@drawable/bg_button"
+             android:text="@string/sendidentifyingcode"
+             android:textColor="@color/color_white" />
+@@ -100,21 +100,21 @@
+             android:id="@+id/iv_enterpassword"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:background="@drawable/password"
+             android:layout_centerVertical="true"
+-            />
++            android:background="@drawable/password" />
+ 
+         <EditText
+-            android:layout_marginLeft="@dimen/layout_margin"
++            android:id="@+id/et_regist_password"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+-            android:layout_toRightOf="@id/iv_enterpassword"
+             android:layout_centerVertical="true"
++            android:layout_marginLeft="@dimen/layout_margin"
++            android:layout_toRightOf="@id/iv_enterpassword"
+             android:background="@null"
+-            android:password="true"
+-            android:textColorHint="@color/item_pressed_color"
+             android:hint="@string/enterpassword"
+-            android:singleLine="true" />
++            android:password="true"
++            android:singleLine="true"
++            android:textColorHint="@color/item_pressed_color" />
+     </RelativeLayout>
+ 
+     <RelativeLayout
+@@ -128,45 +128,43 @@
+             android:id="@+id/iv_confirmpassword"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:background="@drawable/password"
+             android:layout_centerVertical="true"
+-            />
++            android:background="@drawable/password" />
+ 
+         <EditText
+-            android:layout_marginLeft="@dimen/layout_margin"
++            android:id="@+id/et_regist_confirmpassword"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+-            android:layout_toRightOf="@id/iv_confirmpassword"
+             android:layout_centerVertical="true"
++            android:layout_marginLeft="@dimen/layout_margin"
++            android:layout_toRightOf="@id/iv_confirmpassword"
+             android:background="@null"
+-            android:password="true"
+-            android:textColorHint="@color/item_pressed_color"
+             android:hint="@string/confirmpassword"
+-            android:singleLine="true" />
++            android:password="true"
++            android:singleLine="true"
++            android:textColorHint="@color/item_pressed_color" />
+     </RelativeLayout>
+-    
+-        <EditText
++
++    <EditText
+-        android:id="@+id/et_invitationcode"
++        android:id="@+id/et_regist_invitationcode"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/hight_layout"
+         android:layout_margin="@dimen/layout_margin"
++        android:background="@drawable/editjiage_color"
+-         android:gravity="center_vertical"
++        android:gravity="center_vertical"
+-        android:padding="@dimen/index_padding"
+         android:hint="@string/invitationcode"
+-            android:textColorHint="@color/item_pressed_color"
+-        android:background="@drawable/editjiage_color"
+-         />
++        android:padding="@dimen/index_padding"
++        android:textColorHint="@color/item_pressed_color" />
+ 
+-	<Button 
++    <Button
+-	    android:id="@+id/bt_mainbutton"
++        android:id="@+id/bt_regist_regist"
+-	    android:layout_width="match_parent"
+-	    android:layout_height="wrap_content"
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
+-	    android:layout_marginTop="@dimen/layout_margin_bigmiddle"
+-	    android:layout_marginLeft="@dimen/layout_margin"
+-	   	android:layout_marginRight="@dimen/layout_margin"
++        android:layout_marginLeft="@dimen/layout_margin"
++        android:layout_marginRight="@dimen/layout_margin"
+-	    android:text="@string/regist"
+-	    android:textColor="@color/color_white"
++        android:layout_marginTop="@dimen/layout_margin_bigmiddle"
+-	    android:background="@drawable/bg_button"
++        android:background="@drawable/bg_button"
+-	    />
++        android:text="@string/regist"
++        android:textColor="@color/color_white" />
+ 
+ </LinearLayout>
+Index: app/src/main/java/com/hshy41/mane/fragment/MyFragment.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/fragment/MyFragment.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/java/com/hshy41/mane/fragment/MyFragment.java	(revision )
+@@ -1,6 +1,9 @@
+ package com.hshy41.mane.fragment;
+ 
++import android.content.Context;
+ import android.content.Intent;
++import android.content.SharedPreferences;
++import android.graphics.Bitmap;
+ import android.view.View;
+ import android.view.View.OnClickListener;
+ import android.widget.Button;
+@@ -11,13 +14,23 @@
+ 
+ import com.hshy41.mane.R;
+ import com.hshy41.mane.base.BaseFragment;
++import com.hshy41.mane.entity.LoginEntity;
+ import com.hshy41.mane.my.activity.AccountActivity;
+ import com.hshy41.mane.my.activity.LoginActivity;
+ import com.hshy41.mane.my.activity.MyCollectActivity;
+ import com.hshy41.mane.my.activity.RegistActivity;
+ import com.hshy41.mane.my.activity.SetActivity;
+ import com.hshy41.mane.utils.Cons;
++import com.hshy41.mane.utils.ToastUtil;
++import com.nostra13.universalimageloader.core.DisplayImageOptions;
++import com.nostra13.universalimageloader.core.ImageLoader;
++import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
++import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
+ 
++import java.util.Collections;
++import java.util.LinkedList;
++import java.util.List;
++
+ public class MyFragment extends BaseFragment implements OnClickListener {
+ 
+     /**
+@@ -48,7 +61,24 @@
+      */
+     RelativeLayout rl_accountcenter;
+ 
++    /**
++     * 账户uid
++     */
++    TextView tv_my_uid;
+ 
++    /**
++     * 昵称
++     */
++    TextView tv_my_nickname;
++
++    /**
++     * 头像
++     */
++    ImageView iv_my_head;
++
++    SharedPreferences preferences;
++    DisplayImageOptions options;
++
+     @Override
+     protected void setTitleBar() {
+         rl_title_layout.setVisibility(View.VISIBLE);
+@@ -83,6 +113,8 @@
+         bt_title_left = (Button) view.findViewById(R.id.bt_title_left);
+         tv_title_right = (TextView) view.findViewById(R.id.tv_title_right);
+         rl_title_layout = (RelativeLayout) view.findViewById(R.id.title_layout);
++        tv_my_uid = (TextView) view.findViewById(R.id.tv_my_uid);
++        tv_my_nickname = (TextView) view.findViewById(R.id.tv_my_nickname);
+     }
+ 
+     @Override
+@@ -101,14 +133,30 @@
+         tv_regist = (TextView) view.findViewById(R.id.tv_regist);
+         rl_mycollect = (RelativeLayout) view.findViewById(R.id.rl_my_mycollect);
+         rl_accountcenter = (RelativeLayout) view.findViewById(R.id.rl_my_accountcenter);
++        tv_my_nickname = (TextView) view.findViewById(R.id.tv_my_nickname);
++        iv_my_head = (ImageView) view.findViewById(R.id.iv_my_head);
+ 
+         rl_accountcenter.setOnClickListener(this);
+         rl_mycollect.setOnClickListener(this);
+         tv_login.setOnClickListener(this);
+         tv_regist.setOnClickListener(this);
+ 
++
++        //获取数据
++        preferences = getActivity().getSharedPreferences("userInfo", Context.MODE_PRIVATE);
++        if (preferences.getString("uid", "0").equals("0")) {
++            rl_logined.setVisibility(View.GONE);
++            ll_unlogin.setVisibility(View.VISIBLE);
++        } else {
++            rl_logined.setVisibility(View.VISIBLE);
++            ll_unlogin.setVisibility(View.GONE);
++            tv_my_uid.setText(getResources().getString(R.string.accuontid)
++                    + preferences.getString("uid", "0"));
+-    }
++        }
+ 
++
++    }
++
+     @Override
+     public void onActivityResult(int requestCode, int resultCode, Intent data) {
+ 
+@@ -117,13 +165,35 @@
+                 switch (resultCode) {
+                     // 根据登录情况设置布局显示
+                     case Cons.RESULT_LOGIN_ACTIVITY:
+-                        rl_logined.setVisibility(View.GONE);
+-                        ll_unlogin.setVisibility(View.VISIBLE);
+-                        break;
+-                    default:
++                        if (data.getExtras() != null) {
++                            LoginEntity loginentity = (LoginEntity) data.getExtras().getSerializable("loginentity");
+-                        rl_logined.setVisibility(View.VISIBLE);
+-                        ll_unlogin.setVisibility(View.GONE);
++                            rl_logined.setVisibility(View.VISIBLE);
++                            ll_unlogin.setVisibility(View.GONE);
++                            preferences = getActivity().getSharedPreferences("userInfo", Context.MODE_PRIVATE);
++                            SharedPreferences.Editor editor = preferences.edit();
++                            String id = loginentity.getId();
++                            editor.putString("id", id);
++                            editor.putString("id", id);
++                            editor.commit();
++                            tv_my_uid.setText(getResources().getString(R.string.accuontid)
++                                    + id);
++                            tv_my_nickname.setText(loginentity.getCnname());
++                            /**
++                             * 显示图片
++                             * 参数1：图片url
++                             * 参数2：显示图片的控件
++                             * 参数3：显示图片的设置
++                             * 参数4：监听器
++                             */
++                            ImageLoader.getInstance().displayImage(loginentity.getAvatar(), iv_my_head, options, new AnimateFirstDisplayListener());
++                            ToastUtil.showLongToast(getActivity(), "登陆成功");
++                        }
++
+                         break;
++                    default:
++//                        rl_logined.ssetVisibilityetVisibility(View.VISIBLE);
++//                        ll_unlogin.(View.GONE);
++                        break;
+                 }
+ 
+         }
+@@ -160,4 +230,27 @@
+         }
+     }
+ 
++    /**
++     * 图片加载第一次显示监听器
++     *
++     * @author Administrator
++     */
++    private static class AnimateFirstDisplayListener extends SimpleImageLoadingListener {
++
++        static final List<String> displayedImages = Collections.synchronizedList(new LinkedList<String>());
++
++        @Override
++        public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) {
++            if (loadedImage != null) {
++                ImageView imageView = (ImageView) view;
++                // 是否第一次显示
++                boolean firstDisplay = !displayedImages.contains(imageUri);
++                if (firstDisplay) {
++                    // 图片淡入效果
++                    FadeInBitmapDisplayer.animate(imageView, 500);
++                    displayedImages.add(imageUri);
++                }
++            }
++        }
++    }
+ }
+Index: app/src/main/res/layout/fragment_my.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_my.xml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/res/layout/fragment_my.xml	(revision )
+@@ -18,7 +18,7 @@
+         android:padding="@dimen/grid_index_textSpacing">
+ 
+         <ImageView
+-            android:id="@+id/iv_head"
++            android:id="@+id/iv_my_head"
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:layout_centerVertical="true"
+@@ -31,11 +31,11 @@
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="@dimen/grid_index_textSpacing"
+-            android:layout_toRightOf="@+id/iv_head"
++            android:layout_toRightOf="@+id/iv_my_head"
+             android:visibility="gone">
+ 
+             <TextView
+-                android:id="@+id/my_username"
++                android:id="@+id/tv_my_nickname"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="张三"
+@@ -43,10 +43,10 @@
+                 android:textSize="@dimen/text_size_listview_title" />
+ 
+             <TextView
+-                android:id="@+id/my_uid"
++                android:id="@+id/tv_my_uid"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+-                android:layout_below="@id/my_username"
++                android:layout_below="@id/tv_my_nickname"
+                 android:layout_marginTop="@dimen/index_padding"
+                 android:text="@string/accuontid"
+                 android:textColor="@color/text_color_normal"
+@@ -56,7 +56,7 @@
+                 android:id="@+id/my_jifen"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+-                android:layout_below="@id/my_uid"
++                android:layout_below="@id/tv_my_uid"
+                 android:layout_marginTop="@dimen/layout_margin"
+                 android:text="@string/userScore"
+                 android:textColor="@color/text_color_normal"
+@@ -109,7 +109,7 @@
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="@dimen/layout_margin_bigmiddle"
+-            android:layout_toRightOf="@+id/iv_head"
++            android:layout_toRightOf="@+id/iv_my_head"
+             android:orientation="horizontal">
+ 
+             <TextView
+\ No newline at end of file
+Index: app/src/main/java/com/hshy41/mane/adapter/ImagePagerAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/adapter/ImagePagerAdapter.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/java/com/hshy41/mane/adapter/ImagePagerAdapter.java	(revision )
+@@ -5,13 +5,16 @@
+  */
+ package com.hshy41.mane.adapter;
+ 
++import java.io.File;
+ import java.util.List;
+ 
+ 
+ import com.hshy41.mane.entity.ImageEntity;
++import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
+ import com.nostra13.universalimageloader.core.DisplayImageOptions;
+ import com.nostra13.universalimageloader.core.ImageLoader;
+ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
++import com.nostra13.universalimageloader.utils.StorageUtils;
+ 
+ import android.content.Context;
+ import android.content.Intent;
+@@ -26,91 +29,100 @@
+ 
+ /**
+  * ImagePagerAdapter
+- * 
++ *
+  * @author <a href="http://www.trinea.cn" target="_blank">Trinea</a> 2014-2-23
+  */
+ public class ImagePagerAdapter extends RecyclingPagerAdapter {
+ 
+-	private Context context;
+-	private List<ImageEntity> imageIdList;
+-	private DisplayImageOptions options;
+-	private int size;
+-	private boolean isInfiniteLoop;
++    private Context context;
++    private List<ImageEntity> imageIdList;
++    private DisplayImageOptions options;
++    private int size;
++    private boolean isInfiniteLoop;
+ 
+-	public ImagePagerAdapter(Context context, List<ImageEntity> imageIdList) {
+-		this.context = context;
+-		this.imageIdList = imageIdList;
+-		// this.size = ListUtils.getSize(imageIdList);
+-		this.size = imageIdList.size();
+-		isInfiniteLoop = false;
++    public ImagePagerAdapter(Context context, List<ImageEntity> imageIdList) {
++        this.context = context;
++        this.imageIdList = imageIdList;
++        // this.size = ListUtils.getSize(imageIdList);
++        this.size = imageIdList.size();
++        isInfiniteLoop = false;
++        File cacheDir = StorageUtils.getOwnCacheDirectory(context, "ManE/Cache");
+-		ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(
+-				context).writeDebugLogs() // 打印log信息
++        ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(
++                context).writeDebugLogs() // 打印log信息
++                .diskCache(new UnlimitedDiskCache(cacheDir))//自定义缓存路径
+-				.build();
+-		ImageLoader.getInstance().init(configuration);
++                .build();
++        ImageLoader.getInstance().init(configuration);
+-		options = new DisplayImageOptions.Builder().cacheInMemory(true)
+-				.cacheOnDisk(true).bitmapConfig(Bitmap.Config.RGB_565).build();
++        options = new DisplayImageOptions.Builder()
++                //                .showStubImage(R.drawable.ic_stub)          // 设置图片下载期间显示的图片
++//                .showImageForEmptyUri(R.drawable.ic_empty)  // 设置图片Uri为空或是错误的时候显示的图片
++//                .showImageOnFail(R.drawable.ic_error)       // 设置图片加载或解码过程中发生错误显示的图片
++                .cacheInMemory(true)// 设置下载的图片是否缓存在内存中
++                .cacheOnDisk(true) // 设置下载的图片是否缓存在SD卡中
++
++                .bitmapConfig(Bitmap.Config.RGB_565).build();
++
++
+-	}
++    }
+ 
+-	@Override
+-	public int getCount() {
+-		// Infinite loop
+-		if (size == 0) {
+-			return 0;
+-		} else {
+-			return isInfiniteLoop ? Integer.MAX_VALUE : size;
+-		}
+-	}
++    @Override
++    public int getCount() {
++        // Infinite loop
++        if (size == 0) {
++            return 0;
++        } else {
++            return isInfiniteLoop ? Integer.MAX_VALUE : size;
++        }
++    }
+ 
+-	/**
+-	 * get really position
+-	 * 
+-	 * @param position
+-	 * @return
+-	 */
+-	private int getPosition(int position) {
++    /**
++     * get really position
++     *
++     * @param position
++     * @return
++     */
++    private int getPosition(int position) {
+ 
+-		if (size == 0)
+-			return 0;
+-		else
+-			return isInfiniteLoop ? position % size : position;
+-	}
++        if (size == 0)
++            return 0;
++        else
++            return isInfiniteLoop ? position % size : position;
++    }
+ 
+-	@Override
+-	public View getView(final int position, View view, ViewGroup container) {
+-		ViewHolder holder;
+-		if (view == null) {
+-			holder = new ViewHolder();
+-			view = holder.imageView = new ImageView(context);
+-			view.setTag(holder);
+-		} else {
+-			holder = (ViewHolder) view.getTag();
+-		}
+-		holder.imageView.setScaleType(ScaleType.CENTER_CROP);
+-		ImageLoader.getInstance().displayImage(
+-				imageIdList.get(getPosition(position)).getUrl(),
+-				holder.imageView, options);
++    @Override
++    public View getView(final int position, View view, ViewGroup container) {
++        ViewHolder holder;
++        if (view == null) {
++            holder = new ViewHolder();
++            view = holder.imageView = new ImageView(context);
++            view.setTag(holder);
++        } else {
++            holder = (ViewHolder) view.getTag();
++        }
++        holder.imageView.setScaleType(ScaleType.CENTER_CROP);
++        ImageLoader.getInstance().displayImage(
++                imageIdList.get(getPosition(position)).getUrl(),
++                holder.imageView, options);
+ 
+-		return view;
+-	}
++        return view;
++    }
+ 
+-	private static class ViewHolder {
++    private static class ViewHolder {
+ 
+-		ImageView imageView;
+-	}
++        ImageView imageView;
++    }
+ 
+-	/**
+-	 * @return the isInfiniteLoop
+-	 */
+-	public boolean isInfiniteLoop() {
+-		return isInfiniteLoop;
+-	}
++    /**
++     * @return the isInfiniteLoop
++     */
++    public boolean isInfiniteLoop() {
++        return isInfiniteLoop;
++    }
+ 
+-	/**
++    /**
+-	 * @param isInfiniteLoop
+-	 *            the isInfiniteLoop to set
++     * @param isInfiniteLoop the isInfiniteLoop to set
+-	 */
+-	public ImagePagerAdapter setInfiniteLoop(boolean isInfiniteLoop) {
+-		this.isInfiniteLoop = isInfiniteLoop;
+-		return this;
+-	}
++     */
++    public ImagePagerAdapter setInfiniteLoop(boolean isInfiniteLoop) {
++        this.isInfiniteLoop = isInfiniteLoop;
++        return this;
++    }
+ }
+Index: app/build/generated/source/r/debug/com/facebook/R.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/generated/source/r/debug/com/facebook/R.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/generated/source/r/debug/com/facebook/R.java	(revision )
+@@ -92,18 +92,18 @@
+ 		public static final int box_count = 0x7f0b003e;
+ 		public static final int button = 0x7f0b003f;
+ 		public static final int center = 0x7f0b001c;
+-		public static final int com_facebook_body_frame = 0x7f0b0156;
+-		public static final int com_facebook_button_xout = 0x7f0b0158;
+-		public static final int com_facebook_fragment_container = 0x7f0b0154;
+-		public static final int com_facebook_login_activity_progress_bar = 0x7f0b0155;
+-		public static final int com_facebook_tooltip_bubble_view_bottom_pointer = 0x7f0b015a;
+-		public static final int com_facebook_tooltip_bubble_view_text_body = 0x7f0b0159;
+-		public static final int com_facebook_tooltip_bubble_view_top_pointer = 0x7f0b0157;
++		public static final int com_facebook_body_frame = 0x7f0b015b;
++		public static final int com_facebook_button_xout = 0x7f0b015d;
++		public static final int com_facebook_fragment_container = 0x7f0b0159;
++		public static final int com_facebook_login_activity_progress_bar = 0x7f0b015a;
++		public static final int com_facebook_tooltip_bubble_view_bottom_pointer = 0x7f0b015f;
++		public static final int com_facebook_tooltip_bubble_view_text_body = 0x7f0b015e;
++		public static final int com_facebook_tooltip_bubble_view_top_pointer = 0x7f0b015c;
+ 		public static final int display_always = 0x7f0b0043;
+ 		public static final int inline = 0x7f0b0041;
+ 		public static final int large = 0x7f0b0045;
+ 		public static final int left = 0x7f0b0025;
+-		public static final int messenger_send_button = 0x7f0b01ec;
++		public static final int messenger_send_button = 0x7f0b01f1;
+ 		public static final int never_display = 0x7f0b0044;
+ 		public static final int normal = 0x7f0b000c;
+ 		public static final int open_graph = 0x7f0b003b;
+Index: app/src/main/java/com/hshy41/mane/utils/Cons.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/utils/Cons.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/java/com/hshy41/mane/utils/Cons.java	(revision )
+@@ -2,6 +2,9 @@
+ 
+ import com.hshy41.mane.R;
+ 
++import java.util.regex.Matcher;
++import java.util.regex.Pattern;
++
+ /**
+  * 常量类
+  * Created by lichao on 2015/12/16.
+@@ -33,6 +36,7 @@
+ 
+     public static final String TAG_RESULT_NICKNAME_ACTIVITY = "result_nickname_activity";//昵称页面返回标志
+ 
++
+     public static int[] STRIDARR_MODULEDESIGN_TOP = {R.string.restaurant, R.string.teahouse, R.string.supermaket,
+             R.string.petshop, R.string.carservice};
+     public static int[] STRIDARR_MODULEDESIGN_BOTTOM = {R.string.restaurant, R.string.teahouse, R.string.supermaket,
+@@ -51,4 +55,42 @@
+             R.drawable.jiadianweixiu, R.drawable.kaisuo1, R.drawable.huishou, R.drawable.diannaoweixiu,
+             R.drawable.shumaweixiu, R.drawable.guandaoshutong, R.drawable.fangwuweixiu, R.drawable.jiajuweixiu,
+             R.drawable.xiyipiju};
++
++    //域名
++    public final static String DOMAIN = "http://mysqapp.qweweq.com/index.php/home/";
++
++    //注册发送验证码接口
++    public final static String IDENTIFYING_CODE_REGIST = "Member/reginsertYzm/";
++
++    //注册接口
++    public final static String REGIST = "Member/reginsert/";
++
++    //找回密码接口
++    public final static String FIND_PASSWORD = "Member/resetpass";
++
++    //找回密码发送验证码接口
++    public final static String IDENTIFYING_CODE_FIND_PASSWORD = "Member/resetYzm";
++
++    //登陆接口
++    public final static String LOGIN = "Member/login";
++
++
++
++    /**
++     * 手机号验证
++     *
++     * @param str
++     * @return 验证通过返回true
++     */
++    public static boolean isMobile(String str) {
++        Pattern p = null;
++        Matcher m = null;
++        boolean b = false;
++        p = Pattern.compile("^[1][3,4,5,8][0-9]{9}$"); // 验证手机号
++        m = p.matcher(str);
++        b = m.matches();
++        return b;
++    }
++
++
+ }
+Index: app/src/main/res/layout/activity_login.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_login.xml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/res/layout/activity_login.xml	(revision )
+@@ -36,7 +36,7 @@
+                     android:layout_centerVertical="true"
+                     />
+                 <EditText
+-                    android:id="@+id/userEdit"
++                    android:id="@+id/et_login_phone"
+                     android:layout_marginLeft="@dimen/layout_margin"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+@@ -71,7 +71,7 @@
+                     />
+ 
+                 <EditText
+-                    android:id="@+id/pwdEdit"
++                    android:id="@+id/et_login_password"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="@dimen/layout_margin"
+@@ -111,7 +111,7 @@
+                     />
+             </RelativeLayout>
+             <Button
+-                android:id="@+id/bt_login"
++                android:id="@+id/bt_login_login"
+                 android:layout_marginLeft="@dimen/layout_margin"
+                 android:layout_marginRight="@dimen/layout_margin"
+                 android:layout_marginTop="@dimen/layout_margin_middleaa"
+Index: app/src/main/java/com/hshy41/mane/entity/Identifyingcode_Regist_Entity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/entity/Identifyingcode_Regist_Entity.java	(revision )
++++ app/src/main/java/com/hshy41/mane/entity/Identifyingcode_Regist_Entity.java	(revision )
+@@ -0,0 +1,80 @@
++package com.hshy41.mane.entity;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class Identifyingcode_Regist_Entity {
++    /**
++     * id : 2
++     * username : admin
++     * cnname : 啦啦啦
++     * avatar :
++     * integral : 1
++     * wallet : null
++     * downpeople : null
++     */
++
++    private String id;
++    private String username;
++    private String cnname;
++    private String avatar;
++    private String integral;
++    private String wallet;
++    private String downpeople;
++
++    public void setId(String id) {
++        this.id = id;
++    }
++
++    public void setUsername(String username) {
++        this.username = username;
++    }
++
++    public void setCnname(String cnname) {
++        this.cnname = cnname;
++    }
++
++    public void setAvatar(String avatar) {
++        this.avatar = avatar;
++    }
++
++    public void setIntegral(String integral) {
++        this.integral = integral;
++    }
++
++    public void setWallet(String wallet) {
++        this.wallet = wallet;
++    }
++
++    public void setDownpeople(String downpeople) {
++        this.downpeople = downpeople;
++    }
++
++    public String getId() {
++        return id;
++    }
++
++    public String getUsername() {
++        return username;
++    }
++
++    public String getCnname() {
++        return cnname;
++    }
++
++    public String getAvatar() {
++        return avatar;
++    }
++
++    public String getIntegral() {
++        return integral;
++    }
++
++    public Object getWallet() {
++        return wallet;
++    }
++
++    public Object getDownpeople() {
++        return downpeople;
++    }
++}
+Index: app/src/main/java/com/hshy41/mane/bean/Identifyingcode_Regist_BaseBean.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/bean/Identifyingcode_Regist_BaseBean.java	(revision )
++++ app/src/main/java/com/hshy41/mane/bean/Identifyingcode_Regist_BaseBean.java	(revision )
+@@ -0,0 +1,13 @@
++package com.hshy41.mane.bean;
++
++import com.hshy41.mane.entity.Identifyingcode_Regist_Entity;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class Identifyingcode_Regist_BaseBean {
++
++    public String Result;
++    public String Message;
++    public Identifyingcode_Regist_Entity data;
++}
+Index: ToggleButtonLib/build/intermediates/restart-dex/debug/build-info.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- ToggleButtonLib/build/intermediates/restart-dex/debug/build-info.xml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ ToggleButtonLib/build/intermediates/restart-dex/debug/build-info.xml	(revision )
+@@ -1,1 +1,1 @@
+-<instant-run build-id="1451017177317"><javac duration="0"/><instant-run-dex duration="0"/><instant-run-transform duration="0"/><verifier duration="0"/></instant-run>
+\ No newline at end of file
++<instant-run build-id="1451385388008"><javac duration="0"/><instant-run-dex duration="0"/><instant-run-transform duration="0"/><verifier duration="0"/></instant-run>
+\ No newline at end of file
+Index: app/src/main/java/com/hshy41/mane/entity/Identifyingcode_FindPassword_Entity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/entity/Identifyingcode_FindPassword_Entity.java	(revision )
++++ app/src/main/java/com/hshy41/mane/entity/Identifyingcode_FindPassword_Entity.java	(revision )
+@@ -0,0 +1,7 @@
++package com.hshy41.mane.entity;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class Identifyingcode_FindPassword_Entity {
++}
+Index: app/build/intermediates/restart-dex/debug/build-info.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/intermediates/restart-dex/debug/build-info.xml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/intermediates/restart-dex/debug/build-info.xml	(revision )
+@@ -1,1 +1,1 @@
+-<instant-run build-id="1451017176679" verifier="FIELD_TYPE_CHANGE"><javac duration="1712"/><instant-run-dex duration="1753"/><instant-run-transform duration="95"/><verifier duration="5"/></instant-run>
+\ No newline at end of file
++<instant-run build-id="1451385387682" verifier="FIELD_TYPE_CHANGE"><javac duration="1730"/><instant-run-dex duration="1818"/><instant-run-transform duration="46"/><verifier duration="6"/></instant-run>
+\ No newline at end of file
+Index: app/build/generated/source/r/debug/android/support/design/R.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/generated/source/r/debug/android/support/design/R.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/generated/source/r/debug/android/support/design/R.java	(revision )
+@@ -521,7 +521,7 @@
+ 		public static final int snackbar_background = 0x7f0200b2;
+ 	}
+ 	public static final class id {
+-		public static final int action0 = 0x7f0b01ed;
++		public static final int action0 = 0x7f0b01f2;
+ 		public static final int action_bar = 0x7f0b0064;
+ 		public static final int action_bar_activity_content = 0x7f0b0000;
+ 		public static final int action_bar_container = 0x7f0b0063;
+@@ -530,7 +530,7 @@
+ 		public static final int action_bar_subtitle = 0x7f0b0048;
+ 		public static final int action_bar_title = 0x7f0b0047;
+ 		public static final int action_context_bar = 0x7f0b0065;
+-		public static final int action_divider = 0x7f0b01f1;
++		public static final int action_divider = 0x7f0b01f6;
+ 		public static final int action_menu_divider = 0x7f0b0002;
+ 		public static final int action_menu_presenter = 0x7f0b0003;
+ 		public static final int action_mode_bar = 0x7f0b0061;
+@@ -542,12 +542,12 @@
+ 		public static final int beginning = 0x7f0b002a;
+ 		public static final int bottom = 0x7f0b001b;
+ 		public static final int buttonPanel = 0x7f0b005a;
+-		public static final int cancel_action = 0x7f0b01ee;
++		public static final int cancel_action = 0x7f0b01f3;
+ 		public static final int center = 0x7f0b001c;
+ 		public static final int center_horizontal = 0x7f0b001d;
+ 		public static final int center_vertical = 0x7f0b001e;
+ 		public static final int checkbox = 0x7f0b005c;
+-		public static final int chronometer = 0x7f0b01f4;
++		public static final int chronometer = 0x7f0b01f9;
+ 		public static final int clip_horizontal = 0x7f0b001f;
+ 		public static final int clip_vertical = 0x7f0b0020;
+ 		public static final int collapseActionView = 0x7f0b002d;
+@@ -561,7 +561,7 @@
+ 		public static final int dropdown = 0x7f0b0032;
+ 		public static final int edit_query = 0x7f0b0066;
+ 		public static final int end = 0x7f0b0021;
+-		public static final int end_padder = 0x7f0b01f9;
++		public static final int end_padder = 0x7f0b01fe;
+ 		public static final int enterAlways = 0x7f0b0015;
+ 		public static final int enterAlwaysCollapsed = 0x7f0b0016;
+ 		public static final int exitUntilCollapsed = 0x7f0b0017;
+@@ -576,13 +576,13 @@
+ 		public static final int icon = 0x7f0b004f;
+ 		public static final int ifRoom = 0x7f0b002e;
+ 		public static final int image = 0x7f0b004c;
+-		public static final int info = 0x7f0b01f8;
++		public static final int info = 0x7f0b01fd;
+ 		public static final int left = 0x7f0b0025;
+-		public static final int line1 = 0x7f0b01f2;
+-		public static final int line3 = 0x7f0b01f6;
++		public static final int line1 = 0x7f0b01f7;
++		public static final int line3 = 0x7f0b01fb;
+ 		public static final int listMode = 0x7f0b000b;
+ 		public static final int list_item = 0x7f0b004e;
+-		public static final int media_actions = 0x7f0b01f0;
++		public static final int media_actions = 0x7f0b01f5;
+ 		public static final int middle = 0x7f0b002b;
+ 		public static final int mini = 0x7f0b0029;
+ 		public static final int multiply = 0x7f0b0036;
+@@ -615,20 +615,20 @@
+ 		public static final int showCustom = 0x7f0b0011;
+ 		public static final int showHome = 0x7f0b0012;
+ 		public static final int showTitle = 0x7f0b0013;
+-		public static final int snackbar_action = 0x7f0b01ea;
+-		public static final int snackbar_text = 0x7f0b01e9;
++		public static final int snackbar_action = 0x7f0b01ef;
++		public static final int snackbar_text = 0x7f0b01ee;
+ 		public static final int split_action_bar = 0x7f0b0008;
+ 		public static final int src_atop = 0x7f0b0038;
+ 		public static final int src_in = 0x7f0b0039;
+ 		public static final int src_over = 0x7f0b003a;
+ 		public static final int start = 0x7f0b0027;
+-		public static final int status_bar_latest_event_content = 0x7f0b01ef;
++		public static final int status_bar_latest_event_content = 0x7f0b01f4;
+ 		public static final int submit_area = 0x7f0b006f;
+ 		public static final int tabMode = 0x7f0b000d;
+-		public static final int text = 0x7f0b01f7;
+-		public static final int text2 = 0x7f0b01f5;
++		public static final int text = 0x7f0b01fc;
++		public static final int text2 = 0x7f0b01fa;
+ 		public static final int textSpacerNoButtons = 0x7f0b0057;
+-		public static final int time = 0x7f0b01f3;
++		public static final int time = 0x7f0b01f8;
+ 		public static final int title = 0x7f0b0050;
+ 		public static final int title_template = 0x7f0b0053;
+ 		public static final int top = 0x7f0b0028;
+Index: app/build/generated/source/r/debug/com/lsjwzh/widget/recyclerviewpager/tablayoutcompat/R.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/generated/source/r/debug/com/lsjwzh/widget/recyclerviewpager/tablayoutcompat/R.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/generated/source/r/debug/com/lsjwzh/widget/recyclerviewpager/tablayoutcompat/R.java	(revision )
+@@ -529,7 +529,7 @@
+ 		public static final int snackbar_background = 0x7f0200b2;
+ 	}
+ 	public static final class id {
+-		public static final int action0 = 0x7f0b01ed;
++		public static final int action0 = 0x7f0b01f2;
+ 		public static final int action_bar = 0x7f0b0064;
+ 		public static final int action_bar_activity_content = 0x7f0b0000;
+ 		public static final int action_bar_container = 0x7f0b0063;
+@@ -538,7 +538,7 @@
+ 		public static final int action_bar_subtitle = 0x7f0b0048;
+ 		public static final int action_bar_title = 0x7f0b0047;
+ 		public static final int action_context_bar = 0x7f0b0065;
+-		public static final int action_divider = 0x7f0b01f1;
++		public static final int action_divider = 0x7f0b01f6;
+ 		public static final int action_menu_divider = 0x7f0b0002;
+ 		public static final int action_menu_presenter = 0x7f0b0003;
+ 		public static final int action_mode_bar = 0x7f0b0061;
+@@ -550,12 +550,12 @@
+ 		public static final int beginning = 0x7f0b002a;
+ 		public static final int bottom = 0x7f0b001b;
+ 		public static final int buttonPanel = 0x7f0b005a;
+-		public static final int cancel_action = 0x7f0b01ee;
++		public static final int cancel_action = 0x7f0b01f3;
+ 		public static final int center = 0x7f0b001c;
+ 		public static final int center_horizontal = 0x7f0b001d;
+ 		public static final int center_vertical = 0x7f0b001e;
+ 		public static final int checkbox = 0x7f0b005c;
+-		public static final int chronometer = 0x7f0b01f4;
++		public static final int chronometer = 0x7f0b01f9;
+ 		public static final int clip_horizontal = 0x7f0b001f;
+ 		public static final int clip_vertical = 0x7f0b0020;
+ 		public static final int collapseActionView = 0x7f0b002d;
+@@ -569,7 +569,7 @@
+ 		public static final int dropdown = 0x7f0b0032;
+ 		public static final int edit_query = 0x7f0b0066;
+ 		public static final int end = 0x7f0b0021;
+-		public static final int end_padder = 0x7f0b01f9;
++		public static final int end_padder = 0x7f0b01fe;
+ 		public static final int enterAlways = 0x7f0b0015;
+ 		public static final int enterAlwaysCollapsed = 0x7f0b0016;
+ 		public static final int exitUntilCollapsed = 0x7f0b0017;
+@@ -584,14 +584,14 @@
+ 		public static final int icon = 0x7f0b004f;
+ 		public static final int ifRoom = 0x7f0b002e;
+ 		public static final int image = 0x7f0b004c;
+-		public static final int info = 0x7f0b01f8;
++		public static final int info = 0x7f0b01fd;
+ 		public static final int item_touch_helper_previous_elevation = 0x7f0b0005;
+ 		public static final int left = 0x7f0b0025;
+-		public static final int line1 = 0x7f0b01f2;
+-		public static final int line3 = 0x7f0b01f6;
++		public static final int line1 = 0x7f0b01f7;
++		public static final int line3 = 0x7f0b01fb;
+ 		public static final int listMode = 0x7f0b000b;
+ 		public static final int list_item = 0x7f0b004e;
+-		public static final int media_actions = 0x7f0b01f0;
++		public static final int media_actions = 0x7f0b01f5;
+ 		public static final int middle = 0x7f0b002b;
+ 		public static final int mini = 0x7f0b0029;
+ 		public static final int multiply = 0x7f0b0036;
+@@ -605,7 +605,7 @@
+ 		public static final int progress_horizontal = 0x7f0b0007;
+ 		public static final int radio = 0x7f0b005e;
+ 		public static final int right = 0x7f0b0026;
+-		public static final int rvp_fragment_container = 0x7f0b01fb;
++		public static final int rvp_fragment_container = 0x7f0b0200;
+ 		public static final int screen = 0x7f0b0037;
+ 		public static final int scroll = 0x7f0b0018;
+ 		public static final int scrollView = 0x7f0b0056;
+@@ -625,20 +625,20 @@
+ 		public static final int showCustom = 0x7f0b0011;
+ 		public static final int showHome = 0x7f0b0012;
+ 		public static final int showTitle = 0x7f0b0013;
+-		public static final int snackbar_action = 0x7f0b01ea;
+-		public static final int snackbar_text = 0x7f0b01e9;
++		public static final int snackbar_action = 0x7f0b01ef;
++		public static final int snackbar_text = 0x7f0b01ee;
+ 		public static final int split_action_bar = 0x7f0b0008;
+ 		public static final int src_atop = 0x7f0b0038;
+ 		public static final int src_in = 0x7f0b0039;
+ 		public static final int src_over = 0x7f0b003a;
+ 		public static final int start = 0x7f0b0027;
+-		public static final int status_bar_latest_event_content = 0x7f0b01ef;
++		public static final int status_bar_latest_event_content = 0x7f0b01f4;
+ 		public static final int submit_area = 0x7f0b006f;
+ 		public static final int tabMode = 0x7f0b000d;
+-		public static final int text = 0x7f0b01f7;
+-		public static final int text2 = 0x7f0b01f5;
++		public static final int text = 0x7f0b01fc;
++		public static final int text2 = 0x7f0b01fa;
+ 		public static final int textSpacerNoButtons = 0x7f0b0057;
+-		public static final int time = 0x7f0b01f3;
++		public static final int time = 0x7f0b01f8;
+ 		public static final int title = 0x7f0b0050;
+ 		public static final int title_template = 0x7f0b0053;
+ 		public static final int top = 0x7f0b0028;
+Index: app/build/generated/source/r/debug/com/bigkoo/alertview/R.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/generated/source/r/debug/com/bigkoo/alertview/R.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/generated/source/r/debug/com/bigkoo/alertview/R.java	(revision )
+@@ -403,12 +403,12 @@
+ 		public static final int action_mode_bar_stub = 0x7f0b0060;
+ 		public static final int action_mode_close_button = 0x7f0b0049;
+ 		public static final int activity_chooser_view_content = 0x7f0b004a;
+-		public static final int alertButtonListView = 0x7f0b01e4;
++		public static final int alertButtonListView = 0x7f0b01e9;
+ 		public static final int always = 0x7f0b002c;
+ 		public static final int beginning = 0x7f0b002a;
+ 		public static final int checkbox = 0x7f0b005c;
+ 		public static final int collapseActionView = 0x7f0b002d;
+-		public static final int content_container = 0x7f0b01e3;
++		public static final int content_container = 0x7f0b01e8;
+ 		public static final int decor_content_parent = 0x7f0b0062;
+ 		public static final int default_activity_button = 0x7f0b004d;
+ 		public static final int dialog = 0x7f0b0031;
+@@ -425,13 +425,13 @@
+ 		public static final int image = 0x7f0b004c;
+ 		public static final int listMode = 0x7f0b000b;
+ 		public static final int list_item = 0x7f0b004e;
+-		public static final int loAlertButtons = 0x7f0b01e8;
+-		public static final int loAlertHeader = 0x7f0b01a7;
++		public static final int loAlertButtons = 0x7f0b01ed;
++		public static final int loAlertHeader = 0x7f0b01ac;
+ 		public static final int middle = 0x7f0b002b;
+ 		public static final int never = 0x7f0b002f;
+ 		public static final int none = 0x7f0b0010;
+ 		public static final int normal = 0x7f0b000c;
+-		public static final int outmost_container = 0x7f0b01e2;
++		public static final int outmost_container = 0x7f0b01e7;
+ 		public static final int progress_circular = 0x7f0b0006;
+ 		public static final int progress_horizontal = 0x7f0b0007;
+ 		public static final int radio = 0x7f0b005e;
+@@ -453,14 +453,14 @@
+ 		public static final int submit_area = 0x7f0b006f;
+ 		public static final int tabMode = 0x7f0b000d;
+ 		public static final int title = 0x7f0b0050;
+-		public static final int tvAlert = 0x7f0b01aa;
+-		public static final int tvAlertCancel = 0x7f0b01e5;
+-		public static final int tvAlertMsg = 0x7f0b01a9;
+-		public static final int tvAlertTitle = 0x7f0b01a8;
++		public static final int tvAlert = 0x7f0b01af;
++		public static final int tvAlertCancel = 0x7f0b01ea;
++		public static final int tvAlertMsg = 0x7f0b01ae;
++		public static final int tvAlertTitle = 0x7f0b01ad;
+ 		public static final int up = 0x7f0b0009;
+ 		public static final int useLogo = 0x7f0b0014;
+-		public static final int viewStubHorizontal = 0x7f0b01e6;
+-		public static final int viewStubVertical = 0x7f0b01e7;
++		public static final int viewStubHorizontal = 0x7f0b01eb;
++		public static final int viewStubVertical = 0x7f0b01ec;
+ 		public static final int withText = 0x7f0b0030;
+ 		public static final int wrap_content = 0x7f0b0035;
+ 	}
+Index: app/build/generated/source/r/debug/com/hshy41/mane/R.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/generated/source/r/debug/com/hshy41/mane/R.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/generated/source/r/debug/com/hshy41/mane/R.java	(revision )
+@@ -2557,12 +2557,12 @@
+         public static final int abl_collect=0x7f0b008c;
+         public static final int abl_getmonney_game=0x7f0b009c;
+         public static final int abl_houserent=0x7f0b00ab;
+-        public static final int abl_servicelist=0x7f0b012d;
+-        public static final int abl_tour=0x7f0b0140;
+-        public static final int abl_transaction_details=0x7f0b0144;
+-        public static final int abl_vintage_list=0x7f0b0147;
++        public static final int abl_servicelist=0x7f0b0132;
++        public static final int abl_tour=0x7f0b0145;
++        public static final int abl_transaction_details=0x7f0b0149;
++        public static final int abl_vintage_list=0x7f0b014c;
+         public static final int abl_zhoubianshanghu=0x7f0b0099;
+-        public static final int action0=0x7f0b01ed;
++        public static final int action0=0x7f0b01f2;
+         public static final int action_bar=0x7f0b0064;
+         public static final int action_bar_activity_content=0x7f0b0000;
+         public static final int action_bar_container=0x7f0b0063;
+@@ -2571,67 +2571,69 @@
+         public static final int action_bar_subtitle=0x7f0b0048;
+         public static final int action_bar_title=0x7f0b0047;
+         public static final int action_context_bar=0x7f0b0065;
+-        public static final int action_divider=0x7f0b01f1;
++        public static final int action_divider=0x7f0b01f6;
+         public static final int action_menu_divider=0x7f0b0002;
+         public static final int action_menu_presenter=0x7f0b0003;
+         public static final int action_mode_bar=0x7f0b0061;
+         public static final int action_mode_bar_stub=0x7f0b0060;
+         public static final int action_mode_close_button=0x7f0b0049;
+         public static final int activity_chooser_view_content=0x7f0b004a;
+-        public static final int alertButtonListView=0x7f0b01e4;
++        public static final int alertButtonListView=0x7f0b01e9;
+         public static final int alertTitle=0x7f0b0054;
+         public static final int always=0x7f0b002c;
+         public static final int automatic=0x7f0b0042;
+-        public static final int avatar=0x7f0b01eb;
++        public static final int avatar=0x7f0b01f0;
+         public static final int avp_commonweal=0x7f0b0090;
+-        public static final int avp_community=0x7f0b015d;
++        public static final int avp_community=0x7f0b0162;
+         public static final int avp_housekeeping=0x7f0b00a7;
+-        public static final int avp_houserent=0x7f0b0169;
++        public static final int avp_houserent=0x7f0b016e;
+         public static final int avp_productinfo=0x7f0b00df;
+-        public static final int avp_zhoubianshanghu=0x7f0b01a2;
++        public static final int avp_zhoubianshanghu=0x7f0b01a7;
+         public static final int beginning=0x7f0b002a;
+         public static final int bottom=0x7f0b001b;
+         public static final int box_count=0x7f0b003e;
+         public static final int bt_cash_commit=0x7f0b0086;
+         public static final int bt_change_password_save=0x7f0b008b;
+-        public static final int bt_community_property_service=0x7f0b015f;
++        public static final int bt_community_property_service=0x7f0b0164;
+         public static final int bt_goods_release_release=0x7f0b00a6;
+-        public static final int bt_login=0x7f0b00c1;
+-        public static final int bt_mainbutton=0x7f0b012a;
+-        public static final int bt_property_pay_commit=0x7f0b0109;
+-        public static final int bt_public_repair_commit=0x7f0b0124;
+-        public static final int bt_set_safe_quit=0x7f0b013e;
+-        public static final int bt_suggestion_post_commit=0x7f0b013f;
+-        public static final int bt_title_left=0x7f0b014c;
+-        public static final int bt_title_right=0x7f0b01fd;
++        public static final int bt_login=0x7f0b00f0;
++        public static final int bt_login_login=0x7f0b00c1;
++        public static final int bt_property_pay_commit=0x7f0b010a;
++        public static final int bt_public_repair_commit=0x7f0b0125;
++        public static final int bt_regist_regist=0x7f0b012f;
++        public static final int bt_regist_send_identifyingcode=0x7f0b0129;
++        public static final int bt_set_safe_quit=0x7f0b0143;
++        public static final int bt_suggestion_post_commit=0x7f0b0144;
++        public static final int bt_title_left=0x7f0b0151;
++        public static final int bt_title_right=0x7f0b0202;
+         public static final int button=0x7f0b003f;
+         public static final int buttonPanel=0x7f0b005a;
+-        public static final int cancel_action=0x7f0b01ee;
++        public static final int cancel_action=0x7f0b01f3;
+         public static final int center=0x7f0b001c;
+         public static final int center_horizontal=0x7f0b001d;
+         public static final int center_vertical=0x7f0b001e;
+         public static final int checkbox=0x7f0b005c;
+-        public static final int chronometer=0x7f0b01f4;
++        public static final int chronometer=0x7f0b01f9;
+         public static final int clip_horizontal=0x7f0b001f;
+         public static final int clip_vertical=0x7f0b0020;
+         public static final int collapseActionView=0x7f0b002d;
+-        public static final int com_facebook_body_frame=0x7f0b0156;
+-        public static final int com_facebook_button_xout=0x7f0b0158;
+-        public static final int com_facebook_fragment_container=0x7f0b0154;
+-        public static final int com_facebook_login_activity_progress_bar=0x7f0b0155;
+-        public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f0b015a;
+-        public static final int com_facebook_tooltip_bubble_view_text_body=0x7f0b0159;
+-        public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f0b0157;
++        public static final int com_facebook_body_frame=0x7f0b015b;
++        public static final int com_facebook_button_xout=0x7f0b015d;
++        public static final int com_facebook_fragment_container=0x7f0b0159;
++        public static final int com_facebook_login_activity_progress_bar=0x7f0b015a;
++        public static final int com_facebook_tooltip_bubble_view_bottom_pointer=0x7f0b015f;
++        public static final int com_facebook_tooltip_bubble_view_text_body=0x7f0b015e;
++        public static final int com_facebook_tooltip_bubble_view_top_pointer=0x7f0b015c;
+         public static final int container=0x7f0b00c2;
+         public static final int contentPanel=0x7f0b0055;
+-        public static final int content_container=0x7f0b01e3;
++        public static final int content_container=0x7f0b01e8;
+         public static final int content_my_rb=0x7f0b00c8;
+         public static final int content_shequ_rb=0x7f0b00c6;
+         public static final int content_shouye_rb=0x7f0b00c5;
+         public static final int content_zhuan_rb=0x7f0b00c7;
+         public static final int custom=0x7f0b0059;
+         public static final int customPanel=0x7f0b0058;
+-        public static final int datepicker=0x7f0b015b;
++        public static final int datepicker=0x7f0b0160;
+         public static final int decor_content_parent=0x7f0b0062;
+         public static final int default_activity_button=0x7f0b004d;
+         public static final int dialog=0x7f0b0031;
+@@ -2640,7 +2642,7 @@
+         public static final int dropdown=0x7f0b0032;
+         public static final int edit_query=0x7f0b0066;
+         public static final int end=0x7f0b0021;
+-        public static final int end_padder=0x7f0b01f9;
++        public static final int end_padder=0x7f0b01fe;
+         public static final int enterAlways=0x7f0b0015;
+         public static final int enterAlwaysCollapsed=0x7f0b0016;
+         public static final int et_change_password_confirm_password=0x7f0b008a;
+@@ -2650,9 +2652,15 @@
+         public static final int et_goods_release_enter_phone_number=0x7f0b00a1;
+         public static final int et_goods_release_original_price=0x7f0b00a4;
+         public static final int et_goods_release_transfer_price=0x7f0b00a5;
+-        public static final int et_invitationcode=0x7f0b0129;
++        public static final int et_login_password=0x7f0b00be;
++        public static final int et_login_phone=0x7f0b00bc;
+         public static final int et_nickname=0x7f0b00d2;
+-        public static final int et_title_search=0x7f0b0200;
++        public static final int et_regist_confirmpassword=0x7f0b012d;
++        public static final int et_regist_identifyingcode=0x7f0b0128;
++        public static final int et_regist_invitationcode=0x7f0b012e;
++        public static final int et_regist_password=0x7f0b012b;
++        public static final int et_regist_phone=0x7f0b0126;
++        public static final int et_title_search=0x7f0b0205;
+         public static final int exitUntilCollapsed=0x7f0b0017;
+         public static final int expand_activities_button=0x7f0b004b;
+         public static final int expanded_menu=0x7f0b005b;
+@@ -2660,24 +2668,24 @@
+         public static final int fill_horizontal=0x7f0b0023;
+         public static final int fill_vertical=0x7f0b0024;
+         public static final int fixed=0x7f0b0033;
+-        public static final int gridview_one=0x7f0b019c;
+-        public static final int gridview_two=0x7f0b01a0;
++        public static final int gridview_one=0x7f0b01a1;
++        public static final int gridview_two=0x7f0b01a5;
+         public static final int home=0x7f0b0004;
+         public static final int homeAsUp=0x7f0b000f;
+         public static final int icon=0x7f0b004f;
+         public static final int ifRoom=0x7f0b002e;
+         public static final int image=0x7f0b004c;
+-        public static final int img_1=0x7f0b0179;
+-        public static final int img_2=0x7f0b017a;
+-        public static final int img_3=0x7f0b017b;
+-        public static final int img_6=0x7f0b0183;
++        public static final int img_1=0x7f0b017e;
++        public static final int img_2=0x7f0b017f;
++        public static final int img_3=0x7f0b0180;
++        public static final int img_6=0x7f0b0188;
+         public static final int imgset=0x7f0b00b0;
+         public static final int imgset2=0x7f0b00b3;
+         public static final int imgset3=0x7f0b00b6;
+         public static final int imgset4=0x7f0b00b9;
+         public static final int index_layout_main_index=0x7f0b00c3;
+         public static final int index_radiogroup_index=0x7f0b00c4;
+-        public static final int info=0x7f0b01f8;
++        public static final int info=0x7f0b01fd;
+         public static final int info_face=0x7f0b00af;
+         public static final int info_faceimg=0x7f0b00b1;
+         public static final int info_nickname=0x7f0b00b2;
+@@ -2688,35 +2696,35 @@
+         public static final int info_usernametv=0x7f0b00b7;
+         public static final int inline=0x7f0b0041;
+         public static final int item_touch_helper_previous_elevation=0x7f0b0005;
+-        public static final int iv_arrowdown_left=0x7f0b016d;
+-        public static final int iv_arrowdown_right=0x7f0b0170;
+-        public static final int iv_arrowup_left=0x7f0b016c;
+-        public static final int iv_arrowup_right=0x7f0b016f;
++        public static final int iv_arrowdown_left=0x7f0b0172;
++        public static final int iv_arrowdown_right=0x7f0b0175;
++        public static final int iv_arrowup_left=0x7f0b0171;
++        public static final int iv_arrowup_right=0x7f0b0174;
+         public static final int iv_cash_arrow_right=0x7f0b0081;
+         public static final int iv_collec=0x7f0b00e2;
+-        public static final int iv_confirmpassword=0x7f0b0128;
++        public static final int iv_confirmpassword=0x7f0b012c;
+         public static final int iv_diverlien=0x7f0b0093;
+-        public static final int iv_enterpassword=0x7f0b0127;
+-        public static final int iv_ezhuandian_appimg=0x7f0b0167;
+-        public static final int iv_ezhuandian_getmonney_game_img=0x7f0b0163;
+-        public static final int iv_gridItem_img=0x7f0b01a5;
+-        public static final int iv_head=0x7f0b0186;
+-        public static final int iv_index_concessions=0x7f0b017f;
+-        public static final int iv_index_listimg=0x7f0b01b3;
+-        public static final int iv_index_market=0x7f0b0181;
+-        public static final int iv_item_bankfinancing_img=0x7f0b01c2;
+-        public static final int iv_item_community_add=0x7f0b01c7;
+-        public static final int iv_item_financing_adimg=0x7f0b01c9;
+-        public static final int iv_item_getmonney_adimg=0x7f0b01ca;
+-        public static final int iv_item_housekeeping_icon=0x7f0b01ce;
+-        public static final int iv_item_houserent_img=0x7f0b01ac;
+-        public static final int iv_item_photo=0x7f0b01c0;
+-        public static final int iv_item_property_notification_trangle=0x7f0b01d0;
+-        public static final int iv_item_servicelist_img=0x7f0b01b8;
+-        public static final int iv_item_tour_adimg=0x7f0b01d4;
+-        public static final int iv_item_vintage_list_arrow_right=0x7f0b01e1;
+-        public static final int iv_item_vintage_list_img=0x7f0b01dd;
++        public static final int iv_enterpassword=0x7f0b012a;
++        public static final int iv_ezhuandian_appimg=0x7f0b016c;
++        public static final int iv_ezhuandian_getmonney_game_img=0x7f0b0168;
++        public static final int iv_gridItem_img=0x7f0b01aa;
++        public static final int iv_index_concessions=0x7f0b0184;
++        public static final int iv_index_listimg=0x7f0b01b8;
++        public static final int iv_index_market=0x7f0b0186;
++        public static final int iv_item_bankfinancing_img=0x7f0b01c7;
++        public static final int iv_item_community_add=0x7f0b01cc;
++        public static final int iv_item_financing_adimg=0x7f0b01ce;
++        public static final int iv_item_getmonney_adimg=0x7f0b01cf;
++        public static final int iv_item_housekeeping_icon=0x7f0b01d3;
++        public static final int iv_item_houserent_img=0x7f0b01b1;
++        public static final int iv_item_photo=0x7f0b01c5;
++        public static final int iv_item_property_notification_trangle=0x7f0b01d5;
++        public static final int iv_item_servicelist_img=0x7f0b01bd;
++        public static final int iv_item_tour_adimg=0x7f0b01d9;
++        public static final int iv_item_vintage_list_arrow_right=0x7f0b01e6;
++        public static final int iv_item_vintage_list_img=0x7f0b01e2;
+         public static final int iv_like=0x7f0b00e6;
++        public static final int iv_my_head=0x7f0b018b;
+         public static final int iv_personal_info_set_arrow_right1=0x7f0b00d4;
+         public static final int iv_personal_info_set_arrow_right2=0x7f0b00d7;
+         public static final int iv_personal_info_set_arrow_right3=0x7f0b00da;
+@@ -2726,87 +2734,84 @@
+         public static final int iv_personal_info_set_phonenumber=0x7f0b00de;
+         public static final int iv_productinfo_arrow_right=0x7f0b00ee;
+         public static final int iv_productinfo_gps=0x7f0b00ec;
+-        public static final int iv_property_pay_company=0x7f0b0104;
+-        public static final int iv_property_pay_personal=0x7f0b0101;
+-        public static final int iv_property_pay_pick_the_invoice=0x7f0b0106;
+-        public static final int iv_property_pay_send_home=0x7f0b0108;
+-        public static final int iv_property_repair_personal_repair=0x7f0b010d;
+-        public static final int iv_property_repair_public_repair=0x7f0b010b;
+-        public static final int iv_property_service_phone1=0x7f0b0110;
+-        public static final int iv_property_service_phone2=0x7f0b0112;
+-        public static final int iv_property_service_phone3=0x7f0b0114;
+-        public static final int iv_property_service_phone4=0x7f0b0116;
+-        public static final int iv_public_repair_table_arrow_right1=0x7f0b0118;
+-        public static final int iv_set_arrow_right_4=0x7f0b0139;
++        public static final int iv_property_pay_company=0x7f0b0105;
++        public static final int iv_property_pay_personal=0x7f0b0102;
++        public static final int iv_property_pay_pick_the_invoice=0x7f0b0107;
++        public static final int iv_property_pay_send_home=0x7f0b0109;
++        public static final int iv_property_repair_personal_repair=0x7f0b010e;
++        public static final int iv_property_repair_public_repair=0x7f0b010c;
++        public static final int iv_property_service_phone1=0x7f0b0111;
++        public static final int iv_property_service_phone2=0x7f0b0113;
++        public static final int iv_property_service_phone3=0x7f0b0115;
++        public static final int iv_property_service_phone4=0x7f0b0117;
++        public static final int iv_public_repair_table_arrow_right1=0x7f0b0119;
++        public static final int iv_set_arrow_right_4=0x7f0b013e;
+         public static final int iv_share=0x7f0b00e4;
+-        public static final int iv_title_gps=0x7f0b014f;
+-        public static final int iv_yanzhengma=0x7f0b0125;
+-        public static final int iv_zhoubianshanghu_add=0x7f0b0152;
+-        public static final int kefu_img=0x7f0b019a;
+-        public static final int kefu_phone=0x7f0b019b;
++        public static final int iv_title_gps=0x7f0b0154;
++        public static final int iv_yanzhengma=0x7f0b0127;
++        public static final int iv_zhoubianshanghu_add=0x7f0b0157;
++        public static final int kefu_img=0x7f0b019f;
++        public static final int kefu_phone=0x7f0b01a0;
+         public static final int large=0x7f0b0045;
+         public static final int left=0x7f0b0025;
+-        public static final int line1=0x7f0b01f2;
+-        public static final int line3=0x7f0b01f6;
++        public static final int line1=0x7f0b01f7;
++        public static final int line3=0x7f0b01fb;
+         public static final int listMode=0x7f0b000b;
+         public static final int list_item=0x7f0b004e;
+         public static final int ll_commonweal=0x7f0b008f;
+         public static final int ll_commonweal_bannarpointer=0x7f0b0091;
+         public static final int ll_commonweal_text=0x7f0b0095;
+-        public static final int ll_community_bannarpointer=0x7f0b015e;
++        public static final int ll_community_bannarpointer=0x7f0b0163;
+         public static final int ll_housekeeping_bannarpointer=0x7f0b00a8;
+-        public static final int ll_houserent=0x7f0b0168;
+-        public static final int ll_houserent_bannarpointer=0x7f0b016a;
+-        public static final int ll_index_mainAd=0x7f0b017c;
+-        public static final int ll_index_recommend=0x7f0b0184;
+-        public static final int ll_item_getmonney_right=0x7f0b0165;
+-        public static final int ll_item_tour=0x7f0b01d3;
++        public static final int ll_houserent=0x7f0b016d;
++        public static final int ll_houserent_bannarpointer=0x7f0b016f;
++        public static final int ll_index_mainAd=0x7f0b0181;
++        public static final int ll_index_recommend=0x7f0b0189;
++        public static final int ll_item_getmonney_right=0x7f0b016a;
++        public static final int ll_item_tour=0x7f0b01d8;
+         public static final int ll_productinfo_bannarpointer=0x7f0b00e0;
+-        public static final int ll_property_pay_pick_up_the_invoice=0x7f0b0105;
+-        public static final int ll_property_pay_send_home=0x7f0b0107;
+-        public static final int ll_servicelist=0x7f0b019d;
+-        public static final int ll_unlogin=0x7f0b018d;
+-        public static final int ll_zhoubianshangh=0x7f0b01a1;
+-        public static final int ll_zhoubianshanghu_bannarpointer=0x7f0b01a3;
+-        public static final int loAlertButtons=0x7f0b01e8;
+-        public static final int loAlertHeader=0x7f0b01a7;
++        public static final int ll_property_pay_pick_up_the_invoice=0x7f0b0106;
++        public static final int ll_property_pay_send_home=0x7f0b0108;
++        public static final int ll_servicelist=0x7f0b01a2;
++        public static final int ll_unlogin=0x7f0b0192;
++        public static final int ll_zhoubianshangh=0x7f0b01a6;
++        public static final int ll_zhoubianshanghu_bannarpointer=0x7f0b01a8;
++        public static final int loAlertButtons=0x7f0b01ed;
++        public static final int loAlertHeader=0x7f0b01ac;
+         public static final int lv_commonweal=0x7f0b0094;
+-        public static final int lv_houserent=0x7f0b0171;
+-        public static final int lv_index_recommend=0x7f0b0185;
+-        public static final int lv_pop_left=0x7f0b0173;
+-        public static final int lv_pop_right=0x7f0b0174;
+-        public static final int lv_servicelist=0x7f0b019e;
+-        public static final int lv_zhoubianshanghu=0x7f0b01a4;
++        public static final int lv_houserent=0x7f0b0176;
++        public static final int lv_index_recommend=0x7f0b018a;
++        public static final int lv_pop_left=0x7f0b0178;
++        public static final int lv_pop_right=0x7f0b0179;
++        public static final int lv_servicelist=0x7f0b01a3;
++        public static final int lv_zhoubianshanghu=0x7f0b01a9;
+         public static final int main_content=0x7f0b007c;
+-        public static final int media_actions=0x7f0b01f0;
+-        public static final int messenger_send_button=0x7f0b01ec;
++        public static final int media_actions=0x7f0b01f5;
++        public static final int messenger_send_button=0x7f0b01f1;
+         public static final int middle=0x7f0b002b;
+         public static final int mini=0x7f0b0029;
+         public static final int multiply=0x7f0b0036;
+-        public static final int my_jifen=0x7f0b018a;
+-        public static final int my_kefu=0x7f0b0199;
+-        public static final int my_qiandao=0x7f0b018c;
+-        public static final int my_uid=0x7f0b0189;
+-        public static final int my_username=0x7f0b0188;
+-        public static final int my_xiaxian=0x7f0b0190;
++        public static final int my_jifen=0x7f0b018f;
++        public static final int my_kefu=0x7f0b019e;
++        public static final int my_qiandao=0x7f0b0191;
++        public static final int my_xiaxian=0x7f0b0195;
+         public static final int never=0x7f0b002f;
+         public static final int never_display=0x7f0b0044;
+         public static final int none=0x7f0b0010;
+         public static final int normal=0x7f0b000c;
+         public static final int open_graph=0x7f0b003b;
+-        public static final int outmost_container=0x7f0b01e2;
++        public static final int outmost_container=0x7f0b01e7;
+         public static final int page=0x7f0b003c;
+         public static final int parallax=0x7f0b0019;
+         public static final int parentPanel=0x7f0b0051;
+         public static final int pin=0x7f0b001a;
+         public static final int progress_circular=0x7f0b0006;
+         public static final int progress_horizontal=0x7f0b0007;
+-        public static final int pwdEdit=0x7f0b00be;
+         public static final int pwdTv=0x7f0b00bd;
+         public static final int radio=0x7f0b005e;
+-        public static final int rb_item_servicelist=0x7f0b01ba;
+-        public static final int rb_item_tour=0x7f0b01d7;
+-        public static final int recyclerview=0x7f0b01fa;
++        public static final int rb_item_servicelist=0x7f0b01bf;
++        public static final int rb_item_tour=0x7f0b01dc;
++        public static final int recyclerview=0x7f0b01ff;
+         public static final int right=0x7f0b0026;
+         public static final int rl_account_cash=0x7f0b0079;
+         public static final int rl_account_transaction_details=0x7f0b0078;
+@@ -2815,79 +2820,79 @@
+         public static final int rl_cash_enter_cash_total=0x7f0b0083;
+         public static final int rl_collec=0x7f0b00e1;
+         public static final int rl_commonweal_list=0x7f0b0092;
+-        public static final int rl_ezhuandian_app_suggest=0x7f0b0164;
+-        public static final int rl_ezhuandian_getmonney_game=0x7f0b0162;
+-        public static final int rl_index_concessions=0x7f0b017d;
+-        public static final int rl_item_bankfinancing=0x7f0b01c1;
+-        public static final int rl_item_community=0x7f0b01c5;
+-        public static final int rl_item_community_add=0x7f0b01c6;
+-        public static final int rl_item_houserent=0x7f0b01ab;
+-        public static final int rl_item_index=0x7f0b01b2;
+-        public static final int rl_item_layout_ad=0x7f0b01be;
+-        public static final int rl_item_layout_adimg=0x7f0b01bf;
+-        public static final int rl_item_layout_getmonney_title=0x7f0b0160;
+-        public static final int rl_item_layout_housekeeping=0x7f0b01cb;
+-        public static final int rl_item_servicelist=0x7f0b01b7;
+-        public static final int rl_item_transaction_details=0x7f0b01d8;
+-        public static final int rl_item_vintage_list=0x7f0b01dc;
++        public static final int rl_ezhuandian_app_suggest=0x7f0b0169;
++        public static final int rl_ezhuandian_getmonney_game=0x7f0b0167;
++        public static final int rl_index_concessions=0x7f0b0182;
++        public static final int rl_item_bankfinancing=0x7f0b01c6;
++        public static final int rl_item_community=0x7f0b01ca;
++        public static final int rl_item_community_add=0x7f0b01cb;
++        public static final int rl_item_houserent=0x7f0b01b0;
++        public static final int rl_item_index=0x7f0b01b7;
++        public static final int rl_item_layout_ad=0x7f0b01c3;
++        public static final int rl_item_layout_adimg=0x7f0b01c4;
++        public static final int rl_item_layout_getmonney_title=0x7f0b0165;
++        public static final int rl_item_layout_housekeeping=0x7f0b01d0;
++        public static final int rl_item_servicelist=0x7f0b01bc;
++        public static final int rl_item_transaction_details=0x7f0b01dd;
++        public static final int rl_item_vintage_list=0x7f0b01e1;
+         public static final int rl_like=0x7f0b00e5;
+-        public static final int rl_logined=0x7f0b0187;
++        public static final int rl_logined=0x7f0b018c;
+         public static final int rl_message_set_message_off=0x7f0b00c9;
+         public static final int rl_message_set_sound=0x7f0b00cb;
+         public static final int rl_message_set_vibrate=0x7f0b00cd;
+-        public static final int rl_my_accountcenter=0x7f0b0196;
+-        public static final int rl_my_mycollect=0x7f0b0193;
++        public static final int rl_my_accountcenter=0x7f0b019b;
++        public static final int rl_my_mycollect=0x7f0b0198;
+         public static final int rl_nickname=0x7f0b00d1;
+         public static final int rl_personal_info_set_head_icon=0x7f0b00d3;
+         public static final int rl_personal_info_set_name=0x7f0b00d9;
+         public static final int rl_personal_info_set_nickname=0x7f0b00d6;
+         public static final int rl_personal_info_set_phonenumber=0x7f0b00dc;
+-        public static final int rl_pop=0x7f0b0172;
+-        public static final int rl_pop_left=0x7f0b016b;
+-        public static final int rl_pop_right=0x7f0b016e;
++        public static final int rl_pop=0x7f0b0177;
++        public static final int rl_pop_left=0x7f0b0170;
++        public static final int rl_pop_right=0x7f0b0173;
+         public static final int rl_productinfo_address=0x7f0b00eb;
+         public static final int rl_productinfo_one_key_phone=0x7f0b00ef;
+-        public static final int rl_property_hall_property_notification=0x7f0b00f0;
+-        public static final int rl_property_hall_property_pay=0x7f0b00f3;
+-        public static final int rl_property_hall_property_repair=0x7f0b00f1;
+-        public static final int rl_property_hall_property_service=0x7f0b00f2;
+-        public static final int rl_property_hall_property_vintage_release=0x7f0b00f4;
+-        public static final int rl_property_pay_company=0x7f0b0102;
+-        public static final int rl_property_pay_contact_way=0x7f0b00f9;
+-        public static final int rl_property_pay_house_owner=0x7f0b00f6;
+-        public static final int rl_property_pay_personal=0x7f0b00ff;
+-        public static final int rl_property_pay_water_rent=0x7f0b00fc;
+-        public static final int rl_property_repair_one_key_phone=0x7f0b010e;
+-        public static final int rl_property_repair_personal_repair=0x7f0b010c;
+-        public static final int rl_property_repair_public_repair=0x7f0b010a;
+-        public static final int rl_property_service_net_repair=0x7f0b0113;
+-        public static final int rl_property_service_power_repair=0x7f0b010f;
+-        public static final int rl_property_service_warm_repair=0x7f0b0115;
+-        public static final int rl_property_service_water_repair=0x7f0b0111;
+-        public static final int rl_public_repair_table_address=0x7f0b0120;
+-        public static final int rl_public_repair_table_chosed_community=0x7f0b0117;
+-        public static final int rl_public_repair_table_contact_phone=0x7f0b011d;
+-        public static final int rl_public_repair_table_name=0x7f0b011a;
+-        public static final int rl_set_about_us=0x7f0b013c;
+-        public static final int rl_set_account_safe=0x7f0b0131;
+-        public static final int rl_set_clean_cache=0x7f0b0137;
+-        public static final int rl_set_info_post=0x7f0b0134;
+-        public static final int rl_set_message_set=0x7f0b0136;
+-        public static final int rl_set_personal_info_set=0x7f0b0130;
+-        public static final int rl_set_product_introduces=0x7f0b013d;
+-        public static final int rl_set_suggestion_post=0x7f0b013b;
+-        public static final int rl_set_update_check=0x7f0b013a;
++        public static final int rl_property_hall_property_notification=0x7f0b00f1;
++        public static final int rl_property_hall_property_pay=0x7f0b00f4;
++        public static final int rl_property_hall_property_repair=0x7f0b00f2;
++        public static final int rl_property_hall_property_service=0x7f0b00f3;
++        public static final int rl_property_hall_property_vintage_release=0x7f0b00f5;
++        public static final int rl_property_pay_company=0x7f0b0103;
++        public static final int rl_property_pay_contact_way=0x7f0b00fa;
++        public static final int rl_property_pay_house_owner=0x7f0b00f7;
++        public static final int rl_property_pay_personal=0x7f0b0100;
++        public static final int rl_property_pay_water_rent=0x7f0b00fd;
++        public static final int rl_property_repair_one_key_phone=0x7f0b010f;
++        public static final int rl_property_repair_personal_repair=0x7f0b010d;
++        public static final int rl_property_repair_public_repair=0x7f0b010b;
++        public static final int rl_property_service_net_repair=0x7f0b0114;
++        public static final int rl_property_service_power_repair=0x7f0b0110;
++        public static final int rl_property_service_warm_repair=0x7f0b0116;
++        public static final int rl_property_service_water_repair=0x7f0b0112;
++        public static final int rl_public_repair_table_address=0x7f0b0121;
++        public static final int rl_public_repair_table_chosed_community=0x7f0b0118;
++        public static final int rl_public_repair_table_contact_phone=0x7f0b011e;
++        public static final int rl_public_repair_table_name=0x7f0b011b;
++        public static final int rl_set_about_us=0x7f0b0141;
++        public static final int rl_set_account_safe=0x7f0b0136;
++        public static final int rl_set_clean_cache=0x7f0b013c;
++        public static final int rl_set_info_post=0x7f0b0139;
++        public static final int rl_set_message_set=0x7f0b013b;
++        public static final int rl_set_personal_info_set=0x7f0b0135;
++        public static final int rl_set_product_introduces=0x7f0b0142;
++        public static final int rl_set_suggestion_post=0x7f0b0140;
++        public static final int rl_set_update_check=0x7f0b013f;
+         public static final int rl_share=0x7f0b00e3;
+-        public static final int rl_title_content=0x7f0b014d;
+-        public static final int rl_title_left=0x7f0b014b;
+-        public static final int rl_title_right=0x7f0b01fc;
+-        public static final int rl_title_search=0x7f0b01ff;
+-        public static final int rl_titlebar=0x7f0b014a;
+-        public static final int rl_zhoubianshanghu_add=0x7f0b0151;
++        public static final int rl_title_content=0x7f0b0152;
++        public static final int rl_title_left=0x7f0b0150;
++        public static final int rl_title_right=0x7f0b0201;
++        public static final int rl_title_search=0x7f0b0204;
++        public static final int rl_titlebar=0x7f0b014f;
++        public static final int rl_zhoubianshanghu_add=0x7f0b0156;
+         public static final int rv_ad=0x7f0b007d;
+         public static final int rv_bankfinancing=0x7f0b007e;
+         public static final int rv_collect=0x7f0b008e;
+-        public static final int rv_community=0x7f0b0161;
++        public static final int rv_community=0x7f0b0166;
+         public static final int rv_financing=0x7f0b009b;
+         public static final int rv_getmonney=0x7f0b009f;
+         public static final int rv_getmonney_game=0x7f0b009e;
+@@ -2895,18 +2900,18 @@
+         public static final int rv_housekeeping=0x7f0b00aa;
+         public static final int rv_moduledesign_bottom=0x7f0b00d0;
+         public static final int rv_moduledesign_top=0x7f0b00cf;
+-        public static final int rv_property_notification=0x7f0b00f5;
+-        public static final int rv_public_repair_table=0x7f0b0123;
+-        public static final int rv_search_bottom=0x7f0b012c;
+-        public static final int rv_search_top=0x7f0b012b;
+-        public static final int rv_transaction_details=0x7f0b0146;
+-        public static final int rv_vintage_list=0x7f0b0149;
+-        public static final int rvp_fragment_container=0x7f0b01fb;
+-        public static final int rvp_fragment_tour=0x7f0b019f;
++        public static final int rv_property_notification=0x7f0b00f6;
++        public static final int rv_public_repair_table=0x7f0b0124;
++        public static final int rv_search_bottom=0x7f0b0131;
++        public static final int rv_search_top=0x7f0b0130;
++        public static final int rv_transaction_details=0x7f0b014b;
++        public static final int rv_vintage_list=0x7f0b014e;
++        public static final int rvp_fragment_container=0x7f0b0200;
++        public static final int rvp_fragment_tour=0x7f0b01a4;
+         public static final int rvp_houserent=0x7f0b00ae;
+-        public static final int rvp_servicelist=0x7f0b012f;
+-        public static final int rvp_tour=0x7f0b0143;
+-        public static final int rvp_zhoubianshanghu=0x7f0b0153;
++        public static final int rvp_servicelist=0x7f0b0134;
++        public static final int rvp_tour=0x7f0b0148;
++        public static final int rvp_zhoubianshanghu=0x7f0b0158;
+         public static final int screen=0x7f0b0037;
+         public static final int scroll=0x7f0b0018;
+         public static final int scrollView=0x7f0b0056;
+@@ -2923,21 +2928,21 @@
+         public static final int search_voice_btn=0x7f0b0071;
+         public static final int select_dialog_listview=0x7f0b0072;
+         public static final int shortcut=0x7f0b005d;
+-        public static final int shoucang_img=0x7f0b0194;
+-        public static final int shoucang_jiantou=0x7f0b0195;
++        public static final int shoucang_img=0x7f0b0199;
++        public static final int shoucang_jiantou=0x7f0b019a;
+         public static final int showCustom=0x7f0b0011;
+         public static final int showHome=0x7f0b0012;
+         public static final int showTitle=0x7f0b0013;
+         public static final int small=0x7f0b0046;
+-        public static final int snackbar_action=0x7f0b01ea;
+-        public static final int snackbar_text=0x7f0b01e9;
++        public static final int snackbar_action=0x7f0b01ef;
++        public static final int snackbar_text=0x7f0b01ee;
+         public static final int split_action_bar=0x7f0b0008;
+         public static final int src_atop=0x7f0b0038;
+         public static final int src_in=0x7f0b0039;
+         public static final int src_over=0x7f0b003a;
+         public static final int standard=0x7f0b0040;
+         public static final int start=0x7f0b0027;
+-        public static final int status_bar_latest_event_content=0x7f0b01ef;
++        public static final int status_bar_latest_event_content=0x7f0b01f4;
+         public static final int submit_area=0x7f0b006f;
+         public static final int tabMode=0x7f0b000d;
+         public static final int tb_collect=0x7f0b008d;
+@@ -2946,29 +2951,29 @@
+         public static final int tb_message_set_message_off=0x7f0b00ca;
+         public static final int tb_message_set_sound=0x7f0b00cc;
+         public static final int tb_message_set_vibrate=0x7f0b00ce;
+-        public static final int tb_servicelist=0x7f0b012e;
+-        public static final int tb_tour=0x7f0b0141;
+-        public static final int tb_transaction_details=0x7f0b0145;
+-        public static final int tb_vintage_list=0x7f0b0148;
++        public static final int tb_servicelist=0x7f0b0133;
++        public static final int tb_tour=0x7f0b0146;
++        public static final int tb_transaction_details=0x7f0b014a;
++        public static final int tb_vintage_list=0x7f0b014d;
+         public static final int tb_zhoubianshanghu=0x7f0b009a;
+-        public static final int text=0x7f0b01f7;
+-        public static final int text2=0x7f0b01f5;
++        public static final int text=0x7f0b01fc;
++        public static final int text2=0x7f0b01fa;
+         public static final int textSpacerNoButtons=0x7f0b0057;
+-        public static final int tg_set_info_post=0x7f0b0135;
+-        public static final int time=0x7f0b01f3;
+-        public static final int timepicker=0x7f0b015c;
++        public static final int tg_set_info_post=0x7f0b013a;
++        public static final int time=0x7f0b01f8;
++        public static final int timepicker=0x7f0b0161;
+         public static final int title=0x7f0b0050;
+         public static final int title_layout=0x7f0b0073;
+         public static final int title_template=0x7f0b0053;
+         public static final int tl_houserent=0x7f0b00ad;
+-        public static final int tl_tour=0x7f0b0142;
+-        public static final int tl_zhoubianshanghu=0x7f0b0150;
++        public static final int tl_tour=0x7f0b0147;
++        public static final int tl_zhoubianshanghu=0x7f0b0155;
+         public static final int top=0x7f0b0028;
+         public static final int topPanel=0x7f0b0052;
+-        public static final int tvAlert=0x7f0b01aa;
+-        public static final int tvAlertCancel=0x7f0b01e5;
+-        public static final int tvAlertMsg=0x7f0b01a9;
+-        public static final int tvAlertTitle=0x7f0b01a8;
++        public static final int tvAlert=0x7f0b01af;
++        public static final int tvAlertCancel=0x7f0b01ea;
++        public static final int tvAlertMsg=0x7f0b01ae;
++        public static final int tvAlertTitle=0x7f0b01ad;
+         public static final int tv_account_backcash=0x7f0b0077;
+         public static final int tv_account_cash=0x7f0b007a;
+         public static final int tv_account_cashable=0x7f0b0075;
+@@ -2985,88 +2990,88 @@
+         public static final int tv_commomweal_info_title=0x7f0b0096;
+         public static final int tv_findpassword=0x7f0b00c0;
+         public static final int tv_forgetpassword=0x7f0b00bf;
+-        public static final int tv_gridItem_text=0x7f0b01a6;
+-        public static final int tv_index_concessions=0x7f0b017e;
+-        public static final int tv_index_joinMane=0x7f0b0182;
+-        public static final int tv_index_listtext=0x7f0b01b5;
+-        public static final int tv_index_listtitle=0x7f0b01b4;
+-        public static final int tv_index_market=0x7f0b0180;
+-        public static final int tv_item_bankfinancing_content=0x7f0b01c4;
+-        public static final int tv_item_bankfinancing_title=0x7f0b01c3;
+-        public static final int tv_item_community_add_title=0x7f0b01c8;
+-        public static final int tv_item_housekeeping_content=0x7f0b01cd;
+-        public static final int tv_item_housekeeping_title=0x7f0b01cc;
+-        public static final int tv_item_houserent_content=0x7f0b01af;
+-        public static final int tv_item_houserent_distance=0x7f0b01b0;
+-        public static final int tv_item_houserent_price=0x7f0b01ae;
+-        public static final int tv_item_houserent_size=0x7f0b01b1;
+-        public static final int tv_item_houserent_title=0x7f0b01ad;
+-        public static final int tv_item_moduledesign_text=0x7f0b01cf;
+-        public static final int tv_item_more=0x7f0b0166;
+-        public static final int tv_item_search_text=0x7f0b01d2;
+-        public static final int tv_item_servicelist_content=0x7f0b01bc;
+-        public static final int tv_item_servicelist_distance=0x7f0b01bd;
+-        public static final int tv_item_servicelist_price=0x7f0b01bb;
+-        public static final int tv_item_servicelist_title=0x7f0b01b9;
+-        public static final int tv_item_tour_price=0x7f0b01d5;
+-        public static final int tv_item_tour_rating=0x7f0b01d6;
+-        public static final int tv_item_tour_title=0x7f0b00fe;
+-        public static final int tv_item_transaction_details_content=0x7f0b01db;
+-        public static final int tv_item_transaction_details_date=0x7f0b01d1;
+-        public static final int tv_item_transaction_details_number=0x7f0b01da;
+-        public static final int tv_item_transaction_details_title=0x7f0b01d9;
+-        public static final int tv_item_vintage_list_date=0x7f0b01e0;
+-        public static final int tv_item_vintage_list_price=0x7f0b01df;
+-        public static final int tv_item_vintage_list_title=0x7f0b01de;
+-        public static final int tv_login=0x7f0b018e;
+-        public static final int tv_monney=0x7f0b018b;
++        public static final int tv_gridItem_text=0x7f0b01ab;
++        public static final int tv_index_concessions=0x7f0b0183;
++        public static final int tv_index_joinMane=0x7f0b0187;
++        public static final int tv_index_listtext=0x7f0b01ba;
++        public static final int tv_index_listtitle=0x7f0b01b9;
++        public static final int tv_index_market=0x7f0b0185;
++        public static final int tv_item_bankfinancing_content=0x7f0b01c9;
++        public static final int tv_item_bankfinancing_title=0x7f0b01c8;
++        public static final int tv_item_community_add_title=0x7f0b01cd;
++        public static final int tv_item_housekeeping_content=0x7f0b01d2;
++        public static final int tv_item_housekeeping_title=0x7f0b01d1;
++        public static final int tv_item_houserent_content=0x7f0b01b4;
++        public static final int tv_item_houserent_distance=0x7f0b01b5;
++        public static final int tv_item_houserent_price=0x7f0b01b3;
++        public static final int tv_item_houserent_size=0x7f0b01b6;
++        public static final int tv_item_houserent_title=0x7f0b01b2;
++        public static final int tv_item_moduledesign_text=0x7f0b01d4;
++        public static final int tv_item_more=0x7f0b016b;
++        public static final int tv_item_search_text=0x7f0b01d7;
++        public static final int tv_item_servicelist_content=0x7f0b01c1;
++        public static final int tv_item_servicelist_distance=0x7f0b01c2;
++        public static final int tv_item_servicelist_price=0x7f0b01c0;
++        public static final int tv_item_servicelist_title=0x7f0b01be;
++        public static final int tv_item_tour_price=0x7f0b01da;
++        public static final int tv_item_tour_rating=0x7f0b01db;
++        public static final int tv_item_tour_title=0x7f0b00ff;
++        public static final int tv_item_transaction_details_content=0x7f0b01e0;
++        public static final int tv_item_transaction_details_date=0x7f0b01d6;
++        public static final int tv_item_transaction_details_number=0x7f0b01df;
++        public static final int tv_item_transaction_details_title=0x7f0b01de;
++        public static final int tv_item_vintage_list_date=0x7f0b01e5;
++        public static final int tv_item_vintage_list_price=0x7f0b01e4;
++        public static final int tv_item_vintage_list_title=0x7f0b01e3;
++        public static final int tv_login=0x7f0b0193;
++        public static final int tv_monney=0x7f0b0190;
++        public static final int tv_my_nickname=0x7f0b018d;
++        public static final int tv_my_uid=0x7f0b018e;
+         public static final int tv_personal_info_set_nickname=0x7f0b00d8;
+-        public static final int tv_pop=0x7f0b01b6;
++        public static final int tv_pop=0x7f0b01bb;
+         public static final int tv_productinfo_address=0x7f0b00ed;
+         public static final int tv_productinfo_content=0x7f0b00e8;
+         public static final int tv_productinfo_price=0x7f0b00e9;
+         public static final int tv_productinfo_title=0x7f0b00e7;
+-        public static final int tv_property_company=0x7f0b0103;
+-        public static final int tv_property_pay_contact_way=0x7f0b00fb;
+-        public static final int tv_property_pay_contact_way_title=0x7f0b00fa;
+-        public static final int tv_property_pay_house_owner_title=0x7f0b00f7;
+-        public static final int tv_property_pay_name=0x7f0b00f8;
+-        public static final int tv_property_pay_personal=0x7f0b0100;
+-        public static final int tv_property_pay_water_rent_title=0x7f0b00fd;
+-        public static final int tv_public_repair_address=0x7f0b0122;
+-        public static final int tv_public_repair_contact_phone=0x7f0b011f;
+-        public static final int tv_public_repair_table_address_title=0x7f0b0121;
+-        public static final int tv_public_repair_table_community=0x7f0b0119;
+-        public static final int tv_public_repair_table_contact_phone_title=0x7f0b011e;
+-        public static final int tv_public_repair_table_name=0x7f0b011c;
+-        public static final int tv_public_repair_table_name_title=0x7f0b011b;
+-        public static final int tv_regist=0x7f0b018f;
+-        public static final int tv_set_account_safe=0x7f0b0132;
+-        public static final int tv_set_account_safe_tips=0x7f0b0133;
+-        public static final int tv_set_clean_cache=0x7f0b0138;
+-        public static final int tv_title_right=0x7f0b01fe;
+-        public static final int tv_title_text=0x7f0b014e;
++        public static final int tv_property_company=0x7f0b0104;
++        public static final int tv_property_pay_contact_way=0x7f0b00fc;
++        public static final int tv_property_pay_contact_way_title=0x7f0b00fb;
++        public static final int tv_property_pay_house_owner_title=0x7f0b00f8;
++        public static final int tv_property_pay_name=0x7f0b00f9;
++        public static final int tv_property_pay_personal=0x7f0b0101;
++        public static final int tv_property_pay_water_rent_title=0x7f0b00fe;
++        public static final int tv_public_repair_address=0x7f0b0123;
++        public static final int tv_public_repair_contact_phone=0x7f0b0120;
++        public static final int tv_public_repair_table_address_title=0x7f0b0122;
++        public static final int tv_public_repair_table_community=0x7f0b011a;
++        public static final int tv_public_repair_table_contact_phone_title=0x7f0b011f;
++        public static final int tv_public_repair_table_name=0x7f0b011d;
++        public static final int tv_public_repair_table_name_title=0x7f0b011c;
++        public static final int tv_regist=0x7f0b0194;
++        public static final int tv_set_account_safe=0x7f0b0137;
++        public static final int tv_set_account_safe_tips=0x7f0b0138;
++        public static final int tv_set_clean_cache=0x7f0b013d;
++        public static final int tv_title_right=0x7f0b0203;
++        public static final int tv_title_text=0x7f0b0153;
+         public static final int tv_verticalline=0x7f0b00a9;
+         public static final int tv_wallet=0x7f0b00ea;
+         public static final int unknown=0x7f0b003d;
+         public static final int up=0x7f0b0009;
+         public static final int useLogo=0x7f0b0014;
+-        public static final int userEdit=0x7f0b00bc;
+         public static final int userTv=0x7f0b00bb;
+-        public static final int viewStubHorizontal=0x7f0b01e6;
+-        public static final int viewStubVertical=0x7f0b01e7;
++        public static final int viewStubHorizontal=0x7f0b01eb;
++        public static final int viewStubVertical=0x7f0b01ec;
+         public static final int view_offset_helper=0x7f0b000a;
+-        public static final int viewpager_15=0x7f0b0177;
+-        public static final int viewpager_image=0x7f0b0175;
+-        public static final int viewpager_yuandian=0x7f0b0176;
+-        public static final int viewpager_yuandian1=0x7f0b0178;
++        public static final int viewpager_15=0x7f0b017c;
++        public static final int viewpager_image=0x7f0b017a;
++        public static final int viewpager_yuandian=0x7f0b017b;
++        public static final int viewpager_yuandian1=0x7f0b017d;
+         public static final int withText=0x7f0b0030;
+         public static final int wrap_content=0x7f0b0035;
+-        public static final int xiaxian_img=0x7f0b0191;
+-        public static final int xiaxian_renshu=0x7f0b0192;
+-        public static final int zhanghu_img=0x7f0b0197;
+-        public static final int zhanghu_jiantou=0x7f0b0198;
+-        public static final int zhuce_yanzhengmahuoqubt=0x7f0b0126;
++        public static final int xiaxian_img=0x7f0b0196;
++        public static final int xiaxian_renshu=0x7f0b0197;
++        public static final int zhanghu_img=0x7f0b019c;
++        public static final int zhanghu_jiantou=0x7f0b019d;
+     }
+     public static final class integer {
+         public static final int abc_config_activityDefaultDur=0x7f090002;
+Index: app/src/main/java/com/hshy41/mane/my/activity/RegistActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/my/activity/RegistActivity.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/java/com/hshy41/mane/my/activity/RegistActivity.java	(revision )
+@@ -3,15 +3,61 @@
+ import android.view.View;
+ import android.view.View.OnClickListener;
+ import android.widget.Button;
++import android.widget.EditText;
+ import android.widget.ImageView;
+ import android.widget.RelativeLayout;
+ import android.widget.TextView;
+ 
++import com.android.volley.AuthFailureError;
++import com.android.volley.Request;
++import com.android.volley.RequestQueue;
++import com.android.volley.Response;
++import com.android.volley.VolleyError;
++import com.android.volley.toolbox.StringRequest;
++import com.android.volley.toolbox.Volley;
++import com.google.gson.Gson;
+ import com.hshy41.mane.R;
+ import com.hshy41.mane.base.BaseActivity;
++import com.hshy41.mane.bean.Identifyingcode_Regist_BaseBean;
++import com.hshy41.mane.bean.RegistBaseBean;
++import com.hshy41.mane.entity.Identifyingcode_Regist_Entity;
++import com.hshy41.mane.entity.RegistEntity;
++import com.hshy41.mane.utils.Cons;
++import com.hshy41.mane.utils.ToastUtil;
+ 
++import org.json.JSONException;
++import org.json.JSONObject;
++
++import java.util.HashMap;
++import java.util.Map;
++
+ public class RegistActivity extends BaseActivity implements OnClickListener {
++    Gson gson;
++    /**
++     * 各种输入框
++     *
++     * @param et_phone 请输入手机号
++     * @param identifyingcode 请输入验证码
++     * @param password 请输入密码
++     * @param confirm_password 确认密码
++     * @param invitationcode 邀请码
++     */
++    EditText et_phone, et_identifyingcode, et_password,
++            et_confirm_password, et_invitationcode;
+ 
++    /**
++     * 按钮
++     *
++     * @param bt_send_identifyingcode 发送验证码
++     * @param bt_regist 注册
++     */
++    Button bt_send_identifyingcode, bt_regist;
++
++
++    //Volley请求队列
++    RequestQueue mQueue;
++
++
+     @Override
+     protected int setContent() {
+         // TODO Auto-generated method stub
+@@ -21,7 +67,23 @@
+     @Override
+     protected void initViews() {
+         // TODO Auto-generated method stub
++        gson = new Gson();
++        //初始化请求队列
++        mQueue = Volley.newRequestQueue(context);
+ 
++        //初始化各种控件
++        //EditText组
++        et_phone = (EditText) findViewById(R.id.et_regist_phone);
++        et_identifyingcode = (EditText) findViewById(R.id.et_regist_identifyingcode);
++        et_password = (EditText) findViewById(R.id.et_regist_password);
++        et_confirm_password = (EditText) findViewById(R.id.et_regist_confirmpassword);
++        et_invitationcode = (EditText) findViewById(R.id.et_regist_invitationcode);
++        //Button组
++        bt_send_identifyingcode = (Button) findViewById(R.id.bt_regist_send_identifyingcode);
++        bt_regist = (Button) findViewById(R.id.bt_regist_regist);
++
++        bt_send_identifyingcode.setOnClickListener(this);
++        bt_regist.setOnClickListener(this);
+     }
+ 
+     @Override
+@@ -58,9 +120,136 @@
+             case R.id.bt_title_left:
+                 finish();
+                 break;
++            case R.id.bt_regist_send_identifyingcode:
++                if (Cons.isMobile(et_phone.getText().toString())) {
++                    GetIdentifyingcode();
++                } else {
++                    ToastUtil.showToast(this, "请输入正确的手机号");
++                }
++                break;
++            case R.id.bt_regist_regist:
++                if (CheckRegistInfo())
++                    Regist();
++                break;
+             default:
+                 break;
+         }
+     }
++
++    /**
++     * 获取验证码
++     */
++    private void GetIdentifyingcode() {
++        StringRequest stringRequest = new StringRequest(Request.Method.POST,
++                Cons.DOMAIN + Cons.IDENTIFYING_CODE_REGIST,
++                new Response.Listener<String>() {
++                    @Override
++                    public void onResponse(String s) {
++                        if (s != null) {
++                            try {
++                                JSONObject json = new JSONObject(s);
++                                if (json.get("Result").equals("0")) {
++                                    Identifyingcode_Regist_BaseBean bean = gson.fromJson(s, Identifyingcode_Regist_BaseBean.class);
++                                    Identifyingcode_Regist_Entity data = bean.data;
++                                } else if (json.get("Result").equals("1")) {
++                                    ToastUtil.showToast(RegistActivity.this, json.getString("Message"));
++                                }
++                            } catch (JSONException e) {
++                                e.printStackTrace();
++                            }
++                        }
++
++                    }
++                }, new Response.ErrorListener() {
++            @Override
++            public void onErrorResponse(VolleyError volleyError) {
++
++            }
++        }) {
++            @Override
++            protected Map<String, String> getParams() throws AuthFailureError {
++                Map<String, String> map = new HashMap<String, String>();
++                map.put("mobile", et_phone.getText().toString());
++                return map;
++            }
++        };
++        mQueue.add(stringRequest);
++    }
++
++    /**
++     * 注册
++     */
++    private void Regist() {
++        StringRequest stringRequest = new StringRequest(Request.Method.POST,
++                Cons.DOMAIN + Cons.REGIST,
++                new Response.Listener<String>() {
++                    @Override
++                    public void onResponse(String s) {
++                        if (s != null) {
++                            try {
++                                JSONObject json = new JSONObject(s);
++                                if (json.get("Result").equals("0")) {
++                                    RegistBaseBean bean = gson.fromJson(s, RegistBaseBean.class);
++                                    RegistEntity data = bean.data;
++                                } else if (json.get("Result").equals("1")) {
++                                    ToastUtil.showToast(RegistActivity.this, json.getString("Message"));
++                                }
++                            } catch (JSONException e) {
++                                e.printStackTrace();
++                            }
++                        }
++
++                    }
++                }, new Response.ErrorListener() {
++            @Override
++            public void onErrorResponse(VolleyError volleyError) {
++
++            }
++        }) {
++            @Override
++            protected Map<String, String> getParams() throws AuthFailureError {
++                Map<String, String> map = new HashMap<String, String>();
++                map.put("mobile", et_phone.getText().toString());
++                map.put("password", et_password.getText().toString());
++                map.put("yzm", et_identifyingcode.getText().toString());
++                map.put("yqm", et_invitationcode.getText().toString());
++                return map;
++            }
++        };
++        mQueue.add(stringRequest);
++    }
++
++
++    /**
++     * 判断注册参数正确与否
++     */
++    private boolean CheckRegistInfo() {
++        if (!Cons.isMobile(et_phone.getText().toString())) {
++            ToastUtil.showToast(RegistActivity.this, "请输入正确的手机号");
++            return false;
++        }
++
++        if (et_identifyingcode.getText().toString().equals("") || et_identifyingcode.getText() == null) {
++            ToastUtil.showToast(RegistActivity.this, "请输入验证码");
++            return false;
++        }
++
++        if (et_password.getText().toString().equals("") || et_password.getText() == null) {
++            ToastUtil.showToast(RegistActivity.this, "请输入密码");
++            return false;
++        }
++
++        if (et_confirm_password.getText().toString().equals("") || et_confirm_password.getText() == null) {
++            ToastUtil.showToast(RegistActivity.this, "请确认密码");
++            return false;
++        }
++
++        if (!et_confirm_password.getText().toString().equals(et_password.getText().toString())) {
++            ToastUtil.showToast(RegistActivity.this, "两次输入的密码不一致");
++            return false;
++        }
++        return true;
++    }
++
+ 
+ }
+Index: app/src/main/java/com/hshy41/mane/my/activity/LoginActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/my/activity/LoginActivity.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/java/com/hshy41/mane/my/activity/LoginActivity.java	(revision )
+@@ -1,102 +1,218 @@
+ package com.hshy41.mane.my.activity;
+ 
+ import android.content.Intent;
++import android.os.Bundle;
++import android.util.Log;
+ import android.view.View;
+ import android.view.View.OnClickListener;
+ import android.widget.Button;
++import android.widget.EditText;
+ import android.widget.ImageView;
+ import android.widget.RelativeLayout;
+ import android.widget.TextView;
+ 
++import com.android.volley.AuthFailureError;
++import com.android.volley.Request;
++import com.android.volley.RequestQueue;
++import com.android.volley.Response;
++import com.android.volley.VolleyError;
++import com.android.volley.toolbox.StringRequest;
++import com.android.volley.toolbox.Volley;
++import com.google.gson.Gson;
+ import com.hshy41.mane.R;
+ import com.hshy41.mane.base.BaseActivity;
++import com.hshy41.mane.bean.LoginBaseBean;
++import com.hshy41.mane.entity.LoginEntity;
++import com.hshy41.mane.utils.Cons;
++import com.hshy41.mane.utils.ToastUtil;
+ 
++import org.json.JSONException;
++import org.json.JSONObject;
++
++import java.util.HashMap;
++import java.util.Map;
++
+ public class LoginActivity extends BaseActivity implements OnClickListener {
++    //Volley请求队列
++    RequestQueue mQueue;
++    //Gson
++    Gson gson;
+-	/**
+-	 * 登录按键
++    /**
++     * 登录按键
++     *
+-	 * @return
+-	 */
+-	Button bt_login;
++     * @return
++     */
++    Button bt_login;
+ 
+-	/**
+-	 * 找回密码
++    /**
++     * 找回密码
++     *
+-	 * @return
+-	 */
+-	TextView tv_findpassword;
++     * @return
++     */
++    TextView tv_findpassword;
++
++    /**
++     * 输入框
++     *
++     * @param et_phone 手机号
++     * @param et_password 密码
++     */
++    EditText et_phone, et_password;
++
++    LoginEntity data;
++    LoginBaseBean bean;
++
+-	@Override
+-	protected int setContent() {
+-		// TODO Auto-generated method stub
+-		return R.layout.activity_login;
+-	}
++    @Override
++    protected int setContent() {
++        // TODO Auto-generated method stub
++        return R.layout.activity_login;
++    }
+ 
+-	@Override
+-	protected void initViews() {
+-		// TODO Auto-generated method stub
++    @Override
++    protected void initViews() {
++        // TODO Auto-generated method stub
+-		bt_login = (Button) findViewById(R.id.bt_login);
++        //初始化Gson
++        gson = new Gson();
++        //初始化请求队列
++        mQueue = Volley.newRequestQueue(context);
++
++        bt_login = (Button) findViewById(R.id.bt_login_login);
+-		tv_findpassword = (TextView) findViewById(R.id.tv_findpassword);
++        tv_findpassword = (TextView) findViewById(R.id.tv_findpassword);
++        et_phone = (EditText) findViewById(R.id.et_login_phone);
++        et_password = (EditText) findViewById(R.id.et_login_password);
+ 
+-		tv_findpassword.setOnClickListener(this);
+-		bt_login.setOnClickListener(this);
++        tv_findpassword.setOnClickListener(this);
++        bt_login.setOnClickListener(this);
+ 
+-	}
++    }
+ 
+-	@Override
+-	protected void initTitleBar() {
++    @Override
++    protected void initTitleBar() {
+ 
+-		rl_title_left = (RelativeLayout) findViewById(R.id.rl_title_left);
+-		rl_title_right = (RelativeLayout) findViewById(R.id.rl_title_right);
+-		iv_title_gps = (ImageView) findViewById(R.id.iv_title_gps);
+-		tv_title_text = (TextView) findViewById(R.id.tv_title_text);
+-		tv_title_right = (TextView) findViewById(R.id.tv_title_right);
+-		bt_title_right = (Button) findViewById(R.id.bt_title_right);
+-		bt_title_left = (Button) findViewById(R.id.bt_title_left);
+-		tv_title_right = (TextView) findViewById(R.id.tv_title_right);
+- 	}
++        rl_title_left = (RelativeLayout) findViewById(R.id.rl_title_left);
++        rl_title_right = (RelativeLayout) findViewById(R.id.rl_title_right);
++        iv_title_gps = (ImageView) findViewById(R.id.iv_title_gps);
++        tv_title_text = (TextView) findViewById(R.id.tv_title_text);
++        tv_title_right = (TextView) findViewById(R.id.tv_title_right);
++        bt_title_right = (Button) findViewById(R.id.bt_title_right);
++        bt_title_left = (Button) findViewById(R.id.bt_title_left);
++        tv_title_right = (TextView) findViewById(R.id.tv_title_right);
++    }
+ 
+-	@Override
+-	protected void setTitleBar() {
+-		rl_title_left.setVisibility(View.VISIBLE);
+-		rl_title_right.setVisibility(View.VISIBLE);
+-		iv_title_gps.setVisibility(View.GONE);
+-		tv_title_text.setVisibility(View.VISIBLE);
+-		bt_title_right.setVisibility(View.GONE);
+-		bt_title_left.setVisibility(View.VISIBLE);
+-		tv_title_right.setVisibility(View.VISIBLE);
++    @Override
++    protected void setTitleBar() {
++        rl_title_left.setVisibility(View.VISIBLE);
++        rl_title_right.setVisibility(View.VISIBLE);
++        iv_title_gps.setVisibility(View.GONE);
++        tv_title_text.setVisibility(View.VISIBLE);
++        bt_title_right.setVisibility(View.GONE);
++        bt_title_left.setVisibility(View.VISIBLE);
++        tv_title_right.setVisibility(View.VISIBLE);
+ 
+-		tv_title_right.setText(R.string.regist);
+-		tv_title_text.setText(R.string.login);
++        tv_title_right.setText(R.string.regist);
++        tv_title_text.setText(R.string.login);
+ 
+-		tv_title_right.setOnClickListener(this);
+-		bt_title_left.setOnClickListener(this);
+-		rl_title_left.setOnClickListener(this);
+-		rl_title_right.setOnClickListener(this);
++        tv_title_right.setOnClickListener(this);
++        bt_title_left.setOnClickListener(this);
++        rl_title_left.setOnClickListener(this);
++        rl_title_right.setOnClickListener(this);
+ 
+-	}
++    }
+ 
+-	@Override
+-	public void onClick(View arg0) {
+-		// TODO Auto-generated method stub
+-		Intent intent;
+-		switch (arg0.getId()) {
+-			case R.id.rl_title_left:
+-			case R.id.bt_title_left:
+-			finish();
+-			break;
++    @Override
++    public void onClick(View arg0) {
++        // TODO Auto-generated method stub
++        Intent intent;
++        switch (arg0.getId()) {
++            case R.id.rl_title_left:
++            case R.id.bt_title_left:
++                finish();
++                break;
+-			case R.id.bt_login:
+-				finish();
++            case R.id.bt_login_login:
++                if (CheckLoginInfo())
++                    Login();
+-				break;
+-			case R.id.rl_title_right:
+-			case R.id.tv_title_right:
+-				 intent = new Intent(LoginActivity.this, RegistActivity.class);
+-				startActivity(intent);
+-				break;
+-			case R.id.tv_findpassword:
+-				intent = new Intent(LoginActivity.this, FindPasswordActivity.class);
+-				startActivity(intent);
+-				break;
+-		default:
+-			break;
+-		}
++                break;
++            case R.id.rl_title_right:
++            case R.id.tv_title_right:
++                intent = new Intent(LoginActivity.this, RegistActivity.class);
++                startActivity(intent);
++                break;
++            case R.id.tv_findpassword:
++                intent = new Intent(LoginActivity.this, FindPasswordActivity.class);
++                startActivity(intent);
++                break;
++            default:
++                break;
++        }
++    }
++
++
++    /**
++     * 登陆
++     */
++    private void Login() {
++        StringRequest stringRequest = new StringRequest(Request.Method.POST,
++                Cons.DOMAIN + Cons.LOGIN,
++                new Response.Listener<String>() {
++                    @Override
++                    public void onResponse(String s) {
++                        if (s != null) {
++                            try {
++                                JSONObject json = new JSONObject(s);
++                                if (json.get("Result").equals("0")) {
++                                    bean = gson.fromJson(s, LoginBaseBean.class);
++                                    data = bean.data;
++                                    Log.i("lichao", data.toString());
++                                    Bundle bundle = new Bundle();
++                                    bundle.putSerializable("loginentity", data);
++                                    Intent intent = new Intent();
++                                    intent.putExtras(bundle);
++                                    setResult(Cons.RESULT_LOGIN_ACTIVITY, intent);
++                                    finish();
++                                } else if (json.get("Result").equals("1")) {
++                                    ToastUtil.showToast(LoginActivity.this, json.getString("Message"));
++                                }
++                            } catch (JSONException e) {
++                                e.printStackTrace();
++                            }
++                        }
++
++                    }
++                }, new Response.ErrorListener() {
++            @Override
++            public void onErrorResponse(VolleyError volleyError) {
++
++            }
++        }) {
++            @Override
++            protected Map<String, String> getParams() throws AuthFailureError {
++                Map<String, String> map = new HashMap<String, String>();
++                map.put("mobile", et_phone.getText().toString());
++                map.put("password", et_password.getText().toString());
++//                map.put("mobile", "18201310937");
++//                map.put("password", "456789");
++                return map;
++            }
++        };
++        mQueue.add(stringRequest);
++    }
++
++
++    /**
++     * 判断注册参数正确与否
++     */
++    private boolean CheckLoginInfo() {
++
++        if (!Cons.isMobile(et_phone.getText().toString())) {
++            ToastUtil.showToast(this, "请输入正确的手机号");
++            return false;
++        }
++
++        if (et_password.getText() == null || et_password.getText().toString().equals("")) {
++            ToastUtil.showToast(this, "密码不能为空");
++            return false;
++        }
++        return true;
+-	}
++    }
+ 
+ }
+Index: app/build/intermediates/instant-run-support/debug/reload-changes.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/intermediates/instant-run-support/debug/reload-changes.txt	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/intermediates/instant-run-support/debug/reload-changes.txt	(revision )
+@@ -1,4 +1,6 @@
+-D:\AndroidStudioProjects\ManE\app\build\intermediates\transforms\instantRun\debug\folders\4000\1\enhanced\com\hshy41\mane\my\activity\SearchActivity$override.class
++D:\AndroidStudioProjects\ManE\app\build\intermediates\transforms\instantRun\debug\folders\4000\1\enhanced\com\hshy41\mane\adapter\ImagePagerAdapter$override.class
++D:\AndroidStudioProjects\ManE\app\build\intermediates\transforms\instantRun\debug\folders\4000\1\enhanced\com\hshy41\mane\adapter\ImagePagerAdapter$ViewHolder$override.class
++D:\AndroidStudioProjects\ManE\app\build\intermediates\transforms\instantRun\debug\folders\4000\1\enhanced\com\hshy41\mane\fragment\MyFragment$AnimateFirstDisplayListener$override.class
++D:\AndroidStudioProjects\ManE\app\build\intermediates\transforms\instantRun\debug\folders\4000\1\enhanced\com\hshy41\mane\fragment\MyFragment$override.class
+ D:\AndroidStudioProjects\ManE\app\build\intermediates\transforms\instantRun\debug\folders\4000\1\enhanced\com\hshy41\mane\R$id$override.class
+-D:\AndroidStudioProjects\ManE\app\build\intermediates\transforms\instantRun\debug\folders\4000\1\enhanced\com\hshy41\mane\base\BaseActivity$override.class
+ D:\AndroidStudioProjects\ManE\app\build\intermediates\transforms\instantRun\debug\folders\4000\1\enhanced\com\android\build\gradle\internal\incremental\AppPatchesLoaderImpl.class
+Index: app/build/intermediates/res/merged/debug/layout/activity_login.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/intermediates/res/merged/debug/layout/activity_login.xml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/intermediates/res/merged/debug/layout/activity_login.xml	(revision )
+@@ -36,7 +36,7 @@
+                     android:layout_centerVertical="true"
+                     />
+                 <EditText
+-                    android:id="@+id/userEdit"
++                    android:id="@+id/et_login_phone"
+                     android:layout_marginLeft="@dimen/layout_margin"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+@@ -71,7 +71,7 @@
+                     />
+ 
+                 <EditText
+-                    android:id="@+id/pwdEdit"
++                    android:id="@+id/et_login_password"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="@dimen/layout_margin"
+@@ -111,7 +111,7 @@
+                     />
+             </RelativeLayout>
+             <Button
+-                android:id="@+id/bt_login"
++                android:id="@+id/bt_login_login"
+                 android:layout_marginLeft="@dimen/layout_margin"
+                 android:layout_marginRight="@dimen/layout_margin"
+                 android:layout_marginTop="@dimen/layout_margin_middleaa"
+Index: .idea/libraries/volley.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/libraries/volley.xml	(revision )
++++ .idea/libraries/volley.xml	(revision )
+@@ -0,0 +1,9 @@
++<component name="libraryTable">
++  <library name="volley">
++    <CLASSES>
++      <root url="jar://$PROJECT_DIR$/app/libs/volley.jar!/" />
++    </CLASSES>
++    <JAVADOC />
++    <SOURCES />
++  </library>
++</component>
+\ No newline at end of file
+Index: app/app.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/app.iml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/app.iml	(revision )
+@@ -97,6 +97,7 @@
+     <orderEntry type="library" exported="" name="circleimageview-1.3.0" level="project" />
+     <orderEntry type="library" exported="" name="universal-image-loader-1.9.4-with-sources" level="project" />
+     <orderEntry type="library" exported="" name="support-v4-22.2.1" level="project" />
++    <orderEntry type="library" exported="" name="volley" level="project" />
+     <orderEntry type="library" exported="" name="recyclerview-v7-22.2.1" level="project" />
+     <orderEntry type="library" exported="" name="support-annotations-22.2.1" level="project" />
+     <orderEntry type="library" exported="" name="bolts-android-1.2.0" level="project" />
+\ No newline at end of file
+Index: app/build/intermediates/symbols/debug/R.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/intermediates/symbols/debug/R.txt	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/intermediates/symbols/debug/R.txt	(revision )
+@@ -849,12 +849,12 @@
+ int id abl_collect 0x7f0b008c
+ int id abl_getmonney_game 0x7f0b009c
+ int id abl_houserent 0x7f0b00ab
+-int id abl_servicelist 0x7f0b012d
+-int id abl_tour 0x7f0b0140
+-int id abl_transaction_details 0x7f0b0144
+-int id abl_vintage_list 0x7f0b0147
++int id abl_servicelist 0x7f0b0132
++int id abl_tour 0x7f0b0145
++int id abl_transaction_details 0x7f0b0149
++int id abl_vintage_list 0x7f0b014c
+ int id abl_zhoubianshanghu 0x7f0b0099
+-int id action0 0x7f0b01ed
++int id action0 0x7f0b01f2
+ int id action_bar 0x7f0b0064
+ int id action_bar_activity_content 0x7f0b0000
+ int id action_bar_container 0x7f0b0063
+@@ -863,67 +863,69 @@
+ int id action_bar_subtitle 0x7f0b0048
+ int id action_bar_title 0x7f0b0047
+ int id action_context_bar 0x7f0b0065
+-int id action_divider 0x7f0b01f1
++int id action_divider 0x7f0b01f6
+ int id action_menu_divider 0x7f0b0002
+ int id action_menu_presenter 0x7f0b0003
+ int id action_mode_bar 0x7f0b0061
+ int id action_mode_bar_stub 0x7f0b0060
+ int id action_mode_close_button 0x7f0b0049
+ int id activity_chooser_view_content 0x7f0b004a
+-int id alertButtonListView 0x7f0b01e4
++int id alertButtonListView 0x7f0b01e9
+ int id alertTitle 0x7f0b0054
+ int id always 0x7f0b002c
+ int id automatic 0x7f0b0042
+-int id avatar 0x7f0b01eb
++int id avatar 0x7f0b01f0
+ int id avp_commonweal 0x7f0b0090
+-int id avp_community 0x7f0b015d
++int id avp_community 0x7f0b0162
+ int id avp_housekeeping 0x7f0b00a7
+-int id avp_houserent 0x7f0b0169
++int id avp_houserent 0x7f0b016e
+ int id avp_productinfo 0x7f0b00df
+-int id avp_zhoubianshanghu 0x7f0b01a2
++int id avp_zhoubianshanghu 0x7f0b01a7
+ int id beginning 0x7f0b002a
+ int id bottom 0x7f0b001b
+ int id box_count 0x7f0b003e
+ int id bt_cash_commit 0x7f0b0086
+ int id bt_change_password_save 0x7f0b008b
+-int id bt_community_property_service 0x7f0b015f
++int id bt_community_property_service 0x7f0b0164
+ int id bt_goods_release_release 0x7f0b00a6
+-int id bt_login 0x7f0b00c1
+-int id bt_mainbutton 0x7f0b012a
+-int id bt_property_pay_commit 0x7f0b0109
+-int id bt_public_repair_commit 0x7f0b0124
+-int id bt_set_safe_quit 0x7f0b013e
+-int id bt_suggestion_post_commit 0x7f0b013f
+-int id bt_title_left 0x7f0b014c
+-int id bt_title_right 0x7f0b01fd
++int id bt_login 0x7f0b00f0
++int id bt_login_login 0x7f0b00c1
++int id bt_property_pay_commit 0x7f0b010a
++int id bt_public_repair_commit 0x7f0b0125
++int id bt_regist_regist 0x7f0b012f
++int id bt_regist_send_identifyingcode 0x7f0b0129
++int id bt_set_safe_quit 0x7f0b0143
++int id bt_suggestion_post_commit 0x7f0b0144
++int id bt_title_left 0x7f0b0151
++int id bt_title_right 0x7f0b0202
+ int id button 0x7f0b003f
+ int id buttonPanel 0x7f0b005a
+-int id cancel_action 0x7f0b01ee
++int id cancel_action 0x7f0b01f3
+ int id center 0x7f0b001c
+ int id center_horizontal 0x7f0b001d
+ int id center_vertical 0x7f0b001e
+ int id checkbox 0x7f0b005c
+-int id chronometer 0x7f0b01f4
++int id chronometer 0x7f0b01f9
+ int id clip_horizontal 0x7f0b001f
+ int id clip_vertical 0x7f0b0020
+ int id collapseActionView 0x7f0b002d
+-int id com_facebook_body_frame 0x7f0b0156
+-int id com_facebook_button_xout 0x7f0b0158
+-int id com_facebook_fragment_container 0x7f0b0154
+-int id com_facebook_login_activity_progress_bar 0x7f0b0155
+-int id com_facebook_tooltip_bubble_view_bottom_pointer 0x7f0b015a
+-int id com_facebook_tooltip_bubble_view_text_body 0x7f0b0159
+-int id com_facebook_tooltip_bubble_view_top_pointer 0x7f0b0157
++int id com_facebook_body_frame 0x7f0b015b
++int id com_facebook_button_xout 0x7f0b015d
++int id com_facebook_fragment_container 0x7f0b0159
++int id com_facebook_login_activity_progress_bar 0x7f0b015a
++int id com_facebook_tooltip_bubble_view_bottom_pointer 0x7f0b015f
++int id com_facebook_tooltip_bubble_view_text_body 0x7f0b015e
++int id com_facebook_tooltip_bubble_view_top_pointer 0x7f0b015c
+ int id container 0x7f0b00c2
+ int id contentPanel 0x7f0b0055
+-int id content_container 0x7f0b01e3
++int id content_container 0x7f0b01e8
+ int id content_my_rb 0x7f0b00c8
+ int id content_shequ_rb 0x7f0b00c6
+ int id content_shouye_rb 0x7f0b00c5
+ int id content_zhuan_rb 0x7f0b00c7
+ int id custom 0x7f0b0059
+ int id customPanel 0x7f0b0058
+-int id datepicker 0x7f0b015b
++int id datepicker 0x7f0b0160
+ int id decor_content_parent 0x7f0b0062
+ int id default_activity_button 0x7f0b004d
+ int id dialog 0x7f0b0031
+@@ -932,7 +934,7 @@
+ int id dropdown 0x7f0b0032
+ int id edit_query 0x7f0b0066
+ int id end 0x7f0b0021
+-int id end_padder 0x7f0b01f9
++int id end_padder 0x7f0b01fe
+ int id enterAlways 0x7f0b0015
+ int id enterAlwaysCollapsed 0x7f0b0016
+ int id et_change_password_confirm_password 0x7f0b008a
+@@ -942,9 +944,15 @@
+ int id et_goods_release_enter_phone_number 0x7f0b00a1
+ int id et_goods_release_original_price 0x7f0b00a4
+ int id et_goods_release_transfer_price 0x7f0b00a5
+-int id et_invitationcode 0x7f0b0129
++int id et_login_password 0x7f0b00be
++int id et_login_phone 0x7f0b00bc
+ int id et_nickname 0x7f0b00d2
+-int id et_title_search 0x7f0b0200
++int id et_regist_confirmpassword 0x7f0b012d
++int id et_regist_identifyingcode 0x7f0b0128
++int id et_regist_invitationcode 0x7f0b012e
++int id et_regist_password 0x7f0b012b
++int id et_regist_phone 0x7f0b0126
++int id et_title_search 0x7f0b0205
+ int id exitUntilCollapsed 0x7f0b0017
+ int id expand_activities_button 0x7f0b004b
+ int id expanded_menu 0x7f0b005b
+@@ -952,24 +960,24 @@
+ int id fill_horizontal 0x7f0b0023
+ int id fill_vertical 0x7f0b0024
+ int id fixed 0x7f0b0033
+-int id gridview_one 0x7f0b019c
+-int id gridview_two 0x7f0b01a0
++int id gridview_one 0x7f0b01a1
++int id gridview_two 0x7f0b01a5
+ int id home 0x7f0b0004
+ int id homeAsUp 0x7f0b000f
+ int id icon 0x7f0b004f
+ int id ifRoom 0x7f0b002e
+ int id image 0x7f0b004c
+-int id img_1 0x7f0b0179
+-int id img_2 0x7f0b017a
+-int id img_3 0x7f0b017b
+-int id img_6 0x7f0b0183
++int id img_1 0x7f0b017e
++int id img_2 0x7f0b017f
++int id img_3 0x7f0b0180
++int id img_6 0x7f0b0188
+ int id imgset 0x7f0b00b0
+ int id imgset2 0x7f0b00b3
+ int id imgset3 0x7f0b00b6
+ int id imgset4 0x7f0b00b9
+ int id index_layout_main_index 0x7f0b00c3
+ int id index_radiogroup_index 0x7f0b00c4
+-int id info 0x7f0b01f8
++int id info 0x7f0b01fd
+ int id info_face 0x7f0b00af
+ int id info_faceimg 0x7f0b00b1
+ int id info_nickname 0x7f0b00b2
+@@ -980,35 +988,35 @@
+ int id info_usernametv 0x7f0b00b7
+ int id inline 0x7f0b0041
+ int id item_touch_helper_previous_elevation 0x7f0b0005
+-int id iv_arrowdown_left 0x7f0b016d
+-int id iv_arrowdown_right 0x7f0b0170
+-int id iv_arrowup_left 0x7f0b016c
+-int id iv_arrowup_right 0x7f0b016f
++int id iv_arrowdown_left 0x7f0b0172
++int id iv_arrowdown_right 0x7f0b0175
++int id iv_arrowup_left 0x7f0b0171
++int id iv_arrowup_right 0x7f0b0174
+ int id iv_cash_arrow_right 0x7f0b0081
+ int id iv_collec 0x7f0b00e2
+-int id iv_confirmpassword 0x7f0b0128
++int id iv_confirmpassword 0x7f0b012c
+ int id iv_diverlien 0x7f0b0093
+-int id iv_enterpassword 0x7f0b0127
+-int id iv_ezhuandian_appimg 0x7f0b0167
+-int id iv_ezhuandian_getmonney_game_img 0x7f0b0163
+-int id iv_gridItem_img 0x7f0b01a5
+-int id iv_head 0x7f0b0186
+-int id iv_index_concessions 0x7f0b017f
+-int id iv_index_listimg 0x7f0b01b3
+-int id iv_index_market 0x7f0b0181
+-int id iv_item_bankfinancing_img 0x7f0b01c2
+-int id iv_item_community_add 0x7f0b01c7
+-int id iv_item_financing_adimg 0x7f0b01c9
+-int id iv_item_getmonney_adimg 0x7f0b01ca
+-int id iv_item_housekeeping_icon 0x7f0b01ce
+-int id iv_item_houserent_img 0x7f0b01ac
+-int id iv_item_photo 0x7f0b01c0
+-int id iv_item_property_notification_trangle 0x7f0b01d0
+-int id iv_item_servicelist_img 0x7f0b01b8
+-int id iv_item_tour_adimg 0x7f0b01d4
+-int id iv_item_vintage_list_arrow_right 0x7f0b01e1
+-int id iv_item_vintage_list_img 0x7f0b01dd
++int id iv_enterpassword 0x7f0b012a
++int id iv_ezhuandian_appimg 0x7f0b016c
++int id iv_ezhuandian_getmonney_game_img 0x7f0b0168
++int id iv_gridItem_img 0x7f0b01aa
++int id iv_index_concessions 0x7f0b0184
++int id iv_index_listimg 0x7f0b01b8
++int id iv_index_market 0x7f0b0186
++int id iv_item_bankfinancing_img 0x7f0b01c7
++int id iv_item_community_add 0x7f0b01cc
++int id iv_item_financing_adimg 0x7f0b01ce
++int id iv_item_getmonney_adimg 0x7f0b01cf
++int id iv_item_housekeeping_icon 0x7f0b01d3
++int id iv_item_houserent_img 0x7f0b01b1
++int id iv_item_photo 0x7f0b01c5
++int id iv_item_property_notification_trangle 0x7f0b01d5
++int id iv_item_servicelist_img 0x7f0b01bd
++int id iv_item_tour_adimg 0x7f0b01d9
++int id iv_item_vintage_list_arrow_right 0x7f0b01e6
++int id iv_item_vintage_list_img 0x7f0b01e2
+ int id iv_like 0x7f0b00e6
++int id iv_my_head 0x7f0b018b
+ int id iv_personal_info_set_arrow_right1 0x7f0b00d4
+ int id iv_personal_info_set_arrow_right2 0x7f0b00d7
+ int id iv_personal_info_set_arrow_right3 0x7f0b00da
+@@ -1018,87 +1026,84 @@
+ int id iv_personal_info_set_phonenumber 0x7f0b00de
+ int id iv_productinfo_arrow_right 0x7f0b00ee
+ int id iv_productinfo_gps 0x7f0b00ec
+-int id iv_property_pay_company 0x7f0b0104
+-int id iv_property_pay_personal 0x7f0b0101
+-int id iv_property_pay_pick_the_invoice 0x7f0b0106
+-int id iv_property_pay_send_home 0x7f0b0108
+-int id iv_property_repair_personal_repair 0x7f0b010d
+-int id iv_property_repair_public_repair 0x7f0b010b
+-int id iv_property_service_phone1 0x7f0b0110
+-int id iv_property_service_phone2 0x7f0b0112
+-int id iv_property_service_phone3 0x7f0b0114
+-int id iv_property_service_phone4 0x7f0b0116
+-int id iv_public_repair_table_arrow_right1 0x7f0b0118
+-int id iv_set_arrow_right_4 0x7f0b0139
++int id iv_property_pay_company 0x7f0b0105
++int id iv_property_pay_personal 0x7f0b0102
++int id iv_property_pay_pick_the_invoice 0x7f0b0107
++int id iv_property_pay_send_home 0x7f0b0109
++int id iv_property_repair_personal_repair 0x7f0b010e
++int id iv_property_repair_public_repair 0x7f0b010c
++int id iv_property_service_phone1 0x7f0b0111
++int id iv_property_service_phone2 0x7f0b0113
++int id iv_property_service_phone3 0x7f0b0115
++int id iv_property_service_phone4 0x7f0b0117
++int id iv_public_repair_table_arrow_right1 0x7f0b0119
++int id iv_set_arrow_right_4 0x7f0b013e
+ int id iv_share 0x7f0b00e4
+-int id iv_title_gps 0x7f0b014f
+-int id iv_yanzhengma 0x7f0b0125
+-int id iv_zhoubianshanghu_add 0x7f0b0152
+-int id kefu_img 0x7f0b019a
+-int id kefu_phone 0x7f0b019b
++int id iv_title_gps 0x7f0b0154
++int id iv_yanzhengma 0x7f0b0127
++int id iv_zhoubianshanghu_add 0x7f0b0157
++int id kefu_img 0x7f0b019f
++int id kefu_phone 0x7f0b01a0
+ int id large 0x7f0b0045
+ int id left 0x7f0b0025
+-int id line1 0x7f0b01f2
+-int id line3 0x7f0b01f6
++int id line1 0x7f0b01f7
++int id line3 0x7f0b01fb
+ int id listMode 0x7f0b000b
+ int id list_item 0x7f0b004e
+ int id ll_commonweal 0x7f0b008f
+ int id ll_commonweal_bannarpointer 0x7f0b0091
+ int id ll_commonweal_text 0x7f0b0095
+-int id ll_community_bannarpointer 0x7f0b015e
++int id ll_community_bannarpointer 0x7f0b0163
+ int id ll_housekeeping_bannarpointer 0x7f0b00a8
+-int id ll_houserent 0x7f0b0168
+-int id ll_houserent_bannarpointer 0x7f0b016a
+-int id ll_index_mainAd 0x7f0b017c
+-int id ll_index_recommend 0x7f0b0184
+-int id ll_item_getmonney_right 0x7f0b0165
+-int id ll_item_tour 0x7f0b01d3
++int id ll_houserent 0x7f0b016d
++int id ll_houserent_bannarpointer 0x7f0b016f
++int id ll_index_mainAd 0x7f0b0181
++int id ll_index_recommend 0x7f0b0189
++int id ll_item_getmonney_right 0x7f0b016a
++int id ll_item_tour 0x7f0b01d8
+ int id ll_productinfo_bannarpointer 0x7f0b00e0
+-int id ll_property_pay_pick_up_the_invoice 0x7f0b0105
+-int id ll_property_pay_send_home 0x7f0b0107
+-int id ll_servicelist 0x7f0b019d
+-int id ll_unlogin 0x7f0b018d
+-int id ll_zhoubianshangh 0x7f0b01a1
+-int id ll_zhoubianshanghu_bannarpointer 0x7f0b01a3
+-int id loAlertButtons 0x7f0b01e8
+-int id loAlertHeader 0x7f0b01a7
++int id ll_property_pay_pick_up_the_invoice 0x7f0b0106
++int id ll_property_pay_send_home 0x7f0b0108
++int id ll_servicelist 0x7f0b01a2
++int id ll_unlogin 0x7f0b0192
++int id ll_zhoubianshangh 0x7f0b01a6
++int id ll_zhoubianshanghu_bannarpointer 0x7f0b01a8
++int id loAlertButtons 0x7f0b01ed
++int id loAlertHeader 0x7f0b01ac
+ int id lv_commonweal 0x7f0b0094
+-int id lv_houserent 0x7f0b0171
+-int id lv_index_recommend 0x7f0b0185
+-int id lv_pop_left 0x7f0b0173
+-int id lv_pop_right 0x7f0b0174
+-int id lv_servicelist 0x7f0b019e
+-int id lv_zhoubianshanghu 0x7f0b01a4
++int id lv_houserent 0x7f0b0176
++int id lv_index_recommend 0x7f0b018a
++int id lv_pop_left 0x7f0b0178
++int id lv_pop_right 0x7f0b0179
++int id lv_servicelist 0x7f0b01a3
++int id lv_zhoubianshanghu 0x7f0b01a9
+ int id main_content 0x7f0b007c
+-int id media_actions 0x7f0b01f0
+-int id messenger_send_button 0x7f0b01ec
++int id media_actions 0x7f0b01f5
++int id messenger_send_button 0x7f0b01f1
+ int id middle 0x7f0b002b
+ int id mini 0x7f0b0029
+ int id multiply 0x7f0b0036
+-int id my_jifen 0x7f0b018a
+-int id my_kefu 0x7f0b0199
+-int id my_qiandao 0x7f0b018c
+-int id my_uid 0x7f0b0189
+-int id my_username 0x7f0b0188
+-int id my_xiaxian 0x7f0b0190
++int id my_jifen 0x7f0b018f
++int id my_kefu 0x7f0b019e
++int id my_qiandao 0x7f0b0191
++int id my_xiaxian 0x7f0b0195
+ int id never 0x7f0b002f
+ int id never_display 0x7f0b0044
+ int id none 0x7f0b0010
+ int id normal 0x7f0b000c
+ int id open_graph 0x7f0b003b
+-int id outmost_container 0x7f0b01e2
++int id outmost_container 0x7f0b01e7
+ int id page 0x7f0b003c
+ int id parallax 0x7f0b0019
+ int id parentPanel 0x7f0b0051
+ int id pin 0x7f0b001a
+ int id progress_circular 0x7f0b0006
+ int id progress_horizontal 0x7f0b0007
+-int id pwdEdit 0x7f0b00be
+ int id pwdTv 0x7f0b00bd
+ int id radio 0x7f0b005e
+-int id rb_item_servicelist 0x7f0b01ba
+-int id rb_item_tour 0x7f0b01d7
+-int id recyclerview 0x7f0b01fa
++int id rb_item_servicelist 0x7f0b01bf
++int id rb_item_tour 0x7f0b01dc
++int id recyclerview 0x7f0b01ff
+ int id right 0x7f0b0026
+ int id rl_account_cash 0x7f0b0079
+ int id rl_account_transaction_details 0x7f0b0078
+@@ -1107,79 +1112,79 @@
+ int id rl_cash_enter_cash_total 0x7f0b0083
+ int id rl_collec 0x7f0b00e1
+ int id rl_commonweal_list 0x7f0b0092
+-int id rl_ezhuandian_app_suggest 0x7f0b0164
+-int id rl_ezhuandian_getmonney_game 0x7f0b0162
+-int id rl_index_concessions 0x7f0b017d
+-int id rl_item_bankfinancing 0x7f0b01c1
+-int id rl_item_community 0x7f0b01c5
+-int id rl_item_community_add 0x7f0b01c6
+-int id rl_item_houserent 0x7f0b01ab
+-int id rl_item_index 0x7f0b01b2
+-int id rl_item_layout_ad 0x7f0b01be
+-int id rl_item_layout_adimg 0x7f0b01bf
+-int id rl_item_layout_getmonney_title 0x7f0b0160
+-int id rl_item_layout_housekeeping 0x7f0b01cb
+-int id rl_item_servicelist 0x7f0b01b7
+-int id rl_item_transaction_details 0x7f0b01d8
+-int id rl_item_vintage_list 0x7f0b01dc
++int id rl_ezhuandian_app_suggest 0x7f0b0169
++int id rl_ezhuandian_getmonney_game 0x7f0b0167
++int id rl_index_concessions 0x7f0b0182
++int id rl_item_bankfinancing 0x7f0b01c6
++int id rl_item_community 0x7f0b01ca
++int id rl_item_community_add 0x7f0b01cb
++int id rl_item_houserent 0x7f0b01b0
++int id rl_item_index 0x7f0b01b7
++int id rl_item_layout_ad 0x7f0b01c3
++int id rl_item_layout_adimg 0x7f0b01c4
++int id rl_item_layout_getmonney_title 0x7f0b0165
++int id rl_item_layout_housekeeping 0x7f0b01d0
++int id rl_item_servicelist 0x7f0b01bc
++int id rl_item_transaction_details 0x7f0b01dd
++int id rl_item_vintage_list 0x7f0b01e1
+ int id rl_like 0x7f0b00e5
+-int id rl_logined 0x7f0b0187
++int id rl_logined 0x7f0b018c
+ int id rl_message_set_message_off 0x7f0b00c9
+ int id rl_message_set_sound 0x7f0b00cb
+ int id rl_message_set_vibrate 0x7f0b00cd
+-int id rl_my_accountcenter 0x7f0b0196
+-int id rl_my_mycollect 0x7f0b0193
++int id rl_my_accountcenter 0x7f0b019b
++int id rl_my_mycollect 0x7f0b0198
+ int id rl_nickname 0x7f0b00d1
+ int id rl_personal_info_set_head_icon 0x7f0b00d3
+ int id rl_personal_info_set_name 0x7f0b00d9
+ int id rl_personal_info_set_nickname 0x7f0b00d6
+ int id rl_personal_info_set_phonenumber 0x7f0b00dc
+-int id rl_pop 0x7f0b0172
+-int id rl_pop_left 0x7f0b016b
+-int id rl_pop_right 0x7f0b016e
++int id rl_pop 0x7f0b0177
++int id rl_pop_left 0x7f0b0170
++int id rl_pop_right 0x7f0b0173
+ int id rl_productinfo_address 0x7f0b00eb
+ int id rl_productinfo_one_key_phone 0x7f0b00ef
+-int id rl_property_hall_property_notification 0x7f0b00f0
+-int id rl_property_hall_property_pay 0x7f0b00f3
+-int id rl_property_hall_property_repair 0x7f0b00f1
+-int id rl_property_hall_property_service 0x7f0b00f2
+-int id rl_property_hall_property_vintage_release 0x7f0b00f4
+-int id rl_property_pay_company 0x7f0b0102
+-int id rl_property_pay_contact_way 0x7f0b00f9
+-int id rl_property_pay_house_owner 0x7f0b00f6
+-int id rl_property_pay_personal 0x7f0b00ff
+-int id rl_property_pay_water_rent 0x7f0b00fc
+-int id rl_property_repair_one_key_phone 0x7f0b010e
+-int id rl_property_repair_personal_repair 0x7f0b010c
+-int id rl_property_repair_public_repair 0x7f0b010a
+-int id rl_property_service_net_repair 0x7f0b0113
+-int id rl_property_service_power_repair 0x7f0b010f
+-int id rl_property_service_warm_repair 0x7f0b0115
+-int id rl_property_service_water_repair 0x7f0b0111
+-int id rl_public_repair_table_address 0x7f0b0120
+-int id rl_public_repair_table_chosed_community 0x7f0b0117
+-int id rl_public_repair_table_contact_phone 0x7f0b011d
+-int id rl_public_repair_table_name 0x7f0b011a
+-int id rl_set_about_us 0x7f0b013c
+-int id rl_set_account_safe 0x7f0b0131
+-int id rl_set_clean_cache 0x7f0b0137
+-int id rl_set_info_post 0x7f0b0134
+-int id rl_set_message_set 0x7f0b0136
+-int id rl_set_personal_info_set 0x7f0b0130
+-int id rl_set_product_introduces 0x7f0b013d
+-int id rl_set_suggestion_post 0x7f0b013b
+-int id rl_set_update_check 0x7f0b013a
++int id rl_property_hall_property_notification 0x7f0b00f1
++int id rl_property_hall_property_pay 0x7f0b00f4
++int id rl_property_hall_property_repair 0x7f0b00f2
++int id rl_property_hall_property_service 0x7f0b00f3
++int id rl_property_hall_property_vintage_release 0x7f0b00f5
++int id rl_property_pay_company 0x7f0b0103
++int id rl_property_pay_contact_way 0x7f0b00fa
++int id rl_property_pay_house_owner 0x7f0b00f7
++int id rl_property_pay_personal 0x7f0b0100
++int id rl_property_pay_water_rent 0x7f0b00fd
++int id rl_property_repair_one_key_phone 0x7f0b010f
++int id rl_property_repair_personal_repair 0x7f0b010d
++int id rl_property_repair_public_repair 0x7f0b010b
++int id rl_property_service_net_repair 0x7f0b0114
++int id rl_property_service_power_repair 0x7f0b0110
++int id rl_property_service_warm_repair 0x7f0b0116
++int id rl_property_service_water_repair 0x7f0b0112
++int id rl_public_repair_table_address 0x7f0b0121
++int id rl_public_repair_table_chosed_community 0x7f0b0118
++int id rl_public_repair_table_contact_phone 0x7f0b011e
++int id rl_public_repair_table_name 0x7f0b011b
++int id rl_set_about_us 0x7f0b0141
++int id rl_set_account_safe 0x7f0b0136
++int id rl_set_clean_cache 0x7f0b013c
++int id rl_set_info_post 0x7f0b0139
++int id rl_set_message_set 0x7f0b013b
++int id rl_set_personal_info_set 0x7f0b0135
++int id rl_set_product_introduces 0x7f0b0142
++int id rl_set_suggestion_post 0x7f0b0140
++int id rl_set_update_check 0x7f0b013f
+ int id rl_share 0x7f0b00e3
+-int id rl_title_content 0x7f0b014d
+-int id rl_title_left 0x7f0b014b
+-int id rl_title_right 0x7f0b01fc
+-int id rl_title_search 0x7f0b01ff
+-int id rl_titlebar 0x7f0b014a
+-int id rl_zhoubianshanghu_add 0x7f0b0151
++int id rl_title_content 0x7f0b0152
++int id rl_title_left 0x7f0b0150
++int id rl_title_right 0x7f0b0201
++int id rl_title_search 0x7f0b0204
++int id rl_titlebar 0x7f0b014f
++int id rl_zhoubianshanghu_add 0x7f0b0156
+ int id rv_ad 0x7f0b007d
+ int id rv_bankfinancing 0x7f0b007e
+ int id rv_collect 0x7f0b008e
+-int id rv_community 0x7f0b0161
++int id rv_community 0x7f0b0166
+ int id rv_financing 0x7f0b009b
+ int id rv_getmonney 0x7f0b009f
+ int id rv_getmonney_game 0x7f0b009e
+@@ -1187,18 +1192,18 @@
+ int id rv_housekeeping 0x7f0b00aa
+ int id rv_moduledesign_bottom 0x7f0b00d0
+ int id rv_moduledesign_top 0x7f0b00cf
+-int id rv_property_notification 0x7f0b00f5
+-int id rv_public_repair_table 0x7f0b0123
+-int id rv_search_bottom 0x7f0b012c
+-int id rv_search_top 0x7f0b012b
+-int id rv_transaction_details 0x7f0b0146
+-int id rv_vintage_list 0x7f0b0149
+-int id rvp_fragment_container 0x7f0b01fb
+-int id rvp_fragment_tour 0x7f0b019f
++int id rv_property_notification 0x7f0b00f6
++int id rv_public_repair_table 0x7f0b0124
++int id rv_search_bottom 0x7f0b0131
++int id rv_search_top 0x7f0b0130
++int id rv_transaction_details 0x7f0b014b
++int id rv_vintage_list 0x7f0b014e
++int id rvp_fragment_container 0x7f0b0200
++int id rvp_fragment_tour 0x7f0b01a4
+ int id rvp_houserent 0x7f0b00ae
+-int id rvp_servicelist 0x7f0b012f
+-int id rvp_tour 0x7f0b0143
+-int id rvp_zhoubianshanghu 0x7f0b0153
++int id rvp_servicelist 0x7f0b0134
++int id rvp_tour 0x7f0b0148
++int id rvp_zhoubianshanghu 0x7f0b0158
+ int id screen 0x7f0b0037
+ int id scroll 0x7f0b0018
+ int id scrollView 0x7f0b0056
+@@ -1215,21 +1220,21 @@
+ int id search_voice_btn 0x7f0b0071
+ int id select_dialog_listview 0x7f0b0072
+ int id shortcut 0x7f0b005d
+-int id shoucang_img 0x7f0b0194
+-int id shoucang_jiantou 0x7f0b0195
++int id shoucang_img 0x7f0b0199
++int id shoucang_jiantou 0x7f0b019a
+ int id showCustom 0x7f0b0011
+ int id showHome 0x7f0b0012
+ int id showTitle 0x7f0b0013
+ int id small 0x7f0b0046
+-int id snackbar_action 0x7f0b01ea
+-int id snackbar_text 0x7f0b01e9
++int id snackbar_action 0x7f0b01ef
++int id snackbar_text 0x7f0b01ee
+ int id split_action_bar 0x7f0b0008
+ int id src_atop 0x7f0b0038
+ int id src_in 0x7f0b0039
+ int id src_over 0x7f0b003a
+ int id standard 0x7f0b0040
+ int id start 0x7f0b0027
+-int id status_bar_latest_event_content 0x7f0b01ef
++int id status_bar_latest_event_content 0x7f0b01f4
+ int id submit_area 0x7f0b006f
+ int id tabMode 0x7f0b000d
+ int id tb_collect 0x7f0b008d
+@@ -1238,29 +1243,29 @@
+ int id tb_message_set_message_off 0x7f0b00ca
+ int id tb_message_set_sound 0x7f0b00cc
+ int id tb_message_set_vibrate 0x7f0b00ce
+-int id tb_servicelist 0x7f0b012e
+-int id tb_tour 0x7f0b0141
+-int id tb_transaction_details 0x7f0b0145
+-int id tb_vintage_list 0x7f0b0148
++int id tb_servicelist 0x7f0b0133
++int id tb_tour 0x7f0b0146
++int id tb_transaction_details 0x7f0b014a
++int id tb_vintage_list 0x7f0b014d
+ int id tb_zhoubianshanghu 0x7f0b009a
+-int id text 0x7f0b01f7
+-int id text2 0x7f0b01f5
++int id text 0x7f0b01fc
++int id text2 0x7f0b01fa
+ int id textSpacerNoButtons 0x7f0b0057
+-int id tg_set_info_post 0x7f0b0135
+-int id time 0x7f0b01f3
+-int id timepicker 0x7f0b015c
++int id tg_set_info_post 0x7f0b013a
++int id time 0x7f0b01f8
++int id timepicker 0x7f0b0161
+ int id title 0x7f0b0050
+ int id title_layout 0x7f0b0073
+ int id title_template 0x7f0b0053
+ int id tl_houserent 0x7f0b00ad
+-int id tl_tour 0x7f0b0142
+-int id tl_zhoubianshanghu 0x7f0b0150
++int id tl_tour 0x7f0b0147
++int id tl_zhoubianshanghu 0x7f0b0155
+ int id top 0x7f0b0028
+ int id topPanel 0x7f0b0052
+-int id tvAlert 0x7f0b01aa
+-int id tvAlertCancel 0x7f0b01e5
+-int id tvAlertMsg 0x7f0b01a9
+-int id tvAlertTitle 0x7f0b01a8
++int id tvAlert 0x7f0b01af
++int id tvAlertCancel 0x7f0b01ea
++int id tvAlertMsg 0x7f0b01ae
++int id tvAlertTitle 0x7f0b01ad
+ int id tv_account_backcash 0x7f0b0077
+ int id tv_account_cash 0x7f0b007a
+ int id tv_account_cashable 0x7f0b0075
+@@ -1277,88 +1282,88 @@
+ int id tv_commomweal_info_title 0x7f0b0096
+ int id tv_findpassword 0x7f0b00c0
+ int id tv_forgetpassword 0x7f0b00bf
+-int id tv_gridItem_text 0x7f0b01a6
+-int id tv_index_concessions 0x7f0b017e
+-int id tv_index_joinMane 0x7f0b0182
+-int id tv_index_listtext 0x7f0b01b5
+-int id tv_index_listtitle 0x7f0b01b4
+-int id tv_index_market 0x7f0b0180
+-int id tv_item_bankfinancing_content 0x7f0b01c4
+-int id tv_item_bankfinancing_title 0x7f0b01c3
+-int id tv_item_community_add_title 0x7f0b01c8
+-int id tv_item_housekeeping_content 0x7f0b01cd
+-int id tv_item_housekeeping_title 0x7f0b01cc
+-int id tv_item_houserent_content 0x7f0b01af
+-int id tv_item_houserent_distance 0x7f0b01b0
+-int id tv_item_houserent_price 0x7f0b01ae
+-int id tv_item_houserent_size 0x7f0b01b1
+-int id tv_item_houserent_title 0x7f0b01ad
+-int id tv_item_moduledesign_text 0x7f0b01cf
+-int id tv_item_more 0x7f0b0166
+-int id tv_item_search_text 0x7f0b01d2
+-int id tv_item_servicelist_content 0x7f0b01bc
+-int id tv_item_servicelist_distance 0x7f0b01bd
+-int id tv_item_servicelist_price 0x7f0b01bb
+-int id tv_item_servicelist_title 0x7f0b01b9
+-int id tv_item_tour_price 0x7f0b01d5
+-int id tv_item_tour_rating 0x7f0b01d6
+-int id tv_item_tour_title 0x7f0b00fe
+-int id tv_item_transaction_details_content 0x7f0b01db
+-int id tv_item_transaction_details_date 0x7f0b01d1
+-int id tv_item_transaction_details_number 0x7f0b01da
+-int id tv_item_transaction_details_title 0x7f0b01d9
+-int id tv_item_vintage_list_date 0x7f0b01e0
+-int id tv_item_vintage_list_price 0x7f0b01df
+-int id tv_item_vintage_list_title 0x7f0b01de
+-int id tv_login 0x7f0b018e
+-int id tv_monney 0x7f0b018b
++int id tv_gridItem_text 0x7f0b01ab
++int id tv_index_concessions 0x7f0b0183
++int id tv_index_joinMane 0x7f0b0187
++int id tv_index_listtext 0x7f0b01ba
++int id tv_index_listtitle 0x7f0b01b9
++int id tv_index_market 0x7f0b0185
++int id tv_item_bankfinancing_content 0x7f0b01c9
++int id tv_item_bankfinancing_title 0x7f0b01c8
++int id tv_item_community_add_title 0x7f0b01cd
++int id tv_item_housekeeping_content 0x7f0b01d2
++int id tv_item_housekeeping_title 0x7f0b01d1
++int id tv_item_houserent_content 0x7f0b01b4
++int id tv_item_houserent_distance 0x7f0b01b5
++int id tv_item_houserent_price 0x7f0b01b3
++int id tv_item_houserent_size 0x7f0b01b6
++int id tv_item_houserent_title 0x7f0b01b2
++int id tv_item_moduledesign_text 0x7f0b01d4
++int id tv_item_more 0x7f0b016b
++int id tv_item_search_text 0x7f0b01d7
++int id tv_item_servicelist_content 0x7f0b01c1
++int id tv_item_servicelist_distance 0x7f0b01c2
++int id tv_item_servicelist_price 0x7f0b01c0
++int id tv_item_servicelist_title 0x7f0b01be
++int id tv_item_tour_price 0x7f0b01da
++int id tv_item_tour_rating 0x7f0b01db
++int id tv_item_tour_title 0x7f0b00ff
++int id tv_item_transaction_details_content 0x7f0b01e0
++int id tv_item_transaction_details_date 0x7f0b01d6
++int id tv_item_transaction_details_number 0x7f0b01df
++int id tv_item_transaction_details_title 0x7f0b01de
++int id tv_item_vintage_list_date 0x7f0b01e5
++int id tv_item_vintage_list_price 0x7f0b01e4
++int id tv_item_vintage_list_title 0x7f0b01e3
++int id tv_login 0x7f0b0193
++int id tv_monney 0x7f0b0190
++int id tv_my_nickname 0x7f0b018d
++int id tv_my_uid 0x7f0b018e
+ int id tv_personal_info_set_nickname 0x7f0b00d8
+-int id tv_pop 0x7f0b01b6
++int id tv_pop 0x7f0b01bb
+ int id tv_productinfo_address 0x7f0b00ed
+ int id tv_productinfo_content 0x7f0b00e8
+ int id tv_productinfo_price 0x7f0b00e9
+ int id tv_productinfo_title 0x7f0b00e7
+-int id tv_property_company 0x7f0b0103
+-int id tv_property_pay_contact_way 0x7f0b00fb
+-int id tv_property_pay_contact_way_title 0x7f0b00fa
+-int id tv_property_pay_house_owner_title 0x7f0b00f7
+-int id tv_property_pay_name 0x7f0b00f8
+-int id tv_property_pay_personal 0x7f0b0100
+-int id tv_property_pay_water_rent_title 0x7f0b00fd
+-int id tv_public_repair_address 0x7f0b0122
+-int id tv_public_repair_contact_phone 0x7f0b011f
+-int id tv_public_repair_table_address_title 0x7f0b0121
+-int id tv_public_repair_table_community 0x7f0b0119
+-int id tv_public_repair_table_contact_phone_title 0x7f0b011e
+-int id tv_public_repair_table_name 0x7f0b011c
+-int id tv_public_repair_table_name_title 0x7f0b011b
+-int id tv_regist 0x7f0b018f
+-int id tv_set_account_safe 0x7f0b0132
+-int id tv_set_account_safe_tips 0x7f0b0133
+-int id tv_set_clean_cache 0x7f0b0138
+-int id tv_title_right 0x7f0b01fe
+-int id tv_title_text 0x7f0b014e
++int id tv_property_company 0x7f0b0104
++int id tv_property_pay_contact_way 0x7f0b00fc
++int id tv_property_pay_contact_way_title 0x7f0b00fb
++int id tv_property_pay_house_owner_title 0x7f0b00f8
++int id tv_property_pay_name 0x7f0b00f9
++int id tv_property_pay_personal 0x7f0b0101
++int id tv_property_pay_water_rent_title 0x7f0b00fe
++int id tv_public_repair_address 0x7f0b0123
++int id tv_public_repair_contact_phone 0x7f0b0120
++int id tv_public_repair_table_address_title 0x7f0b0122
++int id tv_public_repair_table_community 0x7f0b011a
++int id tv_public_repair_table_contact_phone_title 0x7f0b011f
++int id tv_public_repair_table_name 0x7f0b011d
++int id tv_public_repair_table_name_title 0x7f0b011c
++int id tv_regist 0x7f0b0194
++int id tv_set_account_safe 0x7f0b0137
++int id tv_set_account_safe_tips 0x7f0b0138
++int id tv_set_clean_cache 0x7f0b013d
++int id tv_title_right 0x7f0b0203
++int id tv_title_text 0x7f0b0153
+ int id tv_verticalline 0x7f0b00a9
+ int id tv_wallet 0x7f0b00ea
+ int id unknown 0x7f0b003d
+ int id up 0x7f0b0009
+ int id useLogo 0x7f0b0014
+-int id userEdit 0x7f0b00bc
+ int id userTv 0x7f0b00bb
+-int id viewStubHorizontal 0x7f0b01e6
+-int id viewStubVertical 0x7f0b01e7
++int id viewStubHorizontal 0x7f0b01eb
++int id viewStubVertical 0x7f0b01ec
+ int id view_offset_helper 0x7f0b000a
+-int id viewpager_15 0x7f0b0177
+-int id viewpager_image 0x7f0b0175
+-int id viewpager_yuandian 0x7f0b0176
+-int id viewpager_yuandian1 0x7f0b0178
++int id viewpager_15 0x7f0b017c
++int id viewpager_image 0x7f0b017a
++int id viewpager_yuandian 0x7f0b017b
++int id viewpager_yuandian1 0x7f0b017d
+ int id withText 0x7f0b0030
+ int id wrap_content 0x7f0b0035
+-int id xiaxian_img 0x7f0b0191
+-int id xiaxian_renshu 0x7f0b0192
+-int id zhanghu_img 0x7f0b0197
+-int id zhanghu_jiantou 0x7f0b0198
+-int id zhuce_yanzhengmahuoqubt 0x7f0b0126
++int id xiaxian_img 0x7f0b0196
++int id xiaxian_renshu 0x7f0b0197
++int id zhanghu_img 0x7f0b019c
++int id zhanghu_jiantou 0x7f0b019d
+ int integer abc_config_activityDefaultDur 0x7f090002
+ int integer abc_config_activityShortDur 0x7f090003
+ int integer abc_max_action_buttons 0x7f090000
+Index: app/src/main/java/com/hshy41/mane/bean/FindPasswordBaseBean.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/bean/FindPasswordBaseBean.java	(revision )
++++ app/src/main/java/com/hshy41/mane/bean/FindPasswordBaseBean.java	(revision )
+@@ -0,0 +1,11 @@
++package com.hshy41.mane.bean;
++
++import com.hshy41.mane.entity.FindPasswordEntity;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class FindPasswordBaseBean {
++    public String Result;
++    public String Message;
++}
+Index: app/src/main/java/com/hshy41/mane/my/activity/ChangePasswordActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/my/activity/ChangePasswordActivity.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/src/main/java/com/hshy41/mane/my/activity/ChangePasswordActivity.java	(revision )
+@@ -8,10 +8,17 @@
+ import android.widget.RelativeLayout;
+ import android.widget.TextView;
+ 
++import com.android.volley.RequestQueue;
++import com.android.volley.toolbox.Volley;
++import com.google.gson.Gson;
+ import com.hshy41.mane.R;
+ import com.hshy41.mane.base.BaseActivity;
+ 
+ public class ChangePasswordActivity extends BaseActivity implements OnClickListener {
++    //Volley请求队列
++    RequestQueue mQueue;
++    //Gson
++    Gson gson;
+     /**
+      * 保存按键
+      * @return
+@@ -27,6 +34,11 @@
+     @Override
+     protected void initViews() {
+         // TODO Auto-generated method stub
++        //初始化Gson
++        gson = new Gson();
++        //初始化请求队列
++        mQueue = Volley.newRequestQueue(context);
++
+         bt_save = (Button) findViewById(R.id.bt_change_password_save);
+ 
+         bt_save.setOnClickListener(this);
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ .idea/misc.xml	(revision )
+@@ -12,6 +12,24 @@
+   <component name="EntryPointsManager">
+     <entry_points version="2.0" />
+   </component>
++  <component name="JavadocGenerationManager">
++    <option name="OUTPUT_DIRECTORY" />
++    <option name="OPTION_SCOPE" value="protected" />
++    <option name="OPTION_HIERARCHY" value="true" />
++    <option name="OPTION_NAVIGATOR" value="true" />
++    <option name="OPTION_INDEX" value="true" />
++    <option name="OPTION_SEPARATE_INDEX" value="true" />
++    <option name="OPTION_DOCUMENT_TAG_USE" value="false" />
++    <option name="OPTION_DOCUMENT_TAG_AUTHOR" value="false" />
++    <option name="OPTION_DOCUMENT_TAG_VERSION" value="false" />
++    <option name="OPTION_DOCUMENT_TAG_DEPRECATED" value="true" />
++    <option name="OPTION_DEPRECATED_LIST" value="true" />
++    <option name="OTHER_OPTIONS" value="" />
++    <option name="HEAP_SIZE" />
++    <option name="LOCALE" />
++    <option name="OPEN_IN_BROWSER" value="true" />
++    <option name="OPTION_INCLUDE_LIBS" value="false" />
++  </component>
+   <component name="MavenProjectsManager">
+     <option name="originalFiles">
+       <list>
+\ No newline at end of file
+Index: app/build/intermediates/res/merged/debug/layout/fragment_my.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/intermediates/res/merged/debug/layout/fragment_my.xml	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/intermediates/res/merged/debug/layout/fragment_my.xml	(revision )
+@@ -18,7 +18,7 @@
+         android:padding="@dimen/grid_index_textSpacing">
+ 
+         <ImageView
+-            android:id="@+id/iv_head"
++            android:id="@+id/iv_my_head"
+             android:layout_width="90dp"
+             android:layout_height="90dp"
+             android:layout_centerVertical="true"
+@@ -31,11 +31,11 @@
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="@dimen/grid_index_textSpacing"
+-            android:layout_toRightOf="@+id/iv_head"
++            android:layout_toRightOf="@+id/iv_my_head"
+             android:visibility="gone">
+ 
+             <TextView
+-                android:id="@+id/my_username"
++                android:id="@+id/tv_my_nickname"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="张三"
+@@ -43,10 +43,10 @@
+                 android:textSize="@dimen/text_size_listview_title" />
+ 
+             <TextView
+-                android:id="@+id/my_uid"
++                android:id="@+id/tv_my_uid"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+-                android:layout_below="@id/my_username"
++                android:layout_below="@id/tv_my_nickname"
+                 android:layout_marginTop="@dimen/index_padding"
+                 android:text="@string/accuontid"
+                 android:textColor="@color/text_color_normal"
+@@ -56,7 +56,7 @@
+                 android:id="@+id/my_jifen"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+-                android:layout_below="@id/my_uid"
++                android:layout_below="@id/tv_my_uid"
+                 android:layout_marginTop="@dimen/layout_margin"
+                 android:text="@string/userScore"
+                 android:textColor="@color/text_color_normal"
+@@ -109,7 +109,7 @@
+             android:layout_height="wrap_content"
+             android:layout_centerInParent="true"
+             android:layout_marginLeft="@dimen/layout_margin_bigmiddle"
+-            android:layout_toRightOf="@+id/iv_head"
++            android:layout_toRightOf="@+id/iv_my_head"
+             android:orientation="horizontal">
+ 
+             <TextView
+\ No newline at end of file
+Index: app/build/generated/source/r/debug/com/zcw/togglebutton/R.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/generated/source/r/debug/com/zcw/togglebutton/R.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/generated/source/r/debug/com/zcw/togglebutton/R.java	(revision )
+@@ -98,18 +98,18 @@
+ 		public static final int box_count = 0x7f0b003e;
+ 		public static final int button = 0x7f0b003f;
+ 		public static final int center = 0x7f0b001c;
+-		public static final int com_facebook_body_frame = 0x7f0b0156;
+-		public static final int com_facebook_button_xout = 0x7f0b0158;
+-		public static final int com_facebook_fragment_container = 0x7f0b0154;
+-		public static final int com_facebook_login_activity_progress_bar = 0x7f0b0155;
+-		public static final int com_facebook_tooltip_bubble_view_bottom_pointer = 0x7f0b015a;
+-		public static final int com_facebook_tooltip_bubble_view_text_body = 0x7f0b0159;
+-		public static final int com_facebook_tooltip_bubble_view_top_pointer = 0x7f0b0157;
++		public static final int com_facebook_body_frame = 0x7f0b015b;
++		public static final int com_facebook_button_xout = 0x7f0b015d;
++		public static final int com_facebook_fragment_container = 0x7f0b0159;
++		public static final int com_facebook_login_activity_progress_bar = 0x7f0b015a;
++		public static final int com_facebook_tooltip_bubble_view_bottom_pointer = 0x7f0b015f;
++		public static final int com_facebook_tooltip_bubble_view_text_body = 0x7f0b015e;
++		public static final int com_facebook_tooltip_bubble_view_top_pointer = 0x7f0b015c;
+ 		public static final int display_always = 0x7f0b0043;
+ 		public static final int inline = 0x7f0b0041;
+ 		public static final int large = 0x7f0b0045;
+ 		public static final int left = 0x7f0b0025;
+-		public static final int messenger_send_button = 0x7f0b01ec;
++		public static final int messenger_send_button = 0x7f0b01f1;
+ 		public static final int never_display = 0x7f0b0044;
+ 		public static final int normal = 0x7f0b000c;
+ 		public static final int open_graph = 0x7f0b003b;
+Index: app/src/main/java/com/hshy41/mane/entity/LoginEntity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/entity/LoginEntity.java	(revision )
++++ app/src/main/java/com/hshy41/mane/entity/LoginEntity.java	(revision )
+@@ -0,0 +1,95 @@
++package com.hshy41.mane.entity;
++
++import java.io.Serializable;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class LoginEntity implements Serializable {
++    /**
++     * id : 2
++     * username : admin
++     * cnname : 啦啦啦
++     * avatar :
++     * integral : 1
++     * wallet : null
++     * downpeople : null
++     */
++
++    private String id;
++    private String username;
++    private String cnname;
++    private String avatar;
++    private String integral;
++    private String wallet;
++    private String downpeople;
++
++    public void setId(String id) {
++        this.id = id;
++    }
++
++    public void setUsername(String username) {
++        this.username = username;
++    }
++
++    public void setCnname(String cnname) {
++        this.cnname = cnname;
++    }
++
++    public void setAvatar(String avatar) {
++        this.avatar = avatar;
++    }
++
++    public void setIntegral(String integral) {
++        this.integral = integral;
++    }
++
++    public void setWallet(String wallet) {
++        this.wallet = wallet;
++    }
++
++    public void setDownpeople(String downpeople) {
++        this.downpeople = downpeople;
++    }
++
++    public String getId() {
++        return id;
++    }
++
++    public String getUsername() {
++        return username;
++    }
++
++    public String getCnname() {
++        return cnname;
++    }
++
++    public String getAvatar() {
++        return avatar;
++    }
++
++    public String getIntegral() {
++        return integral;
++    }
++
++    public Object getWallet() {
++        return wallet;
++    }
++
++    public Object getDownpeople() {
++        return downpeople;
++    }
++
++    @Override
++    public String toString() {
++        return "LoginEntity{" +
++                "id='" + id + '\'' +
++                ", username='" + username + '\'' +
++                ", cnname='" + cnname + '\'' +
++                ", avatar='" + avatar + '\'' +
++                ", integral='" + integral + '\'' +
++                ", wallet='" + wallet + '\'' +
++                ", downpeople='" + downpeople + '\'' +
++                '}';
++    }
++}
+Index: app/src/main/java/com/hshy41/mane/bean/LoginBaseBean.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/bean/LoginBaseBean.java	(revision )
++++ app/src/main/java/com/hshy41/mane/bean/LoginBaseBean.java	(revision )
+@@ -0,0 +1,13 @@
++package com.hshy41.mane.bean;
++
++import com.hshy41.mane.entity.LoginEntity;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class LoginBaseBean {
++
++    public String Result;
++    public String Message;
++    public LoginEntity data;
++}
+Index: app/build/generated/source/r/debug/com/lsjwzh/widget/recyclerviewpager/R.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/build/generated/source/r/debug/com/lsjwzh/widget/recyclerviewpager/R.java	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ app/build/generated/source/r/debug/com/lsjwzh/widget/recyclerviewpager/R.java	(revision )
+@@ -21,7 +21,7 @@
+ 	}
+ 	public static final class id {
+ 		public static final int item_touch_helper_previous_elevation = 0x7f0b0005;
+-		public static final int rvp_fragment_container = 0x7f0b01fb;
++		public static final int rvp_fragment_container = 0x7f0b0200;
+ 	}
+ 	public static final class layout {
+ 		public static final int rvp_fragment_container = 0x7f030081;
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- README.md	(revision e8e1c81802a9daf08a95d37de16b8ef25ab30cd1)
++++ README.md	(revision )
+@@ -38,3 +38,10 @@
+ # 2015-12-25
+ 已完成所有界面
+ 战斗胜利!!!!美工糙,产品也糙,破活儿
++# 2015-12-29
++本天主要工作有：
++1登陆接口调试（缓存实现中）
++2注册验证码目录（客户端写好，服务器欠费）
++3注册接口客户端写好，服务器欠费）
++4 忘记密码（客户端写好，服务器欠费）
++5 找回密码发送短信（客户端写好，服务器欠费）
+Index: app/src/main/java/com/hshy41/mane/entity/FindPasswordEntity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/hshy41/mane/entity/FindPasswordEntity.java	(revision )
++++ app/src/main/java/com/hshy41/mane/entity/FindPasswordEntity.java	(revision )
+@@ -0,0 +1,30 @@
++package com.hshy41.mane.entity;
++
++/**
++ * Created by Administrator on 2015/12/29.
++ */
++public class FindPasswordEntity {
++    /**
++     * Result : 1
++     * Message : 报错信息
++     */
++
++    private String Result;
++    private String Message;
++
++    public void setResult(String Result) {
++        this.Result = Result;
++    }
++
++    public void setMessage(String Message) {
++        this.Message = Message;
++    }
++
++    public String getResult() {
++        return Result;
++    }
++
++    public String getMessage() {
++        return Message;
++    }
++}

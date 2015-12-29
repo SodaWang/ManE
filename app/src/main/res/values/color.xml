@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="canlendar_text_color">#323232</color>
+    <color name="color_rating">#E30101</color>
+
+    <color name="color_black">#000</color>
+    <color name="color_white">#fff</color>
+    <color name="color_gray">#ECECEC</color>
+    <color name="color_bg_monney">#08D683</color>
+    <color name="color_alpha_black">#BB000000</color>
+    <!-- 背景颜色 -->
+    <!-- 分割线颜色 -->
+    <color name="bg_color_dividing_line">#d6d6d6</color>
+    <!-- 背景颜色 -->
+    <color name="bg_color_main">#f7f7f7</color>
+    <!-- 标题色 -->
+    <color name="bg_color_title">#fe8d08</color>
+    <color name="item_pressed_color">#CCCCCC</color>
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="item_activated_color">#77CEEE</color>
+    <color name="bg_item_ad">#88000000</color>
+
+    <!-- 字体颜色 -->
+    <!-- 文本颜色 -->
+    <color name="text_color_edit">#666666</color>
+    <!-- 标题颜色 -->
+    <color name="text_color_title">#333333</color>
+    <!-- 备注颜色 -->
+    <color name="text_color_hint">#999999</color>
+    <color name="text_color_select">#fe8d08</color>
+    <color name="text_color_normal">#333</color>
+    <!--小提示颜色-->
+    <color name="text_color_tips">#FF8400</color>
+
+    <!-- listview内容颜色 -->
+    <color name="text_color_listviewtext">#a1a1a1</color>
+    <!-- toggle颜色 -->
+    <color name="color_toggle">#74ED57</color>
+
+    #74ED57
+</resources>

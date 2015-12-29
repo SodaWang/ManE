@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item_servicelist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_index_mainAd"
+        android:layout_height="@dimen/height_index_listviewitem"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/iv_item_servicelist_img"
+            android:layout_width="@dimen/width_index_listviewimg"
+            android:layout_height="@dimen/height_index_listviewimg"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/listimg" />
+
+        <TextView
+            android:id="@+id/tv_item_servicelist_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_item_servicelist_img"
+            android:layout_marginLeft="@dimen/marinRight_index_listviewimg"
+            android:layout_toRightOf="@+id/iv_item_servicelist_img"
+            android:text="@string/index_list_title"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_listview_title" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_servicelist_title"
+            android:layout_below="@+id/tv_item_servicelist_title"
+            android:layout_marginTop="@dimen/title_search_margin">
+
+            <RatingBar
+                android:isIndicator="true"
+                android:id="@+id/rb_item_servicelist"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:id="@+id/tv_item_servicelist_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/rb_item_servicelist"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/title_search_margin"
+                android:layout_toRightOf="@+id/rb_item_servicelist"
+                android:text="￥66/人"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_listview_text" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_item_servicelist_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_item_servicelist_img"
+            android:layout_marginLeft="@dimen/marinRight_index_listviewimg"
+            android:layout_toRightOf="@+id/iv_item_servicelist_img"
+            android:text="@string/index_list_text"
+            android:textColor="@color/text_color_listviewtext"
+            android:textSize="@dimen/text_size_listview_text" />
+
+        <TextView
+            android:id="@+id/tv_item_servicelist_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_item_servicelist_img"
+            android:layout_alignParentRight="true"
+            android:text="66m"
+            android:textColor="@color/text_color_listviewtext"
+            android:textSize="@dimen/text_size_listview_text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_dividing_line"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_color_main" />
+    </RelativeLayout>
+</RelativeLayout>

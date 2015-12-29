@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_servicelist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_main"
+    android:orientation="vertical"
+    tools:context="com.hshy41.mane.fragment.ServiceListFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_tabBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_tabBar"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_pop_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_arrowup_left"
+                    android:layout_width="@dimen/height_title_back"
+                    android:layout_height="@dimen/width_title_back"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/arrow_up"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/area"
+                        android:textColor="@color/text_color_title"
+                        android:textSize="@dimen/text_size_grid" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrowdown_left"
+                        android:layout_width="@dimen/height_title_back"
+                        android:layout_height="@dimen/width_title_back"
+                        android:layout_marginLeft="@dimen/index_padding"
+                        android:background="@drawable/arrow_down"
+                        android:gravity="center" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pop_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_arrowup_right"
+                    android:layout_width="@dimen/height_title_back"
+                    android:layout_height="@dimen/width_title_back"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/arrow_up"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="@string/sort"
+                        android:textColor="@color/text_color_title"
+                        android:textSize="@dimen/text_size_grid" />
+
+
+                    <ImageView
+                        android:id="@+id/iv_arrowdown_right"
+                        android:layout_width="@dimen/height_title_back"
+                        android:layout_height="@dimen/width_title_back"
+                        android:layout_marginLeft="@dimen/index_padding"
+                        android:background="@drawable/arrow_down"
+                        android:gravity="center" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="@dimen/height_dividing_line"
+            android:layout_centerInParent="true"
+            android:background="@color/bg_color_dividing_line" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_diverlien"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_margin"
+                android:background="@color/bg_color_main" />
+
+            <ListView
+                android:id="@+id/lv_servicelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_diverlien"
+                android:background="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="@color/color_alpha_black"
+            android:splitMotionEvents="false"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/lv_pop_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_pop_right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:scrollbars="none"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

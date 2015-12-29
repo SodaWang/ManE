@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_main"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <include
+                android:id="@+id/title_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_titleBar"
+                layout="@layout/title_bar" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <com.hshy41.mane.views.AutoScrollViewPager
+                    android:id="@+id/viewpager_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_banner" >
+                </com.hshy41.mane.views.AutoScrollViewPager>
+
+                <LinearLayout
+                    android:id="@+id/viewpager_yuandian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </FrameLayout>
+
+                <android.support.v4.view.ViewPager
+                    android:background="@color/white"
+                    android:id="@+id/viewpager_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_gridViewPager" >
+                </android.support.v4.view.ViewPager>
+
+                <LinearLayout
+                    android:background="@color/color_white"
+                    android:id="@+id/viewpager_yuandian1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_layout_bannarPointer"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_index_ad1"
+                android:layout_marginTop="@dimen/marinTop_index_ads"
+                android:scaleType="fitXY"
+                android:src="@drawable/a1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_index_ad1"
+                android:layout_marginTop="@dimen/marinTop_index_ads"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a2" />
+
+                <ImageView
+                    android:id="@+id/img_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/a3" />
+            </LinearLayout>
+
+            <RelativeLayout
+
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marinTop_index_ads" >
+            <LinearLayout
+                android:id="@+id/ll_index_mainAd"
+                android:layout_width="@dimen/width_index_mainAd"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_index_concessions"
+                    android:layout_width="@dimen/width_index_concessions"
+                    android:layout_height="match_parent"
+                     >
+
+                    <TextView
+                        android:id="@+id/tv_index_concessions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/marinTop_index_ads"
+                        android:text="@string/concessions"
+                        android:textColor="@color/text_color_edit"
+                        android:textSize="@dimen/text_size_grid" />
+
+                    <ImageView
+                        android:layout_alignLeft="@+id/tv_index_concessions"
+                        android:layout_marginTop="@dimen/marinTop_index_ads"
+                        android:id="@+id/iv_index_concessions"
+                        android:layout_width="@dimen/width_index_concessions"
+                        android:layout_height="@dimen/height_index_concessions"
+                        android:layout_below="@id/tv_index_concessions"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/a1" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/width_index_concessions"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/padding_index_ads"
+                >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginTop="@dimen/marinTop_index_ads"
+                            android:id="@+id/tv_index_market"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/market"
+                            android:textColor="@color/text_color_edit"
+                            android:textSize="@dimen/text_size_grid" />
+
+                        <ImageView
+                            android:layout_alignLeft="@+id/tv_index_market"
+                            android:id="@+id/iv_index_market"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_index_market"
+                            android:layout_below="@id/tv_index_market"
+                            android:scaleType="fitXY"
+                            android:layout_marginTop="@dimen/marinTop_index_ads"
+                            android:src="@drawable/a1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/tv_index_joinMane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/marinTop_index_ads"
+                            android:text="@string/joinMane"
+                            android:textColor="@color/text_color_edit"
+                            android:textSize="@dimen/text_size_grid" />
+
+                        <ImageView
+                            android:id="@+id/img_6"
+                            android:layout_alignLeft="@id/tv_index_joinMane"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="@dimen/marinTop_index_ads"
+                            android:layout_height="@dimen/height_index_market"
+                            android:layout_below="@id/tv_index_joinMane"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/a1" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@color/bg_color_main"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ll_index_mainAd"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_index_recommend"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:layout_height="@dimen/height_index_ads">
+
+                </LinearLayout>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_alignTop="@+id/ll_index_recommend"
+                    android:layout_alignLeft="@+id/ll_index_mainAd"
+                    android:layout_marginTop="@dimen/marinTop_index_ads"
+                    android:layout_height="match_parent"
+                    android:text="@string/recommend"
+                    android:layout_gravity="left"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/text_color_edit"
+                    android:textSize="@dimen/text_size_grid"
+                    />
+                <ListView
+                    android:paddingLeft="@dimen/layout_padding"
+                    android:paddingRight="@dimen/layout_padding"
+                    android:layout_below="@+id/ll_index_recommend"
+                    android:id="@+id/lv_index_recommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    ></ListView>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

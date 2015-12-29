@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlertViewDemo/AlertViewDemo.iml" filepath="$PROJECT_DIR$/AlertViewDemo/AlertViewDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ManE.iml" filepath="$PROJECT_DIR$/ManE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerViewPager/RecyclerViewPager.iml" filepath="$PROJECT_DIR$/RecyclerViewPager/RecyclerViewPager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerViewPagerDemo/RecyclerViewPagerDemo.iml" filepath="$PROJECT_DIR$/RecyclerViewPagerDemo/RecyclerViewPagerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerViewSwipeDismiss/RecyclerViewSwipeDismiss.iml" filepath="$PROJECT_DIR$/RecyclerViewSwipeDismiss/RecyclerViewSwipeDismiss.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerViewSwipeDismissDemo/RecyclerViewSwipeDismissDemo.iml" filepath="$PROJECT_DIR$/RecyclerViewSwipeDismissDemo/RecyclerViewSwipeDismissDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToggleButtonLib/ToggleButtonLib.iml" filepath="$PROJECT_DIR$/ToggleButtonLib/ToggleButtonLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ToggleButtonSample/ToggleButtonSample.iml" filepath="$PROJECT_DIR$/ToggleButtonSample/ToggleButtonSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tablayoutsupport/tablayoutsupport.iml" filepath="$PROJECT_DIR$/tablayoutsupport/tablayoutsupport.iml" />
+    </modules>
+  </component>
+</project>

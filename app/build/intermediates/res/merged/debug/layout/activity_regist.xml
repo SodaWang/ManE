@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_main"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_tabBar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_middle"
+        android:background="@drawable/editjiage_color"
+        android:padding="@dimen/layout_margin">
+
+        <ImageView
+            android:id="@+id/userTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/phone" />
+
+        <EditText
+            android:id="@+id/et_regist_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_toRightOf="@id/userTv"
+            android:background="@null"
+            android:hint="@string/enterphonenumber"
+            android:phoneNumber="true"
+            android:singleLine="true"
+            android:textColorHint="@color/item_pressed_color" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small"
+        android:layout_marginTop="@dimen/padding_small">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".60"
+            android:background="@drawable/editjiage_color"
+            android:padding="@dimen/layout_margin">
+
+            <ImageView
+                android:id="@+id/iv_yanzhengma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/yanzhengma" />
+
+            <EditText
+                android:id="@+id/et_regist_identifyingcode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/layout_margin"
+                android:layout_toRightOf="@id/iv_yanzhengma"
+                android:background="@null"
+                android:hint="@string/identifyingcode"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:textColorHint="@color/item_pressed_color" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/bt_regist_send_identifyingcode"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hight_layout"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_weight=".40"
+            android:background="@drawable/bg_button"
+            android:text="@string/sendidentifyingcode"
+            android:textColor="@color/color_white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_margin="@dimen/padding_small"
+        android:background="@drawable/editjiage_color"
+        android:padding="@dimen/layout_margin">
+
+        <ImageView
+            android:id="@+id/iv_enterpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/password" />
+
+        <EditText
+            android:id="@+id/et_regist_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_toRightOf="@id/iv_enterpassword"
+            android:background="@null"
+            android:hint="@string/enterpassword"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="@color/item_pressed_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_margin="@dimen/padding_small"
+        android:background="@drawable/editjiage_color"
+        android:padding="@dimen/layout_margin">
+
+        <ImageView
+            android:id="@+id/iv_confirmpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/password" />
+
+        <EditText
+            android:id="@+id/et_regist_confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/layout_margin"
+            android:layout_toRightOf="@id/iv_confirmpassword"
+            android:background="@null"
+            android:hint="@string/confirmpassword"
+            android:password="true"
+            android:singleLine="true"
+            android:textColorHint="@color/item_pressed_color" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_regist_invitationcode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hight_layout"
+        android:layout_margin="@dimen/layout_margin"
+        android:background="@drawable/editjiage_color"
+        android:gravity="center_vertical"
+        android:hint="@string/invitationcode"
+        android:padding="@dimen/index_padding"
+        android:textColorHint="@color/item_pressed_color" />
+
+    <Button
+        android:id="@+id/bt_regist_regist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:layout_marginTop="@dimen/layout_margin_bigmiddle"
+        android:background="@drawable/bg_button"
+        android:text="@string/regist"
+        android:textColor="@color/color_white" />
+
+</LinearLayout>

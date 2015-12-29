@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_commonweal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color_main"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hshy41.mane.views.AutoScrollViewPager
+            android:id="@+id/avp_commonweal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_banner">
+
+        </com.hshy41.mane.views.AutoScrollViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_commonweal_bannarpointer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"></LinearLayout>
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_commonweal_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_diverlien"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_margin"
+                android:background="@color/bg_color_dividing_line" />
+
+            <ListView
+                android:scrollbars="none"
+                android:id="@+id/lv_commonweal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_diverlien"
+                android:background="@color/white" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_commonweal_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/layout_commonweal_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_commomweal_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帮农致富,扶困助贫"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_grid" />
+
+        <TextView
+            android:id="@+id/tv_commomweal_info_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="2015-08-07 09:00"
+            android:textColor="@color/text_color_edit"
+            android:textSize="@dimen/text_login_littletips" />
+
+        <TextView
+            android:id="@+id/tv_commomweal_info_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:text="各种内容"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_login_littletips" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hshy41.mane"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.hshy41.mane.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.DesignDemo" >
+        <activity
+            android:name="com.hshy41.mane.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hshy41.mane.my.activity.ChangePasswordActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.FindPasswordActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.LoginActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.SetActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.InfoSetActivity" />
+        <activity
+            android:name="com.hshy41.mane.my.activity.ZhouBianShangHuActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name="com.hshy41.mane.my.activity.RegistActivity" />
+        <activity
+            android:name="com.hshy41.mane.my.activity.GetMonneyActivity"
+            android:label="@string/title_activity_get_monney"
+            android:theme="@style/Theme.DesignDemo" />
+        <activity
+            android:name="com.hshy41.mane.my.activity.ModuleDesignActivity"
+            android:label="@string/title_activity_module_design"
+            android:theme="@style/Theme.DesignDemo" />
+        <activity
+            android:name="com.hshy41.mane.my.activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/Theme.DesignDemo" />
+        <activity
+            android:name="com.hshy41.mane.my.activity.FinancingActivity"
+            android:label="@string/title_activity_finacing"
+            android:theme="@style/Theme.DesignDemo" />
+        <activity android:name="com.hshy41.mane.my.activity.HouseKeepingActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.BankFinancingActivity" />
+        <activity
+            android:name="com.hshy41.mane.my.activity.ProductInfoActivity"
+            android:label="@string/title_activity_product_info"
+            android:theme="@style/Theme.DesignDemo" />
+        <activity
+            android:name="com.hshy41.mane.my.activity.ADActivity"
+            android:label="@string/title_activity_ad"
+            android:theme="@style/Theme.DesignDemo" />
+        <activity android:name="com.hshy41.mane.my.activity.WebActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.ServiceListActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.CommonwealActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.HouseRentActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.TourActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.MyCollectActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.AccountActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.TransactionDetailsActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.CashActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.PersonalInfoSetActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.NickNameActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.ChangePasswordActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.MessageSetActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.SuggestionPostActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.AboutUsActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.PropertyHallActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.PropertyNotificationActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.PropertyRepairActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.PublicRepairTableActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.PropertyServiceActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.PropertyPayActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.VintageListActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.GoodsReleaseActivity" />
+        <activity android:name="com.hshy41.mane.my.activity.GetMonneyGameActivity" />
+    </application>
+
+</manifest>

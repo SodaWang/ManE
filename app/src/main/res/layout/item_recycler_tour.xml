@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_item_tour"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/iv_item_tour_adimg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_getmonney_ad"
+        android:background="@drawable/ad1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_tour_info"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/layout_padding"
+        android:paddingRight="@dimen/layout_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_item_tour_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="湘西农家乐"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_grid" />
+
+            <TextView
+                android:id="@+id/tv_item_tour_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_item_tour_title"
+                android:layout_below="@+id/tv_item_tour_title"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/title_search_margin"
+                android:text="￥330.00"
+                android:textColor="@color/text_color_tips"
+                android:textSize="@dimen/text_login_littletips" />
+
+            <TextView
+                android:id="@+id/tv_item_tour_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:text="111"
+                android:textColor="@color/color_rating"
+                android:textSize="@dimen/text_login_littletips" />
+
+            <RatingBar
+                android:id="@+id/rb_item_tour"
+                style="@style/heartRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/layout_margin"
+                android:layout_toLeftOf="@+id/tv_item_tour_rating"
+                android:numStars="5"
+                android:rating="1" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_index_textSpacing"
+        android:background="@color/bg_color_main" />
+</LinearLayout>
