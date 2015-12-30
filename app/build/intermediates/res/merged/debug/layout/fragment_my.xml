@@ -90,8 +90,8 @@
                     android:textSize="@dimen/text_login_littletips" />
 
 
-                <TextView
-                    android:id="@+id/my_qiandao"
+                <ImageView
+                    android:id="@+id/iv_my_sign_in"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"

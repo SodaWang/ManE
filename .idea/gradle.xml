@@ -3,10 +3,26 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="D:\Program Files\Android\android-studio\gradle\gradle-2.8" />
         <option name="gradleJvm" value="1.8" />
         <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AlertViewDemo" />
+            <option value="$PROJECT_DIR$/RecyclerViewPager" />
+            <option value="$PROJECT_DIR$/RecyclerViewPagerDemo" />
+            <option value="$PROJECT_DIR$/RecyclerViewSwipeDismiss" />
+            <option value="$PROJECT_DIR$/RecyclerViewSwipeDismissDemo" />
+            <option value="$PROJECT_DIR$/ToggleButtonLib" />
+            <option value="$PROJECT_DIR$/ToggleButtonSample" />
+            <option value="$PROJECT_DIR$/alertview" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/tablayoutsupport" />
+          </set>
+        </option>
+        <option name="myModules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/AlertViewDemo" />

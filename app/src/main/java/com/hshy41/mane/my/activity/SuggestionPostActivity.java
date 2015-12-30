@@ -4,12 +4,27 @@ import android.content.Intent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseActivity;
+import com.hshy41.mane.utils.Cons;
+import com.hshy41.mane.utils.ToastUtil;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class SuggestionPostActivity extends BaseActivity implements OnClickListener {
 
@@ -20,6 +35,10 @@ public class SuggestionPostActivity extends BaseActivity implements OnClickListe
      */
     Button bt_commit;
 
+    /**
+     * 意见反馈内容编辑框
+     */
+    EditText et_content;
 
     @Override
     protected int setContent() {
@@ -31,7 +50,7 @@ public class SuggestionPostActivity extends BaseActivity implements OnClickListe
     protected void initViews() {
         // TODO Auto-generated method stub
         bt_commit = (Button) findViewById(R.id.bt_suggestion_post_commit);
-
+        et_content = (EditText) findViewById(R.id.et_suggestion_post_content);
         bt_commit.setOnClickListener(this);
 
     }
@@ -59,7 +78,6 @@ public class SuggestionPostActivity extends BaseActivity implements OnClickListe
         tv_title_text.setText(R.string.suggestion_post);
         bt_title_left.setOnClickListener(this);
         rl_title_left.setOnClickListener(this);
-
     }
 
     @Override
@@ -72,11 +90,55 @@ public class SuggestionPostActivity extends BaseActivity implements OnClickListe
                 finish();
                 break;
             case R.id.bt_suggestion_post_commit:
-                finish();
+                if (MyApplication.checkIsLogin(this)) {
+                    suggestionPost();
+                } else {
+                    ToastUtil.showToast(this, "请先登录");
+                }
                 break;
             default:
                 break;
         }
+    }
+
+    /**
+     * 意见反馈
+     */
+    private void suggestionPost() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,
+                Cons.DOMAIN + Cons.SUGGESTION_POST,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String s) {
+                        if (s != null) {
+                            try {
+                                JSONObject json = new JSONObject(s);
+                                if (json.get("Result").equals("0")) {
+                                    ToastUtil.showToast(SuggestionPostActivity.this, json.getString("Message"));
+                                } else if (json.get("Result").equals("1")) {
+                                    ToastUtil.showToast(SuggestionPostActivity.this, json.getString("Message"));
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> map = new HashMap<String, String>();
+                map.put("uid", MyApplication.user.getId());
+                map.put("body", et_content.getText().toString());
+                return map;
+            }
+        };
+        MyApplication.mQueue.add(stringRequest);
     }
 
 }

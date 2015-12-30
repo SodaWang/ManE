@@ -1,5 +1,7 @@
 package com.hshy41.mane.utils;
 
+import android.widget.DatePicker;
+
 import com.hshy41.mane.R;
 
 import java.util.regex.Matcher;
@@ -77,6 +79,23 @@ public class Cons {
     //修改头像接口
     public final static String CHANGE_HEAD = "Member/changeavatar";
 
+    //修改密码接口
+    public final static String CHANGE_PASSWORD = "Member/changepass";
+
+    //意见反馈接口
+    public final static String SUGGESTION_POST = "Member/feedback";
+
+    //修改昵称接口
+    public final static String CHANGE_NICKNAME = "Member/changecnname";
+
+    //每日签到接口
+    public final static String SIGN_IN = "Member/signin";
+
+    //图片缓存目录
+    public final static String CACHE_IMAGE_DIR = "ManE/Cache";
+
+
+
 
     /**
      * 手机号验证
@@ -88,11 +107,10 @@ public class Cons {
         Pattern p = null;
         Matcher m = null;
         boolean b = false;
-        p = Pattern.compile("^[1][3,4,5,8][0-9]{9}$"); // 验证手机号
+        p = Pattern.compile("^[1][3,4,5,8,7][0-9]{9}$"); // 验证手机号
         m = p.matcher(str);
         b = m.matches();
         return b;
     }
-
 
 }

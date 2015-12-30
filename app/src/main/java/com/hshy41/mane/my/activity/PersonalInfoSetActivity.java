@@ -10,7 +10,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Looper;
-import android.os.Message;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
@@ -26,9 +25,7 @@ import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseActivity;
 import com.hshy41.mane.bean.ChangeHeadBaseBean;
-import com.hshy41.mane.bean.LoginBaseBean;
 import com.hshy41.mane.entity.ChangeHeadEntity;
-import com.hshy41.mane.utils.BitmapUtils;
 import com.hshy41.mane.utils.Cons;
 import com.hshy41.mane.utils.FileUtil;
 import com.hshy41.mane.utils.ToastUtil;
@@ -39,9 +36,6 @@ import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.client.*;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
-import android.os.Handler;
-
-import org.apache.http.util.EntityUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -104,6 +98,26 @@ public class PersonalInfoSetActivity extends BaseActivity implements View.OnClic
      */
     Bitmap bm_head;
 
+    /**
+     * 手机号
+     *
+     * @return
+     */
+    TextView tv_phone;
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (!MyApplication.user.getId().equals(0)) {
+            //若已登录，从缓存中显示头像
+            ImageLoader.getInstance().displayImage(MyApplication.user.getFace(), iv_head_icon, MyApplication.options);
+            //设置昵称
+            tv_nickname.setText(MyApplication.user.getNickname());
+            //设置手机号
+            tv_phone.setText(MyApplication.user.getPhone());
+        }
+    }
+
     @Override
     protected int setContent() {
         // TODO Auto-generated method stub
@@ -118,10 +132,8 @@ public class PersonalInfoSetActivity extends BaseActivity implements View.OnClic
         rl_nickname = (RelativeLayout) findViewById(R.id.rl_personal_info_set_nickname);
         iv_head_icon = (ImageView) findViewById(R.id.iv_personal_info_set_head_icon);
         tv_nickname = (TextView) findViewById(R.id.tv_personal_info_set_nickname);
-        if (!MyApplication.user.getId().equals(0)) {
-            //若已登录，从缓存中显示头像
-            ImageLoader.getInstance().displayImage(MyApplication.user.getFace(), iv_head_icon, MyApplication.options);
-        }
+        tv_phone = (TextView) findViewById(R.id.tv_personal_info_set_phonenumber);
+
 
         rl_head_icon.setOnClickListener(this);
         rl_nickname.setOnClickListener(this);

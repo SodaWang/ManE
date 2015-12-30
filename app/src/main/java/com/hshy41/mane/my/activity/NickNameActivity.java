@@ -1,6 +1,7 @@
 package com.hshy41.mane.my.activity;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -9,9 +10,23 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseActivity;
+import com.hshy41.mane.bean.LoginBaseBean;
 import com.hshy41.mane.utils.Cons;
+import com.hshy41.mane.utils.ToastUtil;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class NickNameActivity extends BaseActivity implements OnClickListener {
 
@@ -85,18 +100,72 @@ public class NickNameActivity extends BaseActivity implements OnClickListener {
                 break;
             case R.id.tv_title_right:
             case R.id.rl_title_right:
-                if (!et_nickname.getText().toString().equals("") && et_nickname.getText() != null) {
-                    String temp = et_nickname.getText()
-                            .toString();
-                    intent = new Intent();
-                    intent.putExtra(Cons.TAG_RESULT_NICKNAME_ACTIVITY,
-                            temp);
-                    setResult(RESULT_OK, intent);
+                if (CheckNicknameInfo()) {
+                    changeNickname();
+
                 }
-                finish();
+
             default:
                 break;
         }
+    }
+
+    /**
+     * 修改昵称
+     */
+    private void changeNickname() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,
+                Cons.DOMAIN + Cons.CHANGE_NICKNAME,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String s) {
+                        if (s != null) {
+                            try {
+                                JSONObject json = new JSONObject(s);
+                                if (json.get("Result").equals("0")) {
+                                    //更新昵称
+                                    MyApplication.user.setNickname(et_nickname.getText().toString());
+                                    MyApplication.updataUserInfo(NickNameActivity.this);
+                                    //成功信息
+                                    ToastUtil.showToast(NickNameActivity.this, json.getString("Message"));
+                                    finish();
+                                } else if (json.get("Result").equals("1")) {
+                                    //失败信息
+                                    ToastUtil.showToast(NickNameActivity.this, json.getString("Message"));
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> map = new HashMap<String, String>();
+                map.put("uid", MyApplication.user.getId());
+                map.put("cnname", et_nickname.getText().toString());
+                return map;
+            }
+        };
+        MyApplication.mQueue.add(stringRequest);
+    }
+
+
+    /**
+     * 判断昵称正确与否
+     */
+    private boolean CheckNicknameInfo() {
+        if (et_nickname.getText() == null || et_nickname.getText().toString().equals("")) {
+            ToastUtil.showToast(this, "昵称不能为空");
+            return false;
+        }
+        return true;
     }
 
 }

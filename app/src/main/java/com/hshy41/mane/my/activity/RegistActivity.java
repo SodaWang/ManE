@@ -16,6 +16,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
+import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseActivity;
 import com.hshy41.mane.bean.Identifyingcode_Regist_BaseBean;
@@ -32,7 +33,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegistActivity extends BaseActivity implements OnClickListener {
-    Gson gson;
     /**
      * 各种输入框
      *
@@ -53,11 +53,6 @@ public class RegistActivity extends BaseActivity implements OnClickListener {
      */
     Button bt_send_identifyingcode, bt_regist;
 
-
-    //Volley请求队列
-    RequestQueue mQueue;
-
-
     @Override
     protected int setContent() {
         // TODO Auto-generated method stub
@@ -67,9 +62,6 @@ public class RegistActivity extends BaseActivity implements OnClickListener {
     @Override
     protected void initViews() {
         // TODO Auto-generated method stub
-        gson = new Gson();
-        //初始化请求队列
-        mQueue = Volley.newRequestQueue(context);
 
         //初始化各种控件
         //EditText组
@@ -149,7 +141,7 @@ public class RegistActivity extends BaseActivity implements OnClickListener {
                             try {
                                 JSONObject json = new JSONObject(s);
                                 if (json.get("Result").equals("0")) {
-                                    Identifyingcode_Regist_BaseBean bean = gson.fromJson(s, Identifyingcode_Regist_BaseBean.class);
+                                    Identifyingcode_Regist_BaseBean bean = MyApplication.gson.fromJson(s, Identifyingcode_Regist_BaseBean.class);
                                     Identifyingcode_Regist_Entity data = bean.data;
                                 } else if (json.get("Result").equals("1")) {
                                     ToastUtil.showToast(RegistActivity.this, json.getString("Message"));
@@ -173,7 +165,7 @@ public class RegistActivity extends BaseActivity implements OnClickListener {
                 return map;
             }
         };
-        mQueue.add(stringRequest);
+        MyApplication.mQueue.add(stringRequest);
     }
 
     /**
@@ -189,7 +181,7 @@ public class RegistActivity extends BaseActivity implements OnClickListener {
                             try {
                                 JSONObject json = new JSONObject(s);
                                 if (json.get("Result").equals("0")) {
-                                    RegistBaseBean bean = gson.fromJson(s, RegistBaseBean.class);
+                                    RegistBaseBean bean = MyApplication.gson.fromJson(s, RegistBaseBean.class);
                                     RegistEntity data = bean.data;
                                 } else if (json.get("Result").equals("1")) {
                                     ToastUtil.showToast(RegistActivity.this, json.getString("Message"));
@@ -216,7 +208,7 @@ public class RegistActivity extends BaseActivity implements OnClickListener {
                 return map;
             }
         };
-        mQueue.add(stringRequest);
+        MyApplication.mQueue.add(stringRequest);
     }
 
 

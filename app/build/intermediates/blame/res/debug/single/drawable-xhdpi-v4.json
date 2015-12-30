@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\arrow_down.png",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xhdpi\\arrow_down.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_button_icon.png",
         "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable-xhdpi-v4\\com_facebook_button_icon.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\arrow_down.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xhdpi\\arrow_down.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\fenxiang.png",
@@ -244,12 +244,12 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xhdpi\\lunbo_kong.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\lunbo.png",
         "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xhdpi\\lunbo.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable-xhdpi-v4\\com_facebook_tooltip_blue_background.9.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",

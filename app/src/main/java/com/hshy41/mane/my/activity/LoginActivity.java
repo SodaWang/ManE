@@ -19,6 +19,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
+import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseActivity;
 import com.hshy41.mane.bean.LoginBaseBean;
@@ -33,10 +34,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginActivity extends BaseActivity implements OnClickListener {
-    //Volley请求队列
-    RequestQueue mQueue;
-    //Gson
-    Gson gson;
+
     /**
      * 登录按键
      *
@@ -71,10 +69,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
     @Override
     protected void initViews() {
         // TODO Auto-generated method stub
-        //初始化Gson
-        gson = new Gson();
-        //初始化请求队列
-        mQueue = Volley.newRequestQueue(context);
 
         bt_login = (Button) findViewById(R.id.bt_login_login);
         tv_findpassword = (TextView) findViewById(R.id.tv_findpassword);
@@ -160,9 +154,12 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
                             try {
                                 JSONObject json = new JSONObject(s);
                                 if (json.get("Result").equals("0")) {
-                                    bean = gson.fromJson(s, LoginBaseBean.class);
+                                    bean = MyApplication.gson.fromJson(s, LoginBaseBean.class);
                                     data = bean.data;
-                                    Log.i("lichao", data.toString());
+                                    //保存手机号
+                                    MyApplication.user.setPhone(et_phone.getText().toString());
+                                    //更新用户信息
+                                    MyApplication.updataUserInfo(LoginActivity.this);
                                     Bundle bundle = new Bundle();
                                     bundle.putSerializable("loginentity", data);
                                     Intent intent = new Intent();
@@ -194,7 +191,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
                 return map;
             }
         };
-        mQueue.add(stringRequest);
+        MyApplication.mQueue.add(stringRequest);
     }
 
 

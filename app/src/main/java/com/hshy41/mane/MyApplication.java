@@ -7,6 +7,8 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
 import com.hshy41.mane.bean.UserBean;
+import com.hshy41.mane.utils.Cons;
+import com.hshy41.mane.utils.DataCleanManager;
 import com.hshy41.mane.utils.SharepreUtil;
 import com.hshy41.mane.utils.ToastUtil;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
@@ -22,6 +24,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.graphics.Bitmap;
+import android.os.Environment;
 import android.os.Handler;
 
 public class MyApplication extends Application {
@@ -34,6 +37,20 @@ public class MyApplication extends Application {
     //图片显示设置
     public static DisplayImageOptions options;
 
+
+    // /data/data/[packagename]/cache目录，存放一些其他缓存 File cache = getCacheDir();
+    public static String CACHE = "";
+
+    //  /data/data/[packagename]/databases，存放数据库
+    public static String DATABASES = "";
+
+    //  /data/data/[packagename]/lib，应用的so目录
+    public static String LIB = "";
+
+    // /data/data/[packagename]/shared_prefs 应用的SharedPreferences保存
+    public static String SHARED_PREFS = "";
+
+
     @Override
     public void onCreate() {
         // TODO Auto-generated method stub
@@ -45,6 +62,42 @@ public class MyApplication extends Application {
         gson = new Gson();
         //初始化请求队列
         mQueue = Volley.newRequestQueue(this);
+
+        CACHE = "/data/data/" + getApplicationContext().getPackageName() + "/cache";
+        DATABASES = "/data/data/" + getApplicationContext().getPackageName() + "/databases";
+        LIB = "/data/data/" + getApplicationContext().getPackageName() + "/lib";
+//        SHARED_PREFS = "/data/data/" + getApplicationContext().getPackageName() + "/shared_prefs";
+    }
+
+    /**
+     * 检测当前缓存值
+     */
+    public static String checkCache(Context context) {
+        try {
+            long size = DataCleanManager.getFolderSize(new File(CACHE)) +
+                    DataCleanManager.getFolderSize(new File(DATABASES)) +
+                    DataCleanManager.getFolderSize(new File(LIB)) +
+//                    DataCleanManager.getFolderSize(new File(SHARED_PREFS)) +
+                    DataCleanManager.getFolderSize(StorageUtils.getOwnCacheDirectory(context, Cons.CACHE_IMAGE_DIR));
+            return DataCleanManager.getFormatSize(size);
+
+        } catch (Exception e) {
+
+            e.printStackTrace();
+            return "检测错误";
+        }
+    }
+
+    /**
+     * 清除缓存
+     */
+
+    public static void clearCache(Context context) {
+        DataCleanManager.deleteDir(new File(CACHE));
+        DataCleanManager.deleteDir(new File(DATABASES));
+        DataCleanManager.deleteDir(new File(LIB));
+//        DataCleanManager.deleteDir(new File(SHARED_PREFS));
+        DataCleanManager.deleteDir(StorageUtils.getOwnCacheDirectory(context, Cons.CACHE_IMAGE_DIR));
     }
 
     private void readUserInfo() {
@@ -127,16 +180,16 @@ public class MyApplication extends Application {
                 .build();
 
         File cacheDir = StorageUtils.getOwnCacheDirectory(
-                getApplicationContext(), "ManE/Cache");
+                getApplicationContext(), Cons.CACHE_IMAGE_DIR);
         ImageLoaderConfiguration configuration = new ImageLoaderConfiguration.Builder(
                 getApplicationContext()).memoryCacheExtraOptions(480, 800)
                 // 即保存的每个内存缓存文件的最大长宽
                 .threadPoolSize(5)
-                        // 线程池内加载的数量
+                // 线程池内加载的数量
                 .diskCacheFileCount(100)
-                        // 设置硬盘缓存的文件的最多个数
+                // 设置硬盘缓存的文件的最多个数
                 .threadPriority(Thread.NORM_PRIORITY - 2)
-                        // 配置线程优先级
+                // 配置线程优先级
                 .denyCacheImageMultipleSizesInMemory()//.内存缓存
 
                 .diskCache(new UnlimitedDiskCache(cacheDir)).build();//硬盘缓存路径

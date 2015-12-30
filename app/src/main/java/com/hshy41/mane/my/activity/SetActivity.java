@@ -8,8 +8,10 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseActivity;
+import com.hshy41.mane.utils.ToastUtil;
 import com.zcw.togglebutton.ToggleButton;
 
 public class SetActivity extends BaseActivity implements OnClickListener {
@@ -70,10 +72,30 @@ public class SetActivity extends BaseActivity implements OnClickListener {
      */
     ToggleButton tg_info_post;
 
+    /**
+     * 缓存值
+     *
+     * @return
+     */
+    TextView tv_used_cache;
+
+    /**
+     * 清除缓存布局
+     *
+     * @return
+     */
+    RelativeLayout rl_clean_cache;
+
     @Override
     protected int setContent() {
         // TODO Auto-generated method stub
         return R.layout.activity_set;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        tv_used_cache.setText("已使用" + MyApplication.checkCache(this));
     }
 
     @Override
@@ -87,9 +109,12 @@ public class SetActivity extends BaseActivity implements OnClickListener {
         rl_suggestion_post = (RelativeLayout) findViewById(R.id.rl_set_suggestion_post);
         rl_about_us = (RelativeLayout) findViewById(R.id.rl_set_about_us);
         rl_product_introduce = (RelativeLayout) findViewById(R.id.rl_set_product_introduces);
+        tv_used_cache = (TextView) findViewById(R.id.tv_set_used_cache);
+        rl_clean_cache = (RelativeLayout) findViewById(R.id.rl_set_clean_cache);
 
         tg_info_post.setToggleOn();
 
+        rl_clean_cache.setOnClickListener(this);
         rl_product_introduce.setOnClickListener(this);
         rl_about_us.setOnClickListener(this);
         rl_suggestion_post.setOnClickListener(this);
@@ -123,7 +148,6 @@ public class SetActivity extends BaseActivity implements OnClickListener {
         tv_title_text.setText(R.string.set);
         bt_title_left.setOnClickListener(this);
         rl_title_left.setOnClickListener(this);
-
     }
 
     @Override
@@ -136,7 +160,13 @@ public class SetActivity extends BaseActivity implements OnClickListener {
                 finish();
                 break;
             case R.id.bt_set_safe_quit:
-                finish();
+                if (MyApplication.checkIsLogin(this)) {
+                    MyApplication.clearUserInfo(this);
+                    finish();
+                } else {
+                    ToastUtil.showLongToast(this, "未登录");
+                }
+
                 break;
             case R.id.rl_set_personal_info_set:
                 intent = new Intent(this, PersonalInfoSetActivity.class);
@@ -159,6 +189,12 @@ public class SetActivity extends BaseActivity implements OnClickListener {
                 startActivity(intent);
                 break;
             case R.id.rl_set_product_introduces:
+                break;
+            case R.id.rl_set_clean_cache:
+                //清除缓存
+                MyApplication.clearCache(this);
+                //重新检测缓存
+                tv_used_cache.setText("已使用" + MyApplication.checkCache(this));
                 break;
             default:
                 break;

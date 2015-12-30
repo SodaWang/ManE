@@ -84,20 +84,20 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxhdpi\\bg_button.9.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\lunbo1.png",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxhdpi\\lunbo1.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\arrow_up.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxhdpi\\arrow_up.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\lunbo1.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxhdpi\\lunbo1.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\chuzu.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxhdpi\\chuzu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
@@ -108,12 +108,12 @@
         "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxhdpi\\abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxhdpi\\abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
         "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxhdpi\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\bg_button.9.png",
@@ -140,12 +140,12 @@
         "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxhdpi\\wuxing.png"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cheese_1.jpg",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxhdpi\\cheese_1.jpg"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\xiyipiju.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxhdpi\\xiyipiju.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\cheese_1.jpg",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxhdpi\\cheese_1.jpg"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",

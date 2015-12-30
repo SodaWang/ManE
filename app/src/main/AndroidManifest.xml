@@ -80,7 +80,6 @@
         <activity android:name=".my.activity.CashActivity" />
         <activity android:name=".my.activity.PersonalInfoSetActivity" />
         <activity android:name=".my.activity.NickNameActivity" />
-        <activity android:name=".my.activity.ChangePasswordActivity" />
         <activity android:name=".my.activity.MessageSetActivity" />
         <activity android:name=".my.activity.SuggestionPostActivity" />
         <activity android:name=".my.activity.AboutUsActivity" />

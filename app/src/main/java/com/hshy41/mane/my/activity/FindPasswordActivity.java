@@ -16,6 +16,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
+import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseActivity;
 import com.hshy41.mane.bean.FindPasswordBaseBean;
@@ -59,12 +60,6 @@ public class FindPasswordActivity extends BaseActivity implements OnClickListene
      */
     Button bt_confirm;
 
-
-    //Volley请求队列
-    RequestQueue mQueue;
-    //Gson
-    Gson gson;
-
     @Override
     protected int setContent() {
         // TODO Auto-generated method stub
@@ -75,10 +70,6 @@ public class FindPasswordActivity extends BaseActivity implements OnClickListene
     @Override
     protected void initViews() {
         // TODO Auto-generated method stub
-        //初始化Gson
-        gson = new Gson();
-        //初始化请求队列
-        mQueue = Volley.newRequestQueue(context);
         //邀请码隐藏
         et_invitationcode = (EditText) findViewById(R.id.et_regist_invitationcode);
         et_invitationcode.setVisibility(View.GONE);
@@ -163,7 +154,7 @@ public class FindPasswordActivity extends BaseActivity implements OnClickListene
                             try {
                                 JSONObject json = new JSONObject(s);
                                 if (json.get("Result").equals("0")) {
-                                    Identifyingcode_FindPassword_BaseBean bean = gson.fromJson(s, Identifyingcode_FindPassword_BaseBean.class);
+                                    Identifyingcode_FindPassword_BaseBean bean = MyApplication.gson.fromJson(s, Identifyingcode_FindPassword_BaseBean.class);
                                 } else if (json.get("Result").equals("1")) {
                                     ToastUtil.showToast(FindPasswordActivity.this, json.getString("Message"));
                                 }
@@ -186,7 +177,7 @@ public class FindPasswordActivity extends BaseActivity implements OnClickListene
                 return map;
             }
         };
-        mQueue.add(stringRequest);
+        MyApplication.mQueue.add(stringRequest);
     }
 
     /**
@@ -202,7 +193,7 @@ public class FindPasswordActivity extends BaseActivity implements OnClickListene
                             try {
                                 JSONObject json = new JSONObject(s);
                                 if (json.get("Result").equals("0")) {
-                                    FindPasswordBaseBean bean = gson.fromJson(s, FindPasswordBaseBean.class);
+                                    FindPasswordBaseBean bean = MyApplication.gson.fromJson(s, FindPasswordBaseBean.class);
                                 } else if (json.get("Result").equals("1")) {
                                     ToastUtil.showToast(FindPasswordActivity.this, json.getString("Message"));
                                 }
@@ -227,7 +218,7 @@ public class FindPasswordActivity extends BaseActivity implements OnClickListene
                 return map;
             }
         };
-        mQueue.add(stringRequest);
+        MyApplication.mQueue.add(stringRequest);
     }
 
 

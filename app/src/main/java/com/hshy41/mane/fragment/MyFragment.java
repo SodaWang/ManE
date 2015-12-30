@@ -1,9 +1,7 @@
 package com.hshy41.mane.fragment;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Bitmap;
+import android.os.Environment;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -12,6 +10,11 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseFragment;
@@ -22,15 +25,17 @@ import com.hshy41.mane.my.activity.MyCollectActivity;
 import com.hshy41.mane.my.activity.RegistActivity;
 import com.hshy41.mane.my.activity.SetActivity;
 import com.hshy41.mane.utils.Cons;
+import com.hshy41.mane.utils.DataCleanManager;
 import com.hshy41.mane.utils.ToastUtil;
-import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
-import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
 
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.w3c.dom.Text;
+
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 public class MyFragment extends BaseFragment implements OnClickListener {
 
@@ -77,6 +82,39 @@ public class MyFragment extends BaseFragment implements OnClickListener {
      */
     ImageView iv_my_head;
 
+    /**
+     * 签到
+     */
+    ImageView iv_sign_in;
+
+    /**
+     * 缓存值
+     */
+    TextView tv_cache;
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        //检查是否登录过
+        if (MyApplication.checkIsLogin(getActivity())) {
+            rl_logined.setVisibility(View.VISIBLE);
+            ll_unlogin.setVisibility(View.GONE);
+            //设置id
+            tv_my_uid.setText(getResources().getString(R.string.accuontid)
+                    + MyApplication.user.getId());
+            //设置头像
+            ImageLoader.getInstance().displayImage(MyApplication.user.getFace(),
+                    iv_my_head, MyApplication.options);
+            //设置昵称
+            tv_my_nickname.setText(MyApplication.user.getNickname());
+        } else {
+            rl_logined.setVisibility(View.GONE);
+            ll_unlogin.setVisibility(View.VISIBLE);
+            //设置头像
+            iv_my_head.setImageResource(R.drawable.a2);
+        }
+
+    }
 
     @Override
     protected void setTitleBar() {
@@ -134,30 +172,14 @@ public class MyFragment extends BaseFragment implements OnClickListener {
         rl_accountcenter = (RelativeLayout) view.findViewById(R.id.rl_my_accountcenter);
         tv_my_nickname = (TextView) view.findViewById(R.id.tv_my_nickname);
         iv_my_head = (ImageView) view.findViewById(R.id.iv_my_head);
+        iv_sign_in = (ImageView) view.findViewById(R.id.iv_my_sign_in);
 
+
+        iv_sign_in.setOnClickListener(this);
         rl_accountcenter.setOnClickListener(this);
         rl_mycollect.setOnClickListener(this);
         tv_login.setOnClickListener(this);
         tv_regist.setOnClickListener(this);
-
-
-        //检查是否登录过
-        if (MyApplication.checkIsLogin(getActivity())) {
-            rl_logined.setVisibility(View.VISIBLE);
-            ll_unlogin.setVisibility(View.GONE);
-
-            //设置id
-            tv_my_uid.setText(getResources().getString(R.string.accuontid)
-                    + MyApplication.user.getId());
-            //设置头像
-            ImageLoader.getInstance().displayImage(MyApplication.user.getFace(),
-                    iv_my_head, MyApplication.options);
-            //设置昵称
-            tv_my_nickname.setText(MyApplication.user.getNickname());
-        } else {
-            rl_logined.setVisibility(View.GONE);
-            ll_unlogin.setVisibility(View.VISIBLE);
-        }
 
 
     }
@@ -229,6 +251,9 @@ public class MyFragment extends BaseFragment implements OnClickListener {
                 intent = new Intent(getActivity(), SetActivity.class);
                 getActivity().startActivity(intent);
                 break;
+            case R.id.iv_my_sign_in:
+                signIn();
+                break;
             default:
                 break;
         }
@@ -257,4 +282,43 @@ public class MyFragment extends BaseFragment implements OnClickListener {
 //            }
 //        }
 //    }
+
+    /**
+     * 每日签到
+     */
+    private void signIn() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST,
+                Cons.DOMAIN + Cons.SIGN_IN,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String s) {
+                        if (s != null) {
+                            try {
+                                JSONObject json = new JSONObject(s);
+                                if (json.get("Result").equals("0")) {
+                                    ToastUtil.showToast(getActivity(), json.getString("Message"));
+                                } else if (json.get("Result").equals("1")) {
+                                    ToastUtil.showToast(getActivity(), json.getString("Message"));
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }
+
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError volleyError) {
+
+            }
+        }) {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> map = new HashMap<String, String>();
+                map.put("uid", MyApplication.user.getId());
+                return map;
+            }
+        };
+        MyApplication.mQueue.add(stringRequest);
+    }
 }

@@ -142,7 +142,7 @@
             android:background="@drawable/arrow_right" />
 
         <TextView
-            android:id="@+id/iv_personal_info_set_phonenumber"
+            android:id="@+id/tv_personal_info_set_phonenumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
