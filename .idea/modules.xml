@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/RecyclerViewSwipeDismissDemo/RecyclerViewSwipeDismissDemo.iml" filepath="$PROJECT_DIR$/RecyclerViewSwipeDismissDemo/RecyclerViewSwipeDismissDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/ToggleButtonLib/ToggleButtonLib.iml" filepath="$PROJECT_DIR$/ToggleButtonLib/ToggleButtonLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/ToggleButtonSample/ToggleButtonSample.iml" filepath="$PROJECT_DIR$/ToggleButtonSample/ToggleButtonSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aMapLocationDemo2x/aMapLocationDemo2x.iml" filepath="$PROJECT_DIR$/aMapLocationDemo2x/aMapLocationDemo2x.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aMap_Android_API_2DMap_Demo_V270_Location_API_V133/aMap_Android_API_2DMap_Demo_V270_Location_API_V133.iml" filepath="$PROJECT_DIR$/aMap_Android_API_2DMap_Demo_V270_Location_API_V133/aMap_Android_API_2DMap_Demo_V270_Location_API_V133.iml" />
       <module fileurl="file://$PROJECT_DIR$/alertview/alertview.iml" filepath="$PROJECT_DIR$/alertview/alertview.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/tablayoutsupport/tablayoutsupport.iml" filepath="$PROJECT_DIR$/tablayoutsupport/tablayoutsupport.iml" />

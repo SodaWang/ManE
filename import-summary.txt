@@ -7,15 +7,13 @@ The following files were *not* copied into the new Gradle project; you
 should evaluate whether these are still needed in your project and if
 so manually move them:
 
-* build.gradle
-* gradle\
-* gradle\wrapper\
-* gradle\wrapper\gradle-wrapper.jar
-* gradle\wrapper\gradle-wrapper.properties
-* gradlew
-* gradlew.bat
-* ic_launcher-web.png
-* proguard-project.txt
+* .gitignore
+* proguard\
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+* 使用说明.txt
 
 Replaced Jars with Dependencies:
 --------------------------------
@@ -27,20 +25,37 @@ the .jar file in your project was of an older version than the
 dependency we picked, which could render the project not compileable.
 You can disable the jar replacement in the import wizard and try again:
 
-android-support-v4.jar => com.android.support:support-v4:20.0.0
-gson-2.3.1.jar => com.google.code.gson:gson:2.3.1
+android-support-v4.jar => com.android.support:support-v4:21.+
 
 Moved Files:
 ------------
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => app\src\main\AndroidManifest.xml
-* assets\ => app\src\main\assets
-* libs\universal-image-loader-1.9.4-with-sources.jar => app\libs\universal-image-loader-1.9.4-with-sources.jar
-* libs\xUtils-2.6.14.jar => app\libs\xUtils-2.6.14.jar
-* res\ => app\src\main\res\
-* src\ => app\src\main\java\
+* AndroidManifest.xml => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+* assets\ => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\assets\
+* libs\AMap_android_API_2DMap_Lib_V2.7.0_20151124.jar => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\libs\AMap_android_API_2DMap_Lib_V2.7.0_20151124.jar
+* libs\AMap_Location_v2.0.0_20151117.jar => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\libs\AMap_Location_v2.0.0_20151117.jar
+* libs\AMap_Services_V2.7.0_20151125.jar => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\libs\AMap_Services_V2.7.0_20151125.jar
+* libs\Volley.jar => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\libs\Volley.jar
+* lint.xml => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\lint.xml
+* proguard.cfg => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\proguard.cfg
+* res\ => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\res\
+* src\ => aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\java\
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
 
 Next Steps:
 -----------

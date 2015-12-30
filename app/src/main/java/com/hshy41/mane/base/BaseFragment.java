@@ -35,7 +35,7 @@ public abstract class BaseFragment extends Fragment {
 	protected RelativeLayout rl_title_left, rl_title_right;
 	/** 定位小图 */
 	protected ImageView iv_title_gps;
-	/** 标题, 右侧文字 */
+	/** 标题 */
 	protected TextView tv_title_text;
 	/** 左标题键,右标题键键 */
 	protected Button bt_title_right, bt_title_left;
@@ -50,6 +50,12 @@ public abstract class BaseFragment extends Fragment {
 	 * 标题布局
 	 */
 	protected RelativeLayout rl_title_layout;
+
+	/**
+	 * 标题中间内容布局
+	 * @param savedInstanceState
+	 */
+	protected RelativeLayout rl_title_center;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub

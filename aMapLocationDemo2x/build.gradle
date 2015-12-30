@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "com.amap.location.demo"
+        minSdkVersion 8
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:22.+'
+    compile files('libs/AMap_Location_V2.2.0_20151117.jar')
+}

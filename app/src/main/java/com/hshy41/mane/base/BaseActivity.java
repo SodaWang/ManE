@@ -43,6 +43,7 @@ public abstract class BaseActivity extends FragmentActivity {
 	 *搜索布局
      */
 	protected RelativeLayout rl_title_search;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub

@@ -4,222 +4,6 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_actionsheet_header.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_like_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_right.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_right.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\editjiage_color.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\editjiage_color.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shequ_select.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\shequ_select.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_send_background.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ad1.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ad1.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shouye_select.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\shouye_select.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_search.9.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\bg_search.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_login_silver_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_check_material.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_select.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\text_select.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_background.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertview_alert.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertview_alert.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_none.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_none.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_like_background.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\messenger_button_blue_bg_selector.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\messenger_button_white_bg_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\editjiage_color.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\editjiage_color.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ratingbar_drawable.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ratingbar_drawable.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhuan_select.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\zhuan_select.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kaiguan_select.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\kaiguan_select.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_bottom.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_bottom.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\my_select.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\my_select.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_actionsheet_header.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_actionsheet_header.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_none.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_none.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\my_select.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\my_select.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_send_background.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_actionsheet_cancel.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_actionsheet_cancel.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fab_background.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\fab_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_bottom.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_bottom.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ad1.png",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ad1.png"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhuan_select.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\zhuan_select.xml"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
     },
@@ -228,44 +12,36 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\messenger_button_white_bg_round.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\snackbar_background.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\snackbar_background.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_like_background.xml"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\messenger_button_blue_bg_round.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_right.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_right.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ad_img.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ad_img.png"
     },
     {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\messenger_button_blue_bg_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_dark.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_actionsheet_cancel.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_actionsheet_cancel.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_radio_material.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_login_silver_background.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_search.9.png",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\bg_search.9.png"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shequ_select.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\shequ_select.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\text_select.xml",
@@ -276,40 +52,40 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ad_img.png",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ad_img.png"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ad1.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ad1.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_search.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\bg_search.9.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_login_silver_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_check_material.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\messenger_button_blue_bg_selector.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ratingbar_drawable.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ratingbar_drawable.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_dialog_material_background_light.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_switch_thumb_material.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\messenger_button_blue_bg_round.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\shequ_select.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\shequ_select.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertview_alert.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertview_alert.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\snackbar_background.xml",
@@ -328,24 +104,36 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\shouye_select.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\editjiage_color.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\editjiage_color.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ratingbar_drawable_star.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ratingbar_drawable_star.xml"
     },
     {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ratingbar_drawable.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ratingbar_drawable.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ratingbar_drawable_star.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\ratingbar_drawable_star.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\zhuan_select.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\zhuan_select.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
@@ -356,39 +144,59 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_right.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_right.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_cab_background_top_material.xml"
-    },
-    {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_left.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_left.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\fab_background.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\22.2.1\\res\\drawable\\fab_background.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_selector.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\messenger_button_white_bg_selector.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_bottom.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_bottom.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_selector.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\messenger_button_white_bg_selector.xml"
     },
     {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_background.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_left.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_left.xml"
     },
     {
-        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertview_alert.xml",
-        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertview_alert.xml"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\kaiguan_select.xml",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\kaiguan_select.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\location_marker.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\location_marker.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_alertbutton_none.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.bigkoo\\alertview\\1.0.1\\res\\drawable\\bg_alertbutton_none.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\my_select.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable\\my_select.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_send_background.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\drawable\\com_facebook_button_send_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable\\abc_item_background_holo_light.xml"
     }
 ]

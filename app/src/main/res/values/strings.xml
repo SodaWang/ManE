@@ -184,4 +184,5 @@
     <string name="getmonney_game">游戏赚钱</string>
     <string name="app_suggest">APP推荐</string>
     <string name="ezhuandian">e赚点</string>
+    <string name="title_activity_map">MapActivity</string>
 </resources>

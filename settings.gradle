@@ -1,1 +1,3 @@
 include ':app', 'RecyclerViewPagerDemo', ':RecyclerViewPager', ':tablayoutsupport', ':ToggleButtonLib', ':ToggleButtonSample', ':alertview', ':AlertViewDemo', 'RecyclerViewSwipeDismiss', 'RecyclerViewSwipeDismissDemo'
+include ':aMapLocationDemo2x'
+include ':aMap_Android_API_2DMap_Demo_V270_Location_API_V133'

@@ -16,6 +16,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+
+//    signingConfigs {
+//        debug {
+//            storeFile file("D:\\keystore.jks")
+//        }
+//    }
 }
 
 dependencies {

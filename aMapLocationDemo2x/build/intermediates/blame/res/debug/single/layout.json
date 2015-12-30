@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\build\\intermediates\\res\\merged\\debug\\layout\\feature.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\src\\main\\res\\layout\\feature.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\build\\intermediates\\res\\merged\\debug\\layout\\activity_device_sensors.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\src\\main\\res\\layout\\activity_device_sensors.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\build\\intermediates\\res\\merged\\debug\\layout\\activity_battery_saving.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\src\\main\\res\\layout\\activity_battery_saving.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hight_accuracy.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\src\\main\\res\\layout\\activity_hight_accuracy.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\build\\intermediates\\res\\merged\\debug\\layout\\activity_geofence.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\src\\main\\res\\layout\\activity_geofence.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\build\\intermediates\\res\\merged\\debug\\layout\\activity_assistant_location.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\src\\main\\res\\layout\\activity_assistant_location.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\build\\intermediates\\res\\merged\\debug\\layout\\activity_start.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMapLocationDemo2x\\src\\main\\res\\layout\\activity_start.xml"
+    }
+]

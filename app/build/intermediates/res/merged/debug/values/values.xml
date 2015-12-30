@@ -598,6 +598,7 @@
     <string name="title_activity_data">ZhouBianShangHuActivity</string>
     <string name="title_activity_finacing">FinacingActivity</string>
     <string name="title_activity_get_monney">GetMonneyActivity</string>
+    <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_module_design">ModuleDesignActivity</string>
     <string name="title_activity_product_info">ProductInfoActivity</string>
     <string name="title_activity_regist_activiy">RegistActiviy</string>

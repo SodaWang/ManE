@@ -1,0 +1,190 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\route_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\route_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\poikeywordsearch_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\poikeywordsearch_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\routesearch_list_poi.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\routesearch_list_poi.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\geocoder_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\geocoder_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\empty.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\empty.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\district_boundary_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\district_boundary_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\basemap_fragment_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\basemap_fragment_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\events_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\events_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\busline_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\busline_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\polygon_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\polygon_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\feature.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\feature.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\polyline_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\polyline_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\main_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\main_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\poiaroundsearch_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\poiaroundsearch_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\basicmap_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\basicmap_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\camera_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\camera_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\district_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\district_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\preview_photo_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\preview_photo_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\busline_item.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\busline_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\route_inputs.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\route_inputs.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\locationsource_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\locationsource_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\poikeywordsearch_uri.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\poikeywordsearch_uri.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\ui_settings_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\ui_settings_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\cloud_detail_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\cloud_detail_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\screenshot_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\screenshot_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\circle_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\circle_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\custom_info_contents.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\custom_info_contents.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\marker.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\marker.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\locationsensorsource_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\locationsensorsource_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\groundoverlay_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\groundoverlay_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\poi_result_list.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\poi_result_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\item.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\item.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\cloud_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\cloud_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\item_layout.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\layers_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\layers_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\share_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\share_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\marker_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\marker_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\weather_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\weather_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\navsearch_list_poi.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\navsearch_list_poi.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\custom_info_window.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\custom_info_window.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\location.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\location.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\tileoverlay_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\tileoverlay_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\expandablelistviewselector.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\expandablelistviewselector.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\busline_dialog.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\busline_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\locationnetwork_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\locationnetwork_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\osmmap_activity.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\osmmap_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\layout\\photo_layout.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\layout\\photo_layout.xml"
+    }
+]

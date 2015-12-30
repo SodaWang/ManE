@@ -1,0 +1,142 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_small.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_default_small.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\text_search_pressed.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\text_search_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\text_search.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\text_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_driving_focused.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_driving_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\next_disable.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\next_disable.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_transit_off.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_transit_off.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_poi_search_normal.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_poi_search_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_small_normal_disable.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_default_small_normal_disable.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_nav_drag_down_normal.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_nav_drag_down_normal.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_route_pre.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_route_pre.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\point.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\point.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_small_pressed.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_default_small_pressed.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_walk.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_walk.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\text_search_selected.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\text_search_selected.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_driving.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_driving.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\groundoverlay.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\groundoverlay.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\left_back.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\left_back.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_transit_on.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_transit_on.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\whiteborder.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\whiteborder.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_nav_drag_down.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_nav_drag_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_walk_focused.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_walk_focused.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\next.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\next.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_transit.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_transit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\prev_disable.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\prev_disable.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_route_next.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_route_next.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\prev.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\prev.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_nav_drag_down_pressed.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_nav_drag_down_pressed.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_default_small_normal.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_default_small_normal.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_walk_on.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_walk_on.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\text_search_default.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\text_search_default.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_map_poi.xml",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\btn_map_poi.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_driving_off.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_driving_off.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_walk_off.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_walk_off.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_driving_on.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_driving_on.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable\\mode_transit_focused.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable\\mode_transit_focused.9.png"
+    }
+]

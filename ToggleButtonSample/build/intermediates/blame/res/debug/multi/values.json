@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "outputFile": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 102
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 173
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 253
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 332
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 417
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 501
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 593
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 669
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -163,7 +163,7 @@
                     "endOffset": 753
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -182,7 +182,7 @@
                     "endOffset": 830
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -201,7 +201,7 @@
                     "endOffset": 905
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -220,7 +220,7 @@
                     "endOffset": 972
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -239,7 +239,7 @@
                     "endOffset": 1043
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 2894
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\dimens.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -277,7 +277,7 @@
                     "endOffset": 2950
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\dimens.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -296,7 +296,7 @@
                     "endOffset": 3024
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -315,7 +315,7 @@
                     "endOffset": 3097
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -334,7 +334,7 @@
                     "endOffset": 3170
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -353,7 +353,7 @@
                     "endOffset": 3242
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -372,7 +372,7 @@
                     "endOffset": 3315
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -391,7 +391,7 @@
                     "endOffset": 3388
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -410,7 +410,7 @@
                     "endOffset": 3453
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -429,7 +429,7 @@
                     "endOffset": 3522
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -448,7 +448,7 @@
                     "endOffset": 3587
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -467,7 +467,7 @@
                     "endOffset": 3669
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -486,7 +486,7 @@
                     "endOffset": 3752
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -505,7 +505,7 @@
                     "endOffset": 3833
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 31,
                         "startColumn": 4,
@@ -524,7 +524,7 @@
                     "endOffset": 3916
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -543,7 +543,7 @@
                     "endOffset": 3988
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 33,
                         "startColumn": 4,
@@ -562,7 +562,7 @@
                     "endOffset": 4058
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 34,
                         "startColumn": 4,
@@ -581,7 +581,7 @@
                     "endOffset": 4129
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 35,
                         "startColumn": 4,
@@ -600,7 +600,7 @@
                     "endOffset": 4198
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 36,
                         "startColumn": 4,
@@ -619,7 +619,7 @@
                     "endOffset": 4267
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 37,
                         "startColumn": 4,
@@ -638,7 +638,7 @@
                     "endOffset": 4338
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -657,13 +657,13 @@
                     "endOffset": 4391
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 169,
+                        "startOffset": 170,
                         "endColumn": 52,
-                        "endOffset": 217
+                        "endOffset": 218
                     }
                 }
             },
@@ -676,13 +676,13 @@
                     "endOffset": 4447
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 58,
+                        "startOffset": 59,
                         "endColumn": 55,
-                        "endOffset": 109
+                        "endOffset": 110
                     }
                 }
             },
@@ -695,7 +695,7 @@
                     "endOffset": 4562
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
@@ -714,7 +714,7 @@
                     "endOffset": 4680
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 42,
                         "startColumn": 4,
@@ -733,7 +733,7 @@
                     "endOffset": 4775
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 43,
                         "startColumn": 4,
@@ -752,7 +752,7 @@
                     "endOffset": 4840
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 44,
                         "startColumn": 4,
@@ -771,7 +771,7 @@
                     "endOffset": 4908
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 45,
                         "startColumn": 4,
@@ -790,7 +790,7 @@
                     "endOffset": 4968
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -809,7 +809,7 @@
                     "endOffset": 5040
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 47,
                         "startColumn": 4,
@@ -828,7 +828,7 @@
                     "endOffset": 5112
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 48,
                         "startColumn": 4,
@@ -847,7 +847,7 @@
                     "endOffset": 5203
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 49,
                         "startColumn": 4,
@@ -866,7 +866,7 @@
                     "endOffset": 5277
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 50,
                         "startColumn": 4,
@@ -885,7 +885,7 @@
                     "endOffset": 5351
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
@@ -904,7 +904,7 @@
                     "endOffset": 5434
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 52,
                         "startColumn": 4,
@@ -923,7 +923,7 @@
                     "endOffset": 5535
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 53,
                         "startColumn": 4,
@@ -942,7 +942,7 @@
                     "endOffset": 5598
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 54,
                         "startColumn": 4,
@@ -961,7 +961,7 @@
                     "endOffset": 5663
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 55,
                         "startColumn": 4,
@@ -980,7 +980,7 @@
                     "endOffset": 5792
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -999,13 +999,13 @@
                     "endOffset": 5845
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 115,
+                        "startOffset": 116,
                         "endColumn": 52,
-                        "endOffset": 163
+                        "endOffset": 164
                     }
                 }
             },
@@ -1018,7 +1018,7 @@
                     "endOffset": 5905
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 59,
                         "startColumn": 4,
@@ -1038,7 +1038,7 @@
                     "endOffset": 5998
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -1059,7 +1059,7 @@
                     "endOffset": 6136
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 65,
                         "startColumn": 4,
@@ -1080,7 +1080,7 @@
                     "endOffset": 6413
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 68,
                         "startColumn": 4,
@@ -1101,7 +1101,7 @@
                     "endOffset": 6572
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 74,
                         "startColumn": 4,
@@ -1122,7 +1122,7 @@
                     "endOffset": 6712
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 78,
                         "startColumn": 4,
@@ -1143,7 +1143,7 @@
                     "endOffset": 6990
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 81,
                         "startColumn": 4,
@@ -1164,7 +1164,7 @@
                     "endOffset": 7150
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 87,
                         "startColumn": 4,
@@ -1185,7 +1185,7 @@
                     "endOffset": 7640
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 91,
                         "startColumn": 4,
@@ -1206,7 +1206,7 @@
                     "endOffset": 7745
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 102,
                         "startColumn": 4,
@@ -1227,7 +1227,7 @@
                     "endOffset": 7890
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 105,
                         "startColumn": 4,
@@ -1248,7 +1248,7 @@
                     "endOffset": 8035
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 108,
                         "startColumn": 4,
@@ -1269,7 +1269,7 @@
                     "endOffset": 8141
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 111,
                         "startColumn": 4,
@@ -1290,7 +1290,7 @@
                     "endOffset": 8286
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 114,
                         "startColumn": 4,
@@ -1311,7 +1311,7 @@
                     "endOffset": 8431
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 117,
                         "startColumn": 4,
@@ -1332,7 +1332,7 @@
                     "endOffset": 9032
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 122,
                         "startColumn": 4,
@@ -1353,7 +1353,7 @@
                     "endOffset": 9211
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 133,
                         "startColumn": 4,
@@ -1374,7 +1374,7 @@
                     "endOffset": 9558
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 136,
                         "startColumn": 4,
@@ -1395,7 +1395,7 @@
                     "endOffset": 9809
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 141,
                         "startColumn": 4,
@@ -1416,7 +1416,7 @@
                     "endOffset": 9991
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 145,
                         "startColumn": 4,
@@ -1437,7 +1437,7 @@
                     "endOffset": 10315
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 148,
                         "startColumn": 4,
@@ -1458,7 +1458,7 @@
                     "endOffset": 10675
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonSample\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values\\values.xml",
                     "position": {
                         "startLine": 153,
                         "startColumn": 4,

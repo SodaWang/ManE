@@ -7,10 +7,9 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="21" />
-
+    <!-- 满e社区权限start -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <!-- 往sdcard中写入数据的权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -18,7 +17,19 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 满e社区权限end -->
 
+
+    <!-- 高德地图SDK权限start -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 高德地图SDK权限end -->
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -91,7 +102,28 @@
         <activity android:name=".my.activity.PropertyPayActivity" />
         <activity android:name=".my.activity.VintageListActivity" />
         <activity android:name=".my.activity.GoodsReleaseActivity" />
-        <activity android:name=".my.activity.GetMonneyGameActivity"></activity>
+        <activity android:name=".my.activity.GetMonneyGameActivity" />
+
+        <!-- 高德地图SDK配置start -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4d70ef82df5e62b9dbb018dd18ac55ca" />
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService"></service>
+        <!--
+         在android4.0以上系统中的 Activity加上下面这句，可以支持地图横竖屏切换
+         android:configChanges="orientation|keyboardHidden|screenSize"
+                               例如：
+         <activity
+            android:name=".basic.BasicMapActivity"
+            android:label="@string/basic_map"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        -->
+        <!-- 高德地图SDK配置end -->
+        <activity
+            android:name=".my.activity.MapActivity"
+            android:label="@string/title_activity_map"
+            android:theme="@style/Theme.DesignDemo"></activity>
     </application>
 
 </manifest>

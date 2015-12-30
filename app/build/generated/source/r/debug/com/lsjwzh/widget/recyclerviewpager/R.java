@@ -21,10 +21,10 @@ public final class R {
 	}
 	public static final class id {
 		public static final int item_touch_helper_previous_elevation = 0x7f0b0005;
-		public static final int rvp_fragment_container = 0x7f0b0202;
+		public static final int rvp_fragment_container = 0x7f0b0203;
 	}
 	public static final class layout {
-		public static final int rvp_fragment_container = 0x7f030081;
+		public static final int rvp_fragment_container = 0x7f030082;
 	}
 	public static final class styleable {
 		public static final int[] RecyclerView = { 0x010100c4, 0x7f010057, 0x7f010058, 0x7f010059, 0x7f01005a };

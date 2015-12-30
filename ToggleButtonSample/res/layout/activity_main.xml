@@ -34,7 +34,7 @@
             toggle:offColor="#ddd"
             toggle:spotColor="#00f"
             toggle:offBorderColor="#000"
-            toggle:borderWidth="2dp"
+            toggle:my_borderWidth="2dp"
             android:layout_height="30dp" >
         </com.zcw.togglebutton.ToggleButton>
         
@@ -45,7 +45,7 @@
             toggle:offColor="#ddd"
             toggle:spotColor="#00f"
             toggle:offBorderColor="#000"
-            toggle:borderWidth="2dp"
+            toggle:my_borderWidth="2dp"
             android:layout_height="30dp" >
         </com.zcw.togglebutton.ToggleButton>
     </LinearLayout>

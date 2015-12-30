@@ -1,0 +1,27 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+        applicationId "com.amap.map2d.demo"
+        minSdkVersion 8
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.cfg'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:21.+'
+    compile files('libs/AMap_android_API_2DMap_Lib_V2.7.0_20151124.jar')
+    compile files('libs/AMap_Location_v2.0.0_20151117.jar')
+    compile files('libs/AMap_Services_V2.7.0_20151125.jar')
+    compile files('libs/Volley.jar')
+}

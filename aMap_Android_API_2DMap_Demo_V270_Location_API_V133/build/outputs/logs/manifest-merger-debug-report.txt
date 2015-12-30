@@ -1,0 +1,339 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:2:1-171:12
+	package
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:15:5-42
+	android:targetSdkVersion
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:8:9-34
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:11:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:13:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:16:5-75
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:16:22-72
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:17:5-76
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:17:22-73
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:18:5-76
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:18:22-73
+uses-permission#android.permission.CHANGE_CONFIGURATION
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:19:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:20:5-68
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:20:22-65
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:22:5-73
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:22:22-70
+application
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:24:5-169:19
+MERGED from [com.android.support:support-v4:21.0.3] C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\AndroidManifest.xml:16:5-19
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:26:9-43
+	android:icon
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:25:9-45
+meta-data#com.amap.api.v2.apikey
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:27:9-29:64
+	android:value
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:29:13-61
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:28:13-50
+activity#com.amap.map2d.demo.MainActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:41:9-47:20
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:41:19-66
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:42:13-46:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:43:17-69
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:43:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:45:17-77
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:45:27-74
+activity#com.amap.map2d.demo.basic.BasicMapActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:48:9-51:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:51:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:50:13-46
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:49:13-51
+activity#com.amap.map2d.demo.basic.OsmMapActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:52:9-55:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:55:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:54:13-44
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:53:13-49
+activity#com.amap.map2d.demo.basic.BaseMapFragmentActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:56:9-59:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:59:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:58:13-54
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:57:13-58
+activity#com.amap.map2d.demo.basic.CameraActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:60:9-63:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:63:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:62:13-48
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:61:13-49
+activity#com.amap.map2d.demo.basic.EventsActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:64:9-67:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:67:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:66:13-48
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:65:13-49
+activity#com.amap.map2d.demo.basic.LayersActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:68:9-71:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:71:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:70:13-48
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:69:13-49
+activity#com.amap.map2d.demo.basic.MapOptionActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:72:9-75:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:75:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:74:13-51
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:73:13-52
+activity#com.amap.map2d.demo.basic.ScreenShotActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:76:9-79:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:79:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:78:13-52
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:77:13-53
+activity#com.amap.map2d.demo.basic.UiSettingsActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:80:9-83:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:83:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:82:13-52
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:81:13-53
+activity#com.amap.map2d.demo.overlay.MarkerActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:84:9-87:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:87:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:86:13-48
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:85:13-51
+activity#com.amap.map2d.demo.overlay.PolylineActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:88:9-91:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:91:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:90:13-50
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:89:13-53
+activity#com.amap.map2d.demo.overlay.GroundOverlayActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:92:9-95:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:95:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:94:13-55
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:93:13-58
+activity#com.amap.map2d.demo.overlay.PolygonActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:96:9-99:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:99:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:98:13-49
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:97:13-52
+activity#com.amap.map2d.demo.overlay.CircleActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:100:9-103:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:103:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:102:13-48
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:101:13-51
+activity#com.amap.map2d.demo.location.LocationSourceActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:104:9-107:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:107:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:106:13-56
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:105:13-60
+activity#com.amap.map2d.demo.location.LocationGPSActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:108:9-111:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:111:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:110:13-53
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:109:13-57
+activity#com.amap.map2d.demo.location.LocationSensorSourceActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:112:9-115:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:115:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:114:13-59
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:113:13-66
+activity#com.amap.map2d.demo.location.LocationNetworkActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:116:9-119:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:119:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:118:13-57
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:117:13-61
+activity#com.amap.map2d.demo.geocoder.GeocoderActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:120:9-123:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:123:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:122:13-50
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:121:13-54
+activity#com.amap.map2d.demo.route.RouteActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:124:9-127:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:127:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:126:13-47
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:125:13-48
+activity#com.amap.map2d.demo.busline.BuslineActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:128:9-131:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:131:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:130:13-49
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:129:13-52
+activity#com.amap.map2d.demo.poisearch.PoiKeywordSearchActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:132:9-135:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:135:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:134:13-58
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:133:13-63
+activity#com.amap.map2d.demo.poisearch.PoiAroundSearchActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:136:9-139:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:139:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:138:13-57
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:137:13-62
+activity#com.amap.map2d.demo.district.DistrictActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:140:9-143:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:143:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:142:13-50
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:141:13-54
+activity#com.amap.map2d.demo.district.DistrictWithBoundaryActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:144:9-147:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:147:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:146:13-59
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:145:13-66
+activity#com.amap.map2d.demo.cloud.CloudActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:148:9-151:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:151:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:150:13-47
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:149:13-48
+activity#com.amap.map2d.demo.cloud.CloudDetailActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:152:9-154:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:154:13-49
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:153:13-54
+activity#com.amap.map2d.demo.cloud.PreviewPhotoActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:155:9-157:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:157:13-49
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:156:13-55
+activity#com.amap.map2d.demo.share.ShareActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:158:9-161:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:161:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:160:13-47
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:159:13-48
+activity#com.amap.map2d.demo.weather.WeatherSearchActivity
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:162:9-165:52
+	android:screenOrientation
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:165:13-49
+	android:label
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:164:13-49
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:163:13-58
+service#com.amap.api.location.APSService
+ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:168:9-76
+	android:name
+		ADDED from C:\Users\Administrator\AndroidStudioProjects\ManE\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\src\main\AndroidManifest.xml:168:18-65

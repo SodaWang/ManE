@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_launcher.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\end.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable-ldpi\\end.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\bus.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable-ldpi\\bus.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\start.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable-ldpi\\start.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\car.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable-ldpi\\car.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\man.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\aMap_Android_API_2DMap_Demo_V270_Location_API_V133\\src\\main\\res\\drawable-ldpi\\man.png"
+    }
+]

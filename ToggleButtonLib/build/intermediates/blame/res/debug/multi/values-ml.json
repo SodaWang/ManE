@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonLib\\build\\intermediates\\res\\merged\\debug\\values-ml\\values-ml.xml",
+        "outputFile": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonLib\\build\\intermediates\\res\\merged\\debug\\values-ml\\values-ml.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 115
                 },
                 "from": {
-                    "file": "D:\\AndroidStudioProjects\\ManE\\ToggleButtonLib\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values-ml\\values.xml",
+                    "file": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\ToggleButtonLib\\build\\intermediates\\exploded-aar\\com.facebook.android\\facebook-android-sdk\\4.1.1\\res\\values-ml\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

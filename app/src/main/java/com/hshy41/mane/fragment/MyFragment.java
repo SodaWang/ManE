@@ -1,7 +1,8 @@
 package com.hshy41.mane.fragment;
 
 import android.content.Intent;
-import android.os.Environment;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -9,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -24,16 +26,15 @@ import com.hshy41.mane.my.activity.LoginActivity;
 import com.hshy41.mane.my.activity.MyCollectActivity;
 import com.hshy41.mane.my.activity.RegistActivity;
 import com.hshy41.mane.my.activity.SetActivity;
+import com.hshy41.mane.utils.AMapUtils;
 import com.hshy41.mane.utils.Cons;
-import com.hshy41.mane.utils.DataCleanManager;
+
 import com.hshy41.mane.utils.ToastUtil;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
-import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -92,6 +93,8 @@ public class MyFragment extends BaseFragment implements OnClickListener {
      */
     TextView tv_cache;
 
+
+
     @Override
     public void onResume() {
         super.onResume();
@@ -115,6 +118,8 @@ public class MyFragment extends BaseFragment implements OnClickListener {
         }
 
     }
+
+
 
     @Override
     protected void setTitleBar() {
@@ -152,6 +157,7 @@ public class MyFragment extends BaseFragment implements OnClickListener {
         rl_title_layout = (RelativeLayout) view.findViewById(R.id.title_layout);
         tv_my_uid = (TextView) view.findViewById(R.id.tv_my_uid);
         tv_my_nickname = (TextView) view.findViewById(R.id.tv_my_nickname);
+
     }
 
     @Override
@@ -173,6 +179,8 @@ public class MyFragment extends BaseFragment implements OnClickListener {
         tv_my_nickname = (TextView) view.findViewById(R.id.tv_my_nickname);
         iv_my_head = (ImageView) view.findViewById(R.id.iv_my_head);
         iv_sign_in = (ImageView) view.findViewById(R.id.iv_my_sign_in);
+
+
 
 
         iv_sign_in.setOnClickListener(this);
@@ -321,4 +329,6 @@ public class MyFragment extends BaseFragment implements OnClickListener {
         };
         MyApplication.mQueue.add(stringRequest);
     }
+
+
 }

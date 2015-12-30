@@ -7,6 +7,8 @@ import org.apache.http.NameValuePair;
 import org.apache.http.client.CookieStore;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
@@ -20,6 +22,10 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 
+import com.amap.api.location.AMapLocation;
+import com.amap.api.location.AMapLocationClient;
+import com.amap.api.location.AMapLocationClientOption;
+import com.amap.api.location.AMapLocationListener;
 import com.google.gson.Gson;
 
 import com.hshy41.mane.R;
@@ -31,13 +37,15 @@ import com.hshy41.mane.bean.LunboImageBaseBean;
 import com.hshy41.mane.entity.ImageEntity;
 import com.hshy41.mane.fragment.shouyefragment.OneFragment;
 import com.hshy41.mane.fragment.shouyefragment.TwoFragment;
+import com.hshy41.mane.my.activity.MapActivity;
 import com.hshy41.mane.my.activity.SearchActivity;
+import com.hshy41.mane.utils.AMapUtils;
 import com.hshy41.mane.utils.NetDataCallBack;
 import com.hshy41.mane.utils.NetDataUtils;
 import com.hshy41.mane.utils.ViewSetUtils;
 import com.hshy41.mane.views.AutoScrollViewPager;
 
-public class IndexFragment extends BaseFragment implements View.OnClickListener {
+public class IndexFragment extends BaseFragment implements View.OnClickListener, AMapLocationListener {
     private AutoScrollViewPager autoviewpager;
     private ViewPager viewpager_15;
     private ImageView img1, img2, img3, img4, img6;
@@ -56,6 +64,10 @@ public class IndexFragment extends BaseFragment implements View.OnClickListener 
      */
     private int i_index_gridpage = 0;
 
+    //高德地图组件相关
+    private AMapLocationClient locationClient = null;
+    private AMapLocationClientOption locationOption = null;
+
     @Override
     protected void initTitleBar(View view) {
         rl_title_left = (RelativeLayout) view.findViewById(R.id.rl_title_left);
@@ -66,6 +78,7 @@ public class IndexFragment extends BaseFragment implements View.OnClickListener 
         bt_title_left = (Button) view.findViewById(R.id.bt_title_left);
         tv_title_right = (TextView) view.findViewById(R.id.tv_title_right);
         rl_title_layout = (RelativeLayout) view.findViewById(R.id.title_layout);
+        rl_title_center = (RelativeLayout) view.findViewById(R.id.rl_title_center);
     }
 
     @Override
@@ -87,6 +100,7 @@ public class IndexFragment extends BaseFragment implements View.OnClickListener 
 
         bt_title_right.setOnClickListener(this);
         rl_title_right.setOnClickListener(this);
+        rl_title_center.setOnClickListener(this);
     }
 
     @Override
@@ -117,6 +131,37 @@ public class IndexFragment extends BaseFragment implements View.OnClickListener 
         getImage();
         setViewpager();
         setlistview();
+
+        locationClient = new AMapLocationClient(getActivity().getApplicationContext());
+        locationOption = new AMapLocationClientOption();
+
+        // 设置定位模式为高精度模式
+        locationOption.setLocationMode(AMapLocationClientOption.AMapLocationMode.Hight_Accuracy);
+        // 设置定位监听
+        locationClient.setLocationListener(this);
+        //持续定位或单次定位
+        locationOption.setOnceLocation(false);
+        // 设置定位参数
+        locationClient.setLocationOption(locationOption);
+        // 启动定位
+        locationClient.startLocation();
+
+        mHandler.sendEmptyMessage(AMapUtils.MSG_LOCATION_START);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        //高德地图
+        if (null != locationClient) {
+            /**
+             * 如果AMapLocationClient是在当前Activity实例化的，
+             * 在Activity的onDestroy中一定要执行AMapLocationClient的onDestroy
+             */
+            locationClient.onDestroy();
+            locationClient = null;
+            locationOption = null;
+        }
     }
 
     /**
@@ -262,6 +307,10 @@ public class IndexFragment extends BaseFragment implements View.OnClickListener 
                 intent = new Intent(getActivity(), SearchActivity.class);
                 getActivity().startActivity(intent);
                 break;
+            case R.id.rl_title_center:
+                intent = new Intent(getActivity(), MapActivity.class);
+                getActivity().startActivity(intent);
+                break;
 
         }
     }
@@ -328,4 +377,35 @@ public class IndexFragment extends BaseFragment implements View.OnClickListener 
         autoviewpager.startAutoScroll();
     }
 
+
+    Handler mHandler = new Handler() {
+        public void dispatchMessage(android.os.Message msg) {
+            switch (msg.what) {
+                //开始定位
+                case AMapUtils.MSG_LOCATION_START:
+                    tv_title_text.setText("正在定位...");
+                    break;
+                // 定位完成
+                case AMapUtils.MSG_LOCATION_FINISH:
+                    AMapLocation loc = (AMapLocation) msg.obj;
+                    String result = AMapUtils.getSimpleAddressStr(loc);
+                    tv_title_text.setText(result);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+    };
+
+    // 定位监听
+    @Override
+    public void onLocationChanged(AMapLocation loc) {
+        if (null != loc) {
+            Message msg = mHandler.obtainMessage();
+            msg.obj = loc;
+            msg.what = AMapUtils.MSG_LOCATION_FINISH;
+            mHandler.sendMessage(msg);
+        }
+    }
 }
