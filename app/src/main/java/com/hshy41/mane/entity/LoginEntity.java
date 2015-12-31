@@ -6,23 +6,28 @@ import java.io.Serializable;
  * Created by Administrator on 2015/12/29.
  */
 public class LoginEntity implements Serializable {
+
     /**
-     * id : 2
-     * username : admin
-     * cnname : 啦啦啦
-     * avatar :
-     * integral : 1
-     * wallet : null
-     * downpeople : null
+     * id : 5
+     * username : 18600364741
+     * mobile : 18600364741
+     * cnname : 18600364741
+     * face : null
+     * integral : 0
+     * expval : 0
+     * money : 0
+     * sum : 0
      */
 
     private String id;
     private String username;
+    private String mobile;
     private String cnname;
-    private String avatar;
+    private String face;
     private String integral;
-    private String wallet;
-    private String downpeople;
+    private String expval;
+    private String money;
+    private String sum;
 
     public void setId(String id) {
         this.id = id;
@@ -32,24 +37,32 @@ public class LoginEntity implements Serializable {
         this.username = username;
     }
 
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
     public void setCnname(String cnname) {
         this.cnname = cnname;
     }
 
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
+    public void setFace(String face) {
+        this.face = face;
     }
 
     public void setIntegral(String integral) {
         this.integral = integral;
     }
 
-    public void setWallet(String wallet) {
-        this.wallet = wallet;
+    public void setExpval(String expval) {
+        this.expval = expval;
     }
 
-    public void setDownpeople(String downpeople) {
-        this.downpeople = downpeople;
+    public void setMoney(String money) {
+        this.money = money;
+    }
+
+    public void setSum(String sum) {
+        this.sum = sum;
     }
 
     public String getId() {
@@ -60,36 +73,31 @@ public class LoginEntity implements Serializable {
         return username;
     }
 
+    public String getMobile() {
+        return mobile;
+    }
+
     public String getCnname() {
         return cnname;
     }
 
-    public String getAvatar() {
-        return avatar;
+    public String getFace() {
+        return face;
     }
 
     public String getIntegral() {
         return integral;
     }
 
-    public Object getWallet() {
-        return wallet;
+    public String getExpval() {
+        return expval;
     }
 
-    public Object getDownpeople() {
-        return downpeople;
+    public String getMoney() {
+        return money;
     }
 
-    @Override
-    public String toString() {
-        return "LoginEntity{" +
-                "id='" + id + '\'' +
-                ", username='" + username + '\'' +
-                ", cnname='" + cnname + '\'' +
-                ", avatar='" + avatar + '\'' +
-                ", integral='" + integral + '\'' +
-                ", wallet='" + wallet + '\'' +
-                ", downpeople='" + downpeople + '\'' +
-                '}';
+    public String getSum() {
+        return sum;
     }
 }

@@ -58,14 +58,17 @@ public class Cons {
             R.drawable.shumaweixiu, R.drawable.guandaoshutong, R.drawable.fangwuweixiu, R.drawable.jiajuweixiu,
             R.drawable.xiyipiju};
 
+    //Cookie
+    public static String COOKIE;
+
     //域名
-    public final static String DOMAIN = "http://mysqapp.qweweq.com/index.php/home/";
+    public final static String DOMAIN = "http://mysqapp.qweweq.com/index.php/app/index/";
 
     //注册发送验证码接口
-    public final static String IDENTIFYING_CODE_REGIST = "Member/reginsertYzm/";
+    public final static String IDENTIFYING_CODE_REGIST = "reginsertYzm";
 
     //注册接口
-    public final static String REGIST = "Member/reginsert/";
+    public final static String REGIST = "reginsert";
 
     //找回密码接口
     public final static String FIND_PASSWORD = "Member/resetpass";
@@ -74,7 +77,7 @@ public class Cons {
     public final static String IDENTIFYING_CODE_FIND_PASSWORD = "Member/resetYzm";
 
     //登陆接口
-    public final static String LOGIN = "Member/login";
+    public final static String LOGIN = "login";
 
     //修改头像接口
     public final static String CHANGE_HEAD = "Member/changeavatar";

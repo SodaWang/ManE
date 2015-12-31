@@ -4,16 +4,8 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\kaisuo.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\kaisuo.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\lunbo.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\lunbo.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\qiandao.png",
@@ -24,20 +16,24 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\huishou.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\jiatu.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\jiatu.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\guandaoshutong.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\guandaoshutong.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dingwei1.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dingwei1.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\jiadianweixiu.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\jiadianweixiu.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shoucang.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shoucang.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\baoxian.png",
@@ -48,12 +44,16 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\weixin.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\danxuankuang.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\danxuankuang.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\zhuangxiu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\zhuangxiu.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\taoxin_kong.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\taoxin_kong.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\jiatu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\jiatu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\danxuankuang.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\danxuankuang.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\danxuankuang2.png",
@@ -68,16 +68,12 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\chuzu.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_clear_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\chongwu.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\chongwu.png"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
@@ -88,52 +84,32 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\xiaxian.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sousuo.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\sousuo.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\diannaoweixiu.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\diannaoweixiu.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\xiyipiju.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\xiyipiju.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shouye.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shouye.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tongzhi.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\tongzhi.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\fangwuweixiu.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\fangwuweixiu.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dianhuajian.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dianhuajian.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\my_check.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\my_check.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\wuxing.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\wuxing.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\kaisuo1.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\kaisuo1.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\fenxiang.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\fenxiang.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tuiguang.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\tuiguang.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\danxuankuang2.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\danxuankuang2.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shequ_check.png",
@@ -148,32 +124,32 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\arrow_right.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\weixin.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\weixin.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\zhuan_check.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\zhuan_check.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\zhifubao.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\zhifubao.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\zhanghu.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\zhanghu.png"
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\kaisuo.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\kaisuo.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_orange_right.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\arrow_orange_right.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\wuxing_kong.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\wuxing_kong.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shouye_check.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shouye_check.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dingwei1.png",
@@ -196,16 +172,20 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\baojie.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_down.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\arrow_down.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\wuxing_kong.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\wuxing_kong.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\huishou.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\huishou.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_voice_search_api_mtrl_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\kefu.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\kefu.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\songshui.png",
@@ -216,56 +196,56 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shoucang1.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\baoxiu.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\baoxiu.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\jiadianweixiu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\jiadianweixiu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\fenxiang.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\fenxiang.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\baojie.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\baojie.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\wuxing.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\wuxing.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_orange_right.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\arrow_orange_right.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shequ.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shequ.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dingwei.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dingwei.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sousuo.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\sousuo.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\qiandao.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\qiandao.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shouye.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shouye.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dianzan.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dianzan.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tongzhi.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\tongzhi.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\lunbo_kong.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\lunbo_kong.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_015.png"
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sanjiao.png",
@@ -280,8 +260,16 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\my.png"
     },
     {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_share_mtrl_alpha.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shequ_check.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shequ_check.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
@@ -292,15 +280,331 @@
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_voice_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shumaweixiu.png",
-        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shumaweixiu.png"
-    },
-    {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\add.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\add.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\yuesao.png",
         "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\yuesao.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\kaisuo.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\kaisuo.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_ab_back_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\jiatu.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\jiatu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\lunbo_kong.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\lunbo_kong.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shoucang.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shoucang.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dianhuajian.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dianhuajian.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\songshui.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\songshui.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\my.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\my.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tuiguang.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\tuiguang.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\taoxin_kong.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\taoxin_kong.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\zhifubao.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\zhifubao.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\danxuankuang.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\danxuankuang.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\kefu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\kefu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\sanjiao.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\sanjiao.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\taoxin_kong.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\taoxin_kong.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\baoxiu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\baoxiu.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\chongwu.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\chongwu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\jiajuweixiu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\jiajuweixiu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\chuzu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\chuzu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\zhanghu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\zhanghu.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\xiyipiju.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\xiyipiju.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_tab_indicator_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_right.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\arrow_right.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shoucang1.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shoucang1.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tongzhi.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\tongzhi.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\fangwuweixiu.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\fangwuweixiu.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dianhuajian.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dianhuajian.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_000.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_radio_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\my_check.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\my_check.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\taoxin.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\taoxin.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\kaisuo1.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\kaisuo1.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\fenxiang.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\fenxiang.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\yuesao.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\yuesao.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\tuiguang.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\tuiguang.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\add.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\add.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dianzan.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dianzan.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shoucang.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shoucang.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\fangwuweixiu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\fangwuweixiu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\diannaoweixiu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\diannaoweixiu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\chongwu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\chongwu.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\zhanghu.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\zhanghu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dingwei.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dingwei.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_moreoverflow_mtrl_alpha.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_moreoverflow_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shouye_check.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shouye_check.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\baoxian.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\baoxian.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shouye_check.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shouye_check.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shequ.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shequ.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\kaisuo1.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\kaisuo1.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_clear_mtrl_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_down.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\arrow_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\baoxiu.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\baoxiu.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dingwei.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dingwei.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\bt_set.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\bt_set.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shouye.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shouye.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\zhuan.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\zhuan.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\dianzan.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\dianzan.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\my_check.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\my_check.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\lunbo_kong.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\lunbo_kong.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\arrow_down.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\arrow_down.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_spinner_mtrl_am_alpha.9.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\xiaxian.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\xiaxian.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shumaweixiu.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shumaweixiu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\22.2.1\\res\\drawable-xxxhdpi\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\shumaweixiu.png",
+        "source": "C:\\Users\\Administrator\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\shumaweixiu.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\xiyipiju.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\xiyipiju.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\guandaoshutong.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\guandaoshutong.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\ManE\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\lunbo.png",
+        "source": "D:\\AndroidStudioProjects\\ManE\\app\\src\\main\\res\\drawable-xxxhdpi\\lunbo.png"
     }
 ]

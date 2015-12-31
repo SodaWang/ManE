@@ -9,30 +9,38 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
+import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.HttpHeaderParser;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.google.gson.Gson;
 import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseActivity;
 import com.hshy41.mane.bean.Identifyingcode_Regist_BaseBean;
 import com.hshy41.mane.bean.RegistBaseBean;
-import com.hshy41.mane.entity.Identifyingcode_Regist_Entity;
 import com.hshy41.mane.entity.RegistEntity;
 import com.hshy41.mane.utils.Cons;
+import com.hshy41.mane.utils.NetDataCallBack;
+import com.hshy41.mane.utils.NetDataUtils;
 import com.hshy41.mane.utils.ToastUtil;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.client.CookieStore;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class RegistActivity extends BaseActivity implements OnClickListener {
+    CookieStore mCookieStore = null;
     /**
      * 各种输入框
      *
@@ -114,101 +122,18 @@ public class RegistActivity extends BaseActivity implements OnClickListener {
                 break;
             case R.id.bt_regist_send_identifyingcode:
                 if (Cons.isMobile(et_phone.getText().toString())) {
-                    GetIdentifyingcode();
+                    getIdentifyingcode();
                 } else {
                     ToastUtil.showToast(this, "请输入正确的手机号");
                 }
                 break;
             case R.id.bt_regist_regist:
                 if (CheckRegistInfo())
-                    Regist();
+                    regist();
                 break;
             default:
                 break;
         }
-    }
-
-    /**
-     * 获取验证码
-     */
-    private void GetIdentifyingcode() {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                Cons.DOMAIN + Cons.IDENTIFYING_CODE_REGIST,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String s) {
-                        if (s != null) {
-                            try {
-                                JSONObject json = new JSONObject(s);
-                                if (json.get("Result").equals("0")) {
-                                    Identifyingcode_Regist_BaseBean bean = MyApplication.gson.fromJson(s, Identifyingcode_Regist_BaseBean.class);
-                                    Identifyingcode_Regist_Entity data = bean.data;
-                                } else if (json.get("Result").equals("1")) {
-                                    ToastUtil.showToast(RegistActivity.this, json.getString("Message"));
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
-
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError volleyError) {
-
-            }
-        }) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> map = new HashMap<String, String>();
-                map.put("mobile", et_phone.getText().toString());
-                return map;
-            }
-        };
-        MyApplication.mQueue.add(stringRequest);
-    }
-
-    /**
-     * 注册
-     */
-    private void Regist() {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                Cons.DOMAIN + Cons.REGIST,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String s) {
-                        if (s != null) {
-                            try {
-                                JSONObject json = new JSONObject(s);
-                                if (json.get("Result").equals("0")) {
-                                    RegistBaseBean bean = MyApplication.gson.fromJson(s, RegistBaseBean.class);
-                                    RegistEntity data = bean.data;
-                                } else if (json.get("Result").equals("1")) {
-                                    ToastUtil.showToast(RegistActivity.this, json.getString("Message"));
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
-
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError volleyError) {
-
-            }
-        }) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> map = new HashMap<String, String>();
-                map.put("mobile", et_phone.getText().toString());
-                map.put("password", et_password.getText().toString());
-                map.put("yzm", et_identifyingcode.getText().toString());
-                map.put("yqm", et_invitationcode.getText().toString());
-                return map;
-            }
-        };
-        MyApplication.mQueue.add(stringRequest);
     }
 
 
@@ -226,8 +151,10 @@ public class RegistActivity extends BaseActivity implements OnClickListener {
             return false;
         }
 
-        if (et_password.getText().toString().equals("") || et_password.getText() == null) {
-            ToastUtil.showToast(RegistActivity.this, "请输入密码");
+        if ((et_password.getText().toString().equals("") || et_password.getText() == null)
+                || et_password.getText().toString().length() < 6
+                || et_password.getText().toString().length() > 16) {
+            ToastUtil.showToast(RegistActivity.this, "请输入正确密码，长度6-16位");
             return false;
         }
 
@@ -243,5 +170,93 @@ public class RegistActivity extends BaseActivity implements OnClickListener {
         return true;
     }
 
+
+    /**
+     * 获取注册验证码
+     */
+    private void getIdentifyingcode() {
+        // TODO Auto-generated method stub
+        List<NameValuePair> pairs = new ArrayList<NameValuePair>();
+        String url = Cons.DOMAIN + Cons.IDENTIFYING_CODE_REGIST;
+        pairs.add(new BasicNameValuePair("mobile", et_phone.getText().toString()));
+        NetDataUtils.getNetDataForPost(context, url, pairs, mcallBack_Identifyingcode, true);
+
+    }
+
+    /**
+     * 获取注册验证码回调
+     */
+    private NetDataCallBack mcallBack_Identifyingcode = new NetDataCallBack() {
+        @Override
+        public void onNetSuccess(String s, CookieStore cookieStore) {
+            // TODO Auto-generated method stub
+            if (s != null) {
+                try {
+                    JSONObject json = new JSONObject(s);
+                    if (json.get("Result").equals("0")) {
+                        Identifyingcode_Regist_BaseBean bean = MyApplication.gson.fromJson(s, Identifyingcode_Regist_BaseBean.class);
+                        ToastUtil.showToast(RegistActivity.this, json.getString("Message"));
+                        mCookieStore = cookieStore;
+                    } else if (json.get("Result").equals("1")) {
+                        ToastUtil.showToast(RegistActivity.this, json.getString("Message"));
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        @Override
+        public void onNetFailure() {
+            // TODO Auto-generated method stub
+            ToastUtil.showToast(RegistActivity.this, "联网失败");
+        }
+
+        @Override
+        public void onNetError(String errMsg) {
+            // TODO Auto-generated method stub
+            ToastUtil.showToast(RegistActivity.this, errMsg);
+        }
+    };
+
+
+    /**
+     * 注册
+     */
+    private void regist() {
+        // TODO Auto-generated method stub
+        List<NameValuePair> pairs = new ArrayList<NameValuePair>();
+        String url = Cons.DOMAIN + Cons.REGIST;
+        pairs.add(new BasicNameValuePair("mobile", et_phone.getText().toString()));
+        pairs.add(new BasicNameValuePair("password", et_password.getText().toString()));
+        pairs.add(new BasicNameValuePair("yzm", et_identifyingcode.getText().toString()));
+        pairs.add(new BasicNameValuePair("passwords", et_confirm_password.getText().toString()));
+        pairs.add(new BasicNameValuePair("yqm", et_invitationcode.getText().toString()));
+        NetDataUtils.getNetDataForPost(context, url, pairs, mcallBack_regist, mCookieStore);
+    }
+
+    /**
+     * 注册回调
+     */
+    private NetDataCallBack mcallBack_regist = new NetDataCallBack() {
+        @Override
+        public void onNetSuccess(String s, CookieStore cookieStore) {
+            // TODO Auto-generated method stub
+
+            ToastUtil.showToast(RegistActivity.this, s);
+        }
+
+        @Override
+        public void onNetFailure() {
+            // TODO Auto-generated method stub
+            ToastUtil.showToast(RegistActivity.this, "联网失败");
+        }
+
+        @Override
+        public void onNetError(String errMsg) {
+            // TODO Auto-generated method stub
+            ToastUtil.showToast(RegistActivity.this, errMsg);
+        }
+    };
 
 }

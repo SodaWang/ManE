@@ -206,12 +206,12 @@ public class MyFragment extends BaseFragment implements OnClickListener {
                             ll_unlogin.setVisibility(View.GONE);
                             String id = loginentity.getId();
                             MyApplication.user.setId(id);
-                            MyApplication.user.setFace(loginentity.getAvatar());
-                            MyApplication.user.setNickname(loginentity.getCnname());
+                            MyApplication.user.setFace(loginentity.getFace());
+                            MyApplication.user.setNickname(loginentity.getUsername());
                             MyApplication.updataUserInfo(getActivity());
                             tv_my_uid.setText(getResources().getString(R.string.accuontid)
                                     + id);
-                            tv_my_nickname.setText(loginentity.getCnname());
+                            tv_my_nickname.setText(loginentity.getUsername());
                             /**
                              * 显示图片
                              * 参数1：图片url
@@ -219,7 +219,7 @@ public class MyFragment extends BaseFragment implements OnClickListener {
                              * 参数3：显示图片的设置
                              * 参数4：监听器
                              */
-                            ImageLoader.getInstance().displayImage(loginentity.getAvatar(), iv_my_head, MyApplication.options);
+                            ImageLoader.getInstance().displayImage(loginentity.getFace(), iv_my_head, MyApplication.options);
                             ToastUtil.showLongToast(getActivity(), "登陆成功");
                         }
 

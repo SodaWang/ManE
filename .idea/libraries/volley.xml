@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="volley">
+  <library name="Volley">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/volley.jar!/" />
+      <root url="jar://$PROJECT_DIR$/aMap_Android_API_2DMap_Demo_V270_Location_API_V133/libs/Volley.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

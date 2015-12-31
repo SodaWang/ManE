@@ -9,5 +9,5 @@ public class Identifyingcode_Regist_BaseBean {
 
     public String Result;
     public String Message;
-    public Identifyingcode_Regist_Entity data;
+    public String data;
 }

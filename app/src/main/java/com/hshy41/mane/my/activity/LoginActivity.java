@@ -2,7 +2,6 @@ package com.hshy41.mane.my.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -11,27 +10,25 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.android.volley.AuthFailureError;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.google.gson.Gson;
 import com.hshy41.mane.MyApplication;
 import com.hshy41.mane.R;
 import com.hshy41.mane.base.BaseActivity;
+import com.hshy41.mane.bean.Identifyingcode_Regist_BaseBean;
 import com.hshy41.mane.bean.LoginBaseBean;
 import com.hshy41.mane.entity.LoginEntity;
 import com.hshy41.mane.utils.Cons;
+import com.hshy41.mane.utils.NetDataCallBack;
+import com.hshy41.mane.utils.NetDataUtils;
 import com.hshy41.mane.utils.ToastUtil;
 
+import org.apache.http.NameValuePair;
+import org.apache.http.client.CookieStore;
+import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginActivity extends BaseActivity implements OnClickListener {
 
@@ -124,7 +121,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
                 break;
             case R.id.bt_login_login:
                 if (CheckLoginInfo())
-                    Login();
+                    login();
                 break;
             case R.id.rl_title_right:
             case R.id.tv_title_right:
@@ -144,55 +141,58 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
     /**
      * 登陆
      */
-    private void Login() {
-        StringRequest stringRequest = new StringRequest(Request.Method.POST,
-                Cons.DOMAIN + Cons.LOGIN,
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String s) {
-                        if (s != null) {
-                            try {
-                                JSONObject json = new JSONObject(s);
-                                if (json.get("Result").equals("0")) {
-                                    bean = MyApplication.gson.fromJson(s, LoginBaseBean.class);
-                                    data = bean.data;
-                                    //保存手机号
-                                    MyApplication.user.setPhone(et_phone.getText().toString());
-                                    //更新用户信息
-                                    MyApplication.updataUserInfo(LoginActivity.this);
-                                    Bundle bundle = new Bundle();
-                                    bundle.putSerializable("loginentity", data);
-                                    Intent intent = new Intent();
-                                    intent.putExtras(bundle);
-                                    setResult(Cons.RESULT_LOGIN_ACTIVITY, intent);
-                                    finish();
-                                } else if (json.get("Result").equals("1")) {
-                                    ToastUtil.showToast(LoginActivity.this, json.getString("Message"));
-                                }
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
-                        }
+    private void login() {
+        // TODO Auto-generated method stub
+        List<NameValuePair> pairs = new ArrayList<NameValuePair>();
+        String url = Cons.DOMAIN + Cons.LOGIN;
+        pairs.add(new BasicNameValuePair("mobile", et_phone.getText().toString()));
+        pairs.add(new BasicNameValuePair("password", et_password.getText().toString()));
+        NetDataUtils.getNetDataForPost(context, url, pairs, mcallBack, true);
 
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError volleyError) {
-
-            }
-        }) {
-            @Override
-            protected Map<String, String> getParams() throws AuthFailureError {
-                Map<String, String> map = new HashMap<String, String>();
-                map.put("mobile", et_phone.getText().toString());
-                map.put("password", et_password.getText().toString());
-//                map.put("mobile", "18201310937");
-//                map.put("password", "456789");
-                return map;
-            }
-        };
-        MyApplication.mQueue.add(stringRequest);
     }
+
+    /**
+     * 登陆回调
+     */
+    private NetDataCallBack mcallBack = new NetDataCallBack() {
+        @Override
+        public void onNetSuccess(String s, CookieStore cookieStore) {
+            // TODO Auto-generated method stub
+            if (s != null) {
+                try {
+                    JSONObject json = new JSONObject(s);
+                    if (json.get("Result").equals("0")) {
+                        LoginBaseBean bean = MyApplication.gson.fromJson(s, LoginBaseBean.class);
+                        LoginEntity data = bean.data;
+                        ToastUtil.showToast(LoginActivity.this, json.getString("Message"));
+
+                        Bundle bundle = new Bundle();
+                        bundle.putSerializable("loginentity", data);
+                        Intent intent = new Intent();
+                        intent.putExtras(bundle);
+                        setResult(Cons.RESULT_LOGIN_ACTIVITY, intent);
+                        finish();
+                    } else if (json.get("Result").equals("1")) {
+                        ToastUtil.showToast(LoginActivity.this, json.getString("Message"));
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        @Override
+        public void onNetFailure() {
+            // TODO Auto-generated method stub
+            ToastUtil.showToast(LoginActivity.this, "联网失败");
+        }
+
+        @Override
+        public void onNetError(String errMsg) {
+            // TODO Auto-generated method stub
+            ToastUtil.showToast(LoginActivity.this, errMsg);
+        }
+    };
 
 
     /**
